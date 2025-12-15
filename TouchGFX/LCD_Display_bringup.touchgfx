@@ -99,7 +99,7 @@
       16
     ],
     "AvailableLCDs": {
-      "16": "LCD16bpp"
+      "16": "LCD16bppSerialFlash"
     },
     "AvailableSections": [
       "ExtFlashSection",
@@ -113,8 +113,8 @@
     ],
     "PhysicalButtons": [],
     "FrameworkFeatures": {
-      "LCD16bpp": {
-        "Id": "LCD16bpp",
+      "LCD16bppSerialFlash": {
+        "Id": "LCD16bppSerialFlash",
         "IsEnabled": false
       }
     },

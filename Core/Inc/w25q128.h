@@ -28,5 +28,8 @@ void W25Q_Write_Page (uint32_t page, uint16_t offset, uint32_t size, uint8_t *da
 
 void W25Q_Erase_Chip (void);
 
+void DataReader_WaitForReceiveDone();
+void DataReader_ReadData(uint32_t address24, uint8_t* buffer, uint32_t length);
+void DataReader_StartDMAReadData(uint32_t address24, uint8_t* buffer, uint32_t length);
 
 #endif /* INC_W25Q128_H_ */

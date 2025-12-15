@@ -19,6 +19,7 @@
 #include <TouchGFXGeneratedHAL.hpp>
 #include <touchgfx/hal/OSWrappers.hpp>
 #include <gui/common/FrontendHeap.hpp>
+#include <TouchGFXDataReader.hpp>
 #include <touchgfx/hal/PaintImpl.hpp>
 #include <touchgfx/hal/PaintRGB565Impl.hpp>
 
@@ -132,6 +133,12 @@ void TouchGFXGeneratedHAL::flushFrameBuffer(const touchgfx::Rect& rect)
 
 bool TouchGFXGeneratedHAL::blockCopy(void* RESTRICT dest, const void* RESTRICT src, uint32_t numBytes)
 {
+    // If requested address is addressable use TouchGFXDataReader to retrive the data
+    if (reader != NULL && (static_cast<TouchGFXDataReader*>(reader)->addressIsAddressable(src) == false))
+    {
+        static_cast<TouchGFXDataReader*>(reader)->copyData(src, dest, numBytes);
+        return true;
+    }
     return HAL::blockCopy(dest, src, numBytes);
 }
 

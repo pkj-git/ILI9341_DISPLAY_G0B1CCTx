@@ -305,4 +305,89 @@ void W25Q_Write_Page (uint32_t page, uint16_t offset, uint32_t size, uint8_t *da
 	    // implementation in w25q128.c handles multi-page reads implicitly.
 	    W25Q_Read(startPage, offset, size, rData);
 	}
+	/**
+	 * @brief Reads data from W25Q flash memory across potential page boundaries.
+	 * * @param mem_offset The starting linear address (byte index) in the memory.
+	 * @param size The total number of bytes to read.
+	 * @param rData Pointer to the buffer where the read data will be stored.
+	 */
+	void W25Q_Read_Bytes_MultiPage(uint32_t mem_offset, uint32_t size, uint8_t *rData) {
+	    // Current linear address (used for calculation and tracking)
+	    uint32_t current_addr = mem_offset;
+	    // Remaining bytes to read
+	    uint32_t bytes_remaining = size;
+	    // Pointer to the current position in the destination buffer
+	    uint8_t *current_rData = rData;
 
+	    // --- 1. Handle the first partial page (if the start is not page-aligned) ---
+
+	    // Calculate the page and offset for the start of the read
+	    uint32_t startPage = current_addr / MEMORY_PAGE_SIZE;
+	    uint8_t offset_in_page = current_addr % MEMORY_PAGE_SIZE;
+
+	    // Bytes available in the first page starting from the offset
+	    uint32_t bytes_left_in_first_page = MEMORY_PAGE_SIZE - offset_in_page;
+
+	    // The amount to read in this first operation:
+	    // It's the smaller of bytes_remaining and the available space in the current page.
+	    uint32_t read_len = (bytes_remaining < bytes_left_in_first_page) ?
+	                        bytes_remaining : bytes_left_in_first_page;
+
+	    if (read_len > 0) {
+	        // Use the specified interface: W25Q_Read(startPage, offset, size, rData)
+	        //
+	        W25Q_Read(startPage, offset_in_page, read_len, current_rData);
+
+	        // Update tracking variables
+	        current_addr += read_len;
+	        current_rData += read_len;
+	        bytes_remaining -= read_len;
+	    }
+
+	    // --- 2. Handle the full middle pages (now page-aligned) ---
+
+	    // The current address is now either page-aligned or the read is complete.
+	    while (bytes_remaining >= MEMORY_PAGE_SIZE) {
+	        read_len = MEMORY_PAGE_SIZE;
+	        startPage = current_addr / MEMORY_PAGE_SIZE;
+	        // Since we are now reading full pages, the offset is always 0
+	        offset_in_page = 0;
+
+	        // Read the full page
+	        W25Q_Read(startPage, offset_in_page, read_len, current_rData);
+
+	        // Update tracking variables
+	        current_addr += read_len;
+	        current_rData += read_len;
+	        bytes_remaining -= read_len;
+	    }
+
+	    // --- 3. Handle the last partial page (if any bytes remain) ---
+
+	    if (bytes_remaining > 0) {
+	        read_len = bytes_remaining;
+	        startPage = current_addr / MEMORY_PAGE_SIZE;
+	        // The last read will be page-aligned from the start, so offset is 0
+	        offset_in_page = 0;
+
+	        // Read the remaining bytes
+	        W25Q_Read(startPage, offset_in_page, read_len, current_rData);
+
+	        // No further updates needed
+	    }
+	}
+
+   void DataReader_WaitForReceiveDone()
+    {
+      return;
+    }
+
+    void DataReader_ReadData(uint32_t address24, uint8_t* buffer, uint32_t length)
+    {
+    	W25Q_Read_Bytes_MultiPage((address24 - MEMORY_START_ADDRESS), length, buffer);
+    }
+
+    void DataReader_StartDMAReadData(uint32_t address24, uint8_t* buffer, uint32_t length)
+    {
+    	W25Q_Read_Bytes_MultiPage((address24 - MEMORY_START_ADDRESS), length, buffer);
+    }
