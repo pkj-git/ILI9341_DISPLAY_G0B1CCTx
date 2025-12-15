@@ -65,6 +65,8 @@ void Error_Handler(void);
 #define RESET_GPIO_Port GPIOA
 #define SPI1_NSS_Pin GPIO_PIN_7
 #define SPI1_NSS_GPIO_Port GPIOA
+#define NSS_Flash_Pin GPIO_PIN_12
+#define NSS_Flash_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
