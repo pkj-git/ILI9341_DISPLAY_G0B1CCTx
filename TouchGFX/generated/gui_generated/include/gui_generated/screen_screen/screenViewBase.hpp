@@ -9,6 +9,7 @@
 #include <gui/screen_screen/screenPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Button.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class screenViewBase : public touchgfx::View<screenPresenter>
 {
@@ -28,6 +29,7 @@ protected:
     touchgfx::Box __background;
     touchgfx::Box box1;
     touchgfx::Button button1;
+    touchgfx::TextAreaWithOneWildcard textArea1;
 
 private:
 
