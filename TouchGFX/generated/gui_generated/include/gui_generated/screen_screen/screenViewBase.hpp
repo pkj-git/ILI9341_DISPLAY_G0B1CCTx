@@ -8,8 +8,8 @@
 #include <mvp/View.hpp>
 #include <gui/screen_screen/screenPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
-#include <touchgfx/widgets/Button.hpp>
-#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/widgets/Image.hpp>
+#include <touchgfx/containers/buttons/Buttons.hpp>
 
 class screenViewBase : public touchgfx::View<screenPresenter>
 {
@@ -17,15 +17,6 @@ public:
     screenViewBase();
     virtual ~screenViewBase();
     virtual void setupScreen();
-    virtual void handleTickEvent();
-
-    /*
-     * Virtual Action Handlers
-     */
-    virtual void increment_counter()
-    {
-        // Override and implement this function in screen
-    }
 
 protected:
     FrontendApplication& application() {
@@ -37,26 +28,20 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::Box box1;
-    touchgfx::Button button1;
-    touchgfx::TextAreaWithOneWildcard textArea1;
-
-    /*
-     * Wildcard Buffers
-     */
-    static const uint16_t TEXTAREA1_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar textArea1Buffer[TEXTAREA1_SIZE];
+    touchgfx::Image image1;
+    touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton1;
 
 private:
 
     /*
      * Callback Declarations
      */
-    touchgfx::Callback<screenViewBase, const touchgfx::AbstractButton&> buttonCallback;
+    touchgfx::Callback<screenViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
 
     /*
      * Callback Handler Declarations
      */
-    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
+    void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
 
 };
 

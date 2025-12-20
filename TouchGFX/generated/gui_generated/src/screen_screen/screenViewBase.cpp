@@ -4,32 +4,31 @@
 #include <gui_generated/screen_screen/screenViewBase.hpp>
 #include <touchgfx/Color.hpp>
 #include <images/BitmapDatabase.hpp>
-#include <texts/TextKeysAndLanguages.hpp>
 
 screenViewBase::screenViewBase() :
-    buttonCallback(this, &screenViewBase::buttonCallbackHandler)
+    flexButtonCallback(this, &screenViewBase::flexButtonCallbackHandler)
 {
     __background.setPosition(0, 0, 320, 240);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
     box1.setPosition(0, 0, 320, 240);
-    box1.setColor(touchgfx::Color::getColorFromRGB(242, 212, 17));
+    box1.setColor(touchgfx::Color::getColorFromRGB(255, 215, 0));
     add(box1);
 
-    button1.setXY(40, 95);
-    button1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
-    button1.setAction(buttonCallback);
-    add(button1);
+    image1.setXY(0, 0);
+    image1.setBitmap(touchgfx::Bitmap(BITMAP_EASTMAN_LOGO_BRAND_RESIZE_ID));
+    image1.setAlpha(119);
+    add(image1);
 
-    textArea1.setXY(114, 51);
-    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea1.setLinespacing(0);
-    Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_1OSM).getText());
-    textArea1.setWildcard(textArea1Buffer);
-    textArea1.resizeToCurrentText();
-    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_OWBD));
-    add(textArea1);
+    flexButton1.setBoxWithBorderPosition(0, 0, 59, 50);
+    flexButton1.setBorderSize(5);
+    flexButton1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43), touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43));
+    flexButton1.setIconBitmaps(Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID), Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID));
+    flexButton1.setIconXY(0, 0);
+    flexButton1.setAction(flexButtonCallback);
+    flexButton1.setPosition(266, 190, 47, 44);
+    add(flexButton1);
 }
 
 screenViewBase::~screenViewBase()
@@ -42,21 +41,13 @@ void screenViewBase::setupScreen()
 
 }
 
-void screenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+void screenViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
 {
-    if (&src == &button1)
+    if (&src == &flexButton1)
     {
-        //Interaction2
-        //When button1 clicked change screen to Screen1
+        //Interaction1
+        //When flexButton1 clicked change screen to Screen1
         //Go to Screen1 with no screen transition
         application().gotoScreen1ScreenNoTransition();
     }
-}
-
-void screenViewBase::handleTickEvent()
-{
-    //Interaction3
-    //When every N tick call virtual function
-    //Call increment_counter
-    increment_counter();
 }

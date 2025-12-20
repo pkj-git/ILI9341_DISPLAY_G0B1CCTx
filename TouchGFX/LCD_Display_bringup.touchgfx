@@ -10,61 +10,72 @@
             "Width": 320,
             "Height": 240,
             "Color": {
-              "Red": 242,
-              "Green": 212,
-              "Blue": 17
+              "Red": 255,
+              "Green": 215
             }
           },
           {
-            "Type": "Button",
-            "Name": "button1",
-            "X": 40,
-            "Y": 95,
-            "Width": 240,
-            "Height": 50,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
-            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 75,
+            "Height": 38,
+            "RelativeFilename": "Eastman_logo_brand_resize.png",
+            "Alpha": 119
           },
           {
-            "Type": "TextArea",
-            "Name": "textArea1",
-            "X": 114,
-            "Y": 51,
-            "Width": 190,
-            "Height": 20,
-            "TextId": "__SingleUse_OWBD",
-            "TextRotation": "0",
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_1OSM",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
+            "Type": "FlexButton",
+            "Name": "flexButton1",
+            "X": 266,
+            "Y": 190,
+            "Width": 47,
+            "Height": 44,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "IconReleased": "__generated\\icon_theme_images_image_navigate_next_50_50_E8F6FB.svg.png",
+                "IconPressed": "__generated\\icon_theme_images_image_navigate_next_50_50_E8F6FB.svg.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 59,
+                "Height": 50,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 5,
+                  "Green": 32,
+                  "Blue": 43
+                },
+                "ColorBorderReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorBorderPressed": {
+                  "Red": 5,
+                  "Green": 32,
+                  "Blue": 43
+                }
+              }
+            ]
           }
         ],
         "Interactions": [
           {
-            "InteractionName": "Interaction2",
+            "InteractionName": "Interaction1",
             "Trigger": {
               "Type": "TriggerClicked",
-              "TriggerComponent": "button1"
+              "TriggerComponent": "flexButton1"
             },
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "Screen1"
-            }
-          },
-          {
-            "InteractionName": "Interaction3",
-            "Trigger": {
-              "Type": "TriggerOnEveryTick",
-              "TickCount": 1
-            },
-            "Action": {
-              "Type": "ActionCustom",
-              "FunctionName": "increment_counter"
             }
           }
         ]
@@ -93,6 +104,106 @@
             "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
             "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
             "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+          },
+          {
+            "Type": "Box",
+            "Name": "box1_1",
+            "Width": 320,
+            "Height": 240,
+            "Color": {
+              "Red": 255,
+              "Green": 215
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 75,
+            "Height": 38,
+            "RelativeFilename": "Eastman_logo_brand_resize.png",
+            "Alpha": 119
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "flexButton1",
+            "X": 266,
+            "Y": 190,
+            "Width": 47,
+            "Height": 44,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "IconReleased": "__generated\\icon_theme_images_image_navigate_next_50_50_E8F6FB.svg.png",
+                "IconPressed": "__generated\\icon_theme_images_image_navigate_next_50_50_E8F6FB.svg.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 59,
+                "Height": 50,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorBorderReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorBorderPressed": {
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "flexButton1_1",
+            "X": 7,
+            "Y": 190,
+            "Width": 47,
+            "Height": 44,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "IconReleased": "__generated\\icon_theme_images_navigation_chevron_left_50_50_E8F6FB.svg.png",
+                "IconPressed": "__generated\\icon_theme_images_navigation_chevron_left_50_50_E8F6FB.svg.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 59,
+                "Height": 50,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 5,
+                  "Green": 32,
+                  "Blue": 43
+                },
+                "ColorBorderReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorBorderPressed": {
+                  "Red": 5,
+                  "Green": 32,
+                  "Blue": 43
+                }
+              }
+            ]
           }
         ],
         "Interactions": [
@@ -101,6 +212,18 @@
             "Trigger": {
               "Type": "TriggerClicked",
               "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "screen"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton1_1"
             },
             "Action": {
               "Type": "ActionGotoScreen",

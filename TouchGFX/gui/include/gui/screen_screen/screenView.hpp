@@ -11,7 +11,7 @@ public:
     virtual ~screenView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
-    void increment_counter() override;
+ //   void increment_counter() override;
 protected:
 };
 

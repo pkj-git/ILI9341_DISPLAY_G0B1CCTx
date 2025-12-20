@@ -12,8 +12,6 @@ enum LANGUAGES
 
 enum TEXTS
 {
-    T___SINGLEUSE_1OSM,
-    T___SINGLEUSE_OWBD,
     NUMBER_OF_TEXT_KEYS
 };
 

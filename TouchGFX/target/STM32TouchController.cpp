@@ -52,6 +52,17 @@ bool STM32TouchController::sampleTouch(int32_t& x, int32_t& y)
     	// Transpose X & Y coordinate because the display is configured as 320w & 240h instead of 320h & 240w
     	y = (uint32_t)raw_x;
     	x = (uint32_t)raw_y;
+    	int32_t mid = 320/2;
+    	if(x > mid) {
+    		int32_t distance = x - mid;
+    		x = mid - distance;
+    	}
+    	else {
+    		int32_t distance = mid - x;
+    		x = mid + distance;
+    	}
+    	//y = (uint32_t)raw_y;
+    	//x = (uint32_t)raw_x;
 
     }
 

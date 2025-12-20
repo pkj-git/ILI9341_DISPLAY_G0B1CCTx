@@ -6,7 +6,8 @@
 #include <images/BitmapDatabase.hpp>
 
 Screen1ViewBase::Screen1ViewBase() :
-    buttonCallback(this, &Screen1ViewBase::buttonCallbackHandler)
+    buttonCallback(this, &Screen1ViewBase::buttonCallbackHandler),
+    flexButtonCallback(this, &Screen1ViewBase::flexButtonCallbackHandler)
 {
     __background.setPosition(0, 0, 320, 240);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
@@ -20,6 +21,32 @@ Screen1ViewBase::Screen1ViewBase() :
     button1.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_MEDIUM_ROUNDED_PRESSED_ID));
     button1.setAction(buttonCallback);
     add(button1);
+
+    box1_1.setPosition(0, 0, 320, 240);
+    box1_1.setColor(touchgfx::Color::getColorFromRGB(255, 215, 0));
+    add(box1_1);
+
+    image1.setXY(0, 0);
+    image1.setBitmap(touchgfx::Bitmap(BITMAP_EASTMAN_LOGO_BRAND_RESIZE_ID));
+    image1.setAlpha(119);
+    add(image1);
+
+    flexButton1.setBoxWithBorderPosition(0, 0, 59, 50);
+    flexButton1.setBorderSize(5);
+    flexButton1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 102, 153));
+    flexButton1.setIconBitmaps(Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID), Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID));
+    flexButton1.setIconXY(0, 0);
+    flexButton1.setPosition(266, 190, 47, 44);
+    add(flexButton1);
+
+    flexButton1_1.setBoxWithBorderPosition(0, 0, 59, 50);
+    flexButton1_1.setBorderSize(5);
+    flexButton1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43), touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43));
+    flexButton1_1.setIconBitmaps(Bitmap(BITMAP_ICON_THEME_IMAGES_NAVIGATION_CHEVRON_LEFT_50_50_E8F6FB_SVG_ID), Bitmap(BITMAP_ICON_THEME_IMAGES_NAVIGATION_CHEVRON_LEFT_50_50_E8F6FB_SVG_ID));
+    flexButton1_1.setIconXY(0, 0);
+    flexButton1_1.setAction(flexButtonCallback);
+    flexButton1_1.setPosition(7, 190, 47, 44);
+    add(flexButton1_1);
 }
 
 Screen1ViewBase::~Screen1ViewBase()
@@ -38,6 +65,17 @@ void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
     {
         //Interaction1
         //When button1 clicked change screen to screen
+        //Go to screen with no screen transition
+        application().gotoscreenScreenNoTransition();
+    }
+}
+
+void Screen1ViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
+{
+    if (&src == &flexButton1_1)
+    {
+        //Interaction2
+        //When flexButton1_1 clicked change screen to screen
         //Go to screen with no screen transition
         application().gotoscreenScreenNoTransition();
     }
