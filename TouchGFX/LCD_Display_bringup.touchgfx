@@ -5,6 +5,22 @@
         "Name": "screen",
         "Components": [
           {
+            "Type": "TextArea",
+            "Name": "textArea1_1_2",
+            "X": 7,
+            "Y": 72,
+            "Width": 102,
+            "Height": 20,
+            "TextId": "__SingleUse_MWFX",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_YY37",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
             "Type": "Box",
             "Name": "box1",
             "Width": 320,
@@ -63,6 +79,86 @@
                 }
               }
             ]
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 8,
+            "Y": 45,
+            "Width": 163,
+            "Height": 20,
+            "TextId": "__SingleUse_GK3L",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_6J49",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1",
+            "X": 8,
+            "Y": 72,
+            "Width": 158,
+            "Height": 20,
+            "TextId": "__SingleUse_FZ4G",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_DPLA",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_3",
+            "X": 8,
+            "Y": 128,
+            "Width": 160,
+            "Height": 20,
+            "TextId": "__SingleUse_BVFP",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_NHV2",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_3_1",
+            "X": 8,
+            "Y": 155,
+            "Width": 161,
+            "Height": 20,
+            "TextId": "__SingleUse_F584",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_3L1F",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1_1",
+            "X": 8,
+            "Y": 100,
+            "Width": 159,
+            "Height": 20,
+            "TextId": "__SingleUse_3YFS",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_U4G4",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
           }
         ],
         "Interactions": [

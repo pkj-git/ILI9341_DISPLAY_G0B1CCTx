@@ -5,7 +5,44 @@
   </Languages>
   <Texts>
     <TextGroup Id="Group1" />
-    <TextGroup Id="Unsorted" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_3L1F" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00.0</Translation>
+      </Text>
+      <Text Id="__SingleUse_F584" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell Min   : &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_NHV2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00.0</Translation>
+      </Text>
+      <Text Id="__SingleUse_BVFP" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell Max  : &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_YY37" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00.0</Translation>
+      </Text>
+      <Text Id="__SingleUse_MWFX" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">SoC: &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_U4G4" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00.0</Translation>
+      </Text>
+      <Text Id="__SingleUse_3YFS" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">SoH        : &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_DPLA" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00.0</Translation>
+      </Text>
+      <Text Id="__SingleUse_FZ4G" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">SoC        : &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_6J49" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00.0 </Translation>
+      </Text>
+      <Text Id="__SingleUse_GK3L" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Batt Volt : &lt;value&gt;</Translation>
+      </Text>
+    </TextGroup>
   </Texts>
   <Typographies>
     <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E" />
