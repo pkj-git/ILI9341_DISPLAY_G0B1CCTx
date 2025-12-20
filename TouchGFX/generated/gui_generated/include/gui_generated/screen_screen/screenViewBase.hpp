@@ -17,6 +17,15 @@ public:
     screenViewBase();
     virtual ~screenViewBase();
     virtual void setupScreen();
+    virtual void handleTickEvent();
+
+    /*
+     * Virtual Action Handlers
+     */
+    virtual void increment_counter()
+    {
+        // Override and implement this function in screen
+    }
 
 protected:
     FrontendApplication& application() {
@@ -30,6 +39,12 @@ protected:
     touchgfx::Box box1;
     touchgfx::Button button1;
     touchgfx::TextAreaWithOneWildcard textArea1;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t TEXTAREA1_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textArea1Buffer[TEXTAREA1_SIZE];
 
 private:
 

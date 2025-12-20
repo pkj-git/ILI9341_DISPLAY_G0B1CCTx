@@ -25,7 +25,8 @@ screenViewBase::screenViewBase() :
     textArea1.setXY(114, 51);
     textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea1.setLinespacing(0);
-    textArea1.setWildcard(touchgfx::TypedText(T___SINGLEUSE_RGAS).getText());
+    Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_1OSM).getText());
+    textArea1.setWildcard(textArea1Buffer);
     textArea1.resizeToCurrentText();
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_OWBD));
     add(textArea1);
@@ -45,9 +46,17 @@ void screenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
     if (&src == &button1)
     {
-        //Interaction1
+        //Interaction2
         //When button1 clicked change screen to Screen1
         //Go to Screen1 with no screen transition
         application().gotoScreen1ScreenNoTransition();
     }
+}
+
+void screenViewBase::handleTickEvent()
+{
+    //Interaction3
+    //When every N tick call virtual function
+    //Call increment_counter
+    increment_counter();
 }

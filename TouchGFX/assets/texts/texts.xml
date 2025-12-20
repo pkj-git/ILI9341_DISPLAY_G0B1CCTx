@@ -6,8 +6,8 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_RGAS" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">0</Translation>
+      <Text Id="__SingleUse_1OSM" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">0    </Translation>
       </Text>
       <Text Id="__SingleUse_OWBD" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">New Text: &lt;value&gt;</Translation>
@@ -15,7 +15,7 @@
     </TextGroup>
   </Texts>
   <Typographies>
-    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0x20-0x7E" />
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
   </Typographies>
