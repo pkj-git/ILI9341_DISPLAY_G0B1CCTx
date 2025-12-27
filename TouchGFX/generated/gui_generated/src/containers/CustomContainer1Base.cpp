@@ -7,19 +7,25 @@
 
 CustomContainer1Base::CustomContainer1Base()
 {
-    setWidth(250);
-    setHeight(31);
-    box1.setPosition(0, 0, 250, 31);
+    setWidth(309);
+    setHeight(27);
+    box1.setPosition(-2, 2, 311, 25);
     box1.setColor(touchgfx::Color::getColorFromRGB(255, 215, 0));
     add(box1);
 
-    textArea1.setXY(4, 3);
-    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea1.setLinespacing(0);
-    textArea1.setWildcard(touchgfx::TypedText(T___SINGLEUSE_5G4J).getText());
-    textArea1.resizeToCurrentText();
-    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6X4E));
-    add(textArea1);
+    Label.setXY(0, 1);
+    Label.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Label.setLinespacing(0);
+    Label.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6X4E));
+    add(Label);
+
+    label_value.setXY(185, 3);
+    label_value.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    label_value.setLinespacing(0);
+    label_value.setWildcard(touchgfx::TypedText(T___SINGLEUSE_ITE7).getText());
+    label_value.resizeToCurrentText();
+    label_value.setTypedText(touchgfx::TypedText(T___SINGLEUSE_BQ5O));
+    add(label_value);
 }
 
 CustomContainer1Base::~CustomContainer1Base()

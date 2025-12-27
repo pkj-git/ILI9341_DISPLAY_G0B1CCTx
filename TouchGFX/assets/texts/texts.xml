@@ -4,13 +4,48 @@
     <Language Id="GB" />
   </Languages>
   <Texts>
+    <TextGroup Id="Group2">
+      <Text Id="remaining_capacity" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Remaining Cap</Translation>
+      </Text>
+      <Text Id="pack_capacity" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Pack Cap</Translation>
+      </Text>
+      <Text Id="mos_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">MOS Temp</Translation>
+      </Text>
+      <Text Id="amb_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Ambient Temp</Translation>
+      </Text>
+      <Text Id="cell_max_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell Max Temp</Translation>
+      </Text>
+      <Text Id="cell_min_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell Min Temp</Translation>
+      </Text>
+      <Text Id="Cell_min_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell Min Volt</Translation>
+      </Text>
+      <Text Id="Cell_max_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell Max Volt</Translation>
+      </Text>
+      <Text Id="Batt_Current" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Batt Current</Translation>
+      </Text>
+      <Text Id="Batt_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Batt Volt</Translation>
+      </Text>
+    </TextGroup>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_5G4J" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">0</Translation>
+      <Text Id="__SingleUse_ITE7" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00.000</Translation>
+      </Text>
+      <Text Id="__SingleUse_BQ5O" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">: &lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_6X4E" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">New Text: &lt;value&gt;</Translation>
+        <Translation Language="GB">New Text            </Translation>
       </Text>
       <Text Id="__SingleUse_NOYW" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">000.0</Translation>

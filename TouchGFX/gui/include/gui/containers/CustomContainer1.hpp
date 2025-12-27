@@ -10,6 +10,7 @@ public:
     virtual ~CustomContainer1() {}
 
     virtual void initialize();
+    void updateData(int index);
 protected:
 };
 

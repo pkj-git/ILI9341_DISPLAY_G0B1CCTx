@@ -413,16 +413,16 @@
           {
             "Type": "ScrollList",
             "Name": "scrollList1",
-            "Y": 37,
-            "Width": 250,
-            "Height": 152,
+            "X": 7,
+            "Y": 45,
+            "Width": 309,
+            "Height": 134,
             "ItemTemplateName": "CustomContainer1",
             "NumberofItems": 15,
-            "Easing": "Back",
-            "EasingOption": "Out",
-            "SwipeAcceleration": 1.0,
-            "DragAcceleration": 1.0,
-            "OverShootPercentage": 75
+            "Easing": "Linear",
+            "EasingOption": "In",
+            "SwipeAcceleration": 0.4,
+            "DragAcceleration": 0.4
           }
         ],
         "Interactions": [
@@ -456,16 +456,18 @@
     "CustomContainerDefinitions": [
       {
         "Name": "CustomContainer1",
-        "X": 35,
+        "X": 5,
         "Y": 23,
-        "Width": 250,
-        "Height": 31,
+        "Width": 309,
+        "Height": 27,
         "Components": [
           {
             "Type": "Box",
             "Name": "box1",
-            "Width": 250,
-            "Height": 31,
+            "X": -2,
+            "Y": 2,
+            "Width": 311,
+            "Height": 25,
             "Color": {
               "Red": 255,
               "Green": 215
@@ -473,16 +475,26 @@
           },
           {
             "Type": "TextArea",
-            "Name": "textArea1",
-            "X": 4,
-            "Y": 3,
-            "Width": 121,
+            "Name": "Label",
+            "Y": 1,
+            "Width": 176,
             "Height": 24,
             "TextId": "__SingleUse_6X4E",
             "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "label_value",
+            "X": 185,
+            "Y": 3,
+            "Width": 88,
+            "Height": 24,
+            "TextId": "__SingleUse_BQ5O",
+            "TextRotation": "0",
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "__SingleUse_5G4J"
+              "TextId": "__SingleUse_ITE7"
             }
           }
         ],

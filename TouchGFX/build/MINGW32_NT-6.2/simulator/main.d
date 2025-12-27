@@ -108,6 +108,8 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  gui/include/gui/containers/CustomContainer1.hpp \
  generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp \
  generated/gui_generated/include/gui_generated/common/SimConstants.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/SDL2TouchController.hpp \
  generated/simulator/include/simulator/mainBase.hpp
@@ -220,6 +222,8 @@ gui/include/gui/screen1_screen/Screen1Presenter.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 gui/include/gui/containers/CustomContainer1.hpp:
 generated/gui_generated/include/gui_generated/containers/CustomContainer1Base.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp:
 generated/gui_generated/include/gui_generated/common/SimConstants.hpp:
 ../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/SDL2TouchController.hpp:
 generated/simulator/include/simulator/mainBase.hpp:

@@ -11,6 +11,8 @@ public:
     virtual ~Screen1View() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    void scrollList1UpdateItem(CustomContainer1& item, int16_t itemIndex) override;
+
 protected:
 };
 

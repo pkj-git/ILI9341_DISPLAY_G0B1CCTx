@@ -7,6 +7,7 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <touchgfx/containers/Container.hpp>
 #include <touchgfx/widgets/Box.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class CustomContainer1Base : public touchgfx::Container
@@ -25,7 +26,8 @@ protected:
      * Member Declarations
      */
     touchgfx::Box box1;
-    touchgfx::TextAreaWithOneWildcard textArea1;
+    touchgfx::TextArea Label;
+    touchgfx::TextAreaWithOneWildcard label_value;
 
 private:
 
