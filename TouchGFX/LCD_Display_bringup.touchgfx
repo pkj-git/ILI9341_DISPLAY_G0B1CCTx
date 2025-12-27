@@ -419,10 +419,9 @@
             "Height": 134,
             "ItemTemplateName": "CustomContainer1",
             "NumberofItems": 15,
-            "Easing": "Linear",
-            "EasingOption": "In",
-            "SwipeAcceleration": 0.4,
-            "DragAcceleration": 0.4
+            "Easing": "Cubic",
+            "EasingOption": "Out",
+            "DragAcceleration": 0.3
           }
         ],
         "Interactions": [
