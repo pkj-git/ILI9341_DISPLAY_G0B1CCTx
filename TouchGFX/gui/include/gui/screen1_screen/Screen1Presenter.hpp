@@ -3,7 +3,7 @@
 
 #include <gui/model/ModelListener.hpp>
 #include <mvp/Presenter.hpp>
-
+#include "serial_data.h"
 using namespace touchgfx;
 
 class Screen1View;
@@ -26,6 +26,7 @@ public:
     virtual void deactivate();
 
     virtual ~Screen1Presenter() {}
+    void process_uart(volatile serialData_t& data) override;
 
 private:
     Screen1Presenter();

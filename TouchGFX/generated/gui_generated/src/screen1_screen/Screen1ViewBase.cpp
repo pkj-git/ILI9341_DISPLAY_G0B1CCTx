@@ -54,7 +54,7 @@ Screen1ViewBase::Screen1ViewBase() :
     scrollList1.setCircular(false);
     scrollList1.setEasingEquation(touchgfx::EasingEquations::cubicEaseOut);
     scrollList1.setSwipeAcceleration(0);
-    scrollList1.setDragAcceleration(3);
+    scrollList1.setDragAcceleration(5);
     scrollList1.setNumberOfItems(15);
     scrollList1.setPadding(0, 0);
     scrollList1.setSnapping(false);

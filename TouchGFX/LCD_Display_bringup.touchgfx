@@ -421,7 +421,7 @@
             "NumberofItems": 15,
             "Easing": "Cubic",
             "EasingOption": "Out",
-            "DragAcceleration": 0.3
+            "DragAcceleration": 0.5
           }
         ],
         "Interactions": [
@@ -493,7 +493,9 @@
             "TextRotation": "0",
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "__SingleUse_ITE7"
+              "TextId": "__SingleUse_ITE7",
+              "UseBuffer": true,
+              "BufferSize": 10
             }
           }
         ],

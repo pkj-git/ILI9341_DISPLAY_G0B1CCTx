@@ -22,7 +22,8 @@ CustomContainer1Base::CustomContainer1Base()
     label_value.setXY(185, 3);
     label_value.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     label_value.setLinespacing(0);
-    label_value.setWildcard(touchgfx::TypedText(T___SINGLEUSE_ITE7).getText());
+    Unicode::snprintf(label_valueBuffer, LABEL_VALUE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_ITE7).getText());
+    label_value.setWildcard(label_valueBuffer);
     label_value.resizeToCurrentText();
     label_value.setTypedText(touchgfx::TypedText(T___SINGLEUSE_BQ5O));
     add(label_value);

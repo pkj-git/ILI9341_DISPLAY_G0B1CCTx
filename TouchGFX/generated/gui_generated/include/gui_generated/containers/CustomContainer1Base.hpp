@@ -29,6 +29,12 @@ protected:
     touchgfx::TextArea Label;
     touchgfx::TextAreaWithOneWildcard label_value;
 
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t LABEL_VALUE_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar label_valueBuffer[LABEL_VALUE_SIZE];
+
 private:
 
 };
