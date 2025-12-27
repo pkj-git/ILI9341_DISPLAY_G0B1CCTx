@@ -11,6 +11,8 @@
 #include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/containers/buttons/Buttons.hpp>
+#include <touchgfx/containers/scrollers/ScrollList.hpp>
+#include <gui/containers/CustomContainer1.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -18,6 +20,11 @@ public:
     Screen1ViewBase();
     virtual ~Screen1ViewBase();
     virtual void setupScreen();
+
+    virtual void scrollList1UpdateItem(CustomContainer1& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Screen1
+    }
 
 protected:
     FrontendApplication& application() {
@@ -34,18 +41,22 @@ protected:
     touchgfx::Image image1;
     touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton1;
     touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton1_1;
+    touchgfx::ScrollList scrollList1;
+    touchgfx::DrawableListItems<CustomContainer1, 6> scrollList1ListItems;
 
 private:
 
     /*
      * Callback Declarations
      */
+    touchgfx::Callback<Screen1ViewBase, touchgfx::DrawableListItemsInterface*, int16_t, int16_t> updateItemCallback;
     touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&> buttonCallback;
     touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
 
     /*
      * Callback Handler Declarations
      */
+    void updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex);
     void buttonCallbackHandler(const touchgfx::AbstractButton& src);
     void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
 

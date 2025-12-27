@@ -6,6 +6,7 @@
 #include <images/BitmapDatabase.hpp>
 
 Screen1ViewBase::Screen1ViewBase() :
+    updateItemCallback(this, &Screen1ViewBase::updateItemCallbackHandler),
     buttonCallback(this, &Screen1ViewBase::buttonCallbackHandler),
     flexButtonCallback(this, &Screen1ViewBase::flexButtonCallbackHandler)
 {
@@ -47,6 +48,20 @@ Screen1ViewBase::Screen1ViewBase() :
     flexButton1_1.setAction(flexButtonCallback);
     flexButton1_1.setPosition(7, 190, 47, 44);
     add(flexButton1_1);
+
+    scrollList1.setPosition(0, 37, 250, 152);
+    scrollList1.setHorizontal(false);
+    scrollList1.setCircular(false);
+    scrollList1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
+    scrollList1.setSwipeAcceleration(10);
+    scrollList1.setDragAcceleration(10);
+    scrollList1.setNumberOfItems(15);
+    scrollList1.setPadding(0, 0);
+    scrollList1.setSnapping(false);
+    scrollList1.setOvershootPercentage(75);
+    scrollList1.setDrawableSize(31, 0);
+    scrollList1.setDrawables(scrollList1ListItems, updateItemCallback);
+    add(scrollList1);
 }
 
 Screen1ViewBase::~Screen1ViewBase()
@@ -56,7 +71,11 @@ Screen1ViewBase::~Screen1ViewBase()
 
 void Screen1ViewBase::setupScreen()
 {
-
+    scrollList1.initialize();
+    for (int i = 0; i < scrollList1ListItems.getNumberOfDrawables(); i++)
+    {
+        scrollList1ListItems[i].initialize();
+    }
 }
 
 void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
@@ -78,5 +97,13 @@ void Screen1ViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonCo
         //When flexButton1_1 clicked change screen to screen
         //Go to screen with no screen transition
         application().gotoscreenScreenNoTransition();
+    }
+}
+
+void Screen1ViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex)
+{
+    if (items == &scrollList1ListItems)
+    {
+        scrollList1UpdateItem(scrollList1ListItems[containerIndex], itemIndex);
     }
 }
