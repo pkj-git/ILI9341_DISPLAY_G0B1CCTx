@@ -5,22 +5,6 @@
         "Name": "screen",
         "Components": [
           {
-            "Type": "TextArea",
-            "Name": "textArea1_1_2",
-            "X": 7,
-            "Y": 72,
-            "Width": 102,
-            "Height": 24,
-            "TextId": "__SingleUse_MWFX",
-            "TextRotation": "0",
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_YY37",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
             "Type": "Box",
             "Name": "box1",
             "Width": 320,
@@ -93,72 +77,6 @@
           },
           {
             "Type": "TextArea",
-            "Name": "textArea1_1",
-            "X": 8,
-            "Y": 53,
-            "Width": 47,
-            "Height": 24,
-            "TextId": "__SingleUse_FZ4G",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1_1_3",
-            "X": 8,
-            "Y": 109,
-            "Width": 84,
-            "Height": 24,
-            "TextId": "__SingleUse_BVFP",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1_1_3_1",
-            "X": 8,
-            "Y": 136,
-            "Width": 78,
-            "Height": 24,
-            "TextId": "__SingleUse_F584",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1_1_3_1_1",
-            "X": 6,
-            "Y": 160,
-            "Width": 144,
-            "Height": 24,
-            "TextId": "__SingleUse_TDOZ",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1_1_3_1_1_1",
-            "X": 6,
-            "Y": 190,
-            "Width": 138,
-            "Height": 24,
-            "TextId": "__SingleUse_8KGZ",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1_1_1",
-            "X": 8,
-            "Y": 81,
-            "Width": 76,
-            "Height": 24,
-            "TextId": "__SingleUse_3YFS",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
             "Name": "textArea2",
             "X": 160,
             "Y": 29,
@@ -175,99 +93,59 @@
           },
           {
             "Type": "TextArea",
+            "Name": "textArea1_1",
+            "X": 6,
+            "Y": 53,
+            "Width": 127,
+            "Height": 24,
+            "TextId": "__SingleUse_CD0X",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
             "Name": "textArea2_1",
             "X": 160,
-            "Y": 53,
-            "Width": 91,
+            "Y": 56,
+            "Width": 90,
             "Height": 24,
-            "TextId": "__SingleUse_LPO7",
+            "TextId": "__SingleUse_4XAG",
             "TextRotation": "0",
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "__SingleUse_HSW2",
+              "TextId": "__SingleUse_LJ7H",
               "UseBuffer": true,
               "BufferSize": 10
             }
           },
           {
-            "Type": "TextArea",
-            "Name": "textArea2_2",
-            "X": 160,
-            "Y": 81,
-            "Width": 91,
-            "Height": 24,
-            "TextId": "__SingleUse_MGMI",
-            "TextRotation": "0",
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_6NTR",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea2_3",
-            "X": 160,
-            "Y": 109,
-            "Width": 83,
-            "Height": 24,
-            "TextId": "__SingleUse_XZ9Z",
-            "TextRotation": "0",
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_ARVK",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea2_1_1",
-            "X": 160,
-            "Y": 133,
-            "Width": 83,
-            "Height": 24,
-            "TextId": "__SingleUse_DJX4",
-            "TextRotation": "0",
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_TW9T",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea2_2_1",
-            "X": 160,
-            "Y": 160,
-            "Width": 96,
-            "Height": 24,
-            "TextId": "__SingleUse_7P8H",
-            "TextRotation": "0",
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_S0LI",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea2_2_1_1",
-            "X": 160,
-            "Y": 190,
-            "Width": 96,
-            "Height": 24,
-            "TextId": "__SingleUse_4JTC",
-            "TextRotation": "0",
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_NOYW",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
+            "Type": "Gauge",
+            "Name": "gauge1",
+            "X": 13,
+            "Y": 102,
+            "Width": 120,
+            "Height": 120,
+            "Preset": "alternate_theme\\presets\\gauges\\tiny\\active.json",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_gauge_tiny_backgrounds_active.png",
+            "RotationCenterX": 60.0,
+            "RotationCenterY": 60.0,
+            "StartAngle": -90.0,
+            "EndAngle": 90.0,
+            "RangeMax": 100.0,
+            "InitialValue": 100.0,
+            "Easing": "Linear",
+            "EasingOption": "In",
+            "FileNameNeedle": "__generated\\alternate_theme_images_widgets_gauge_tiny_needles_rough.png",
+            "NeedleRotationCenterX": 5.0,
+            "NeedleRotationCenterY": 33.0,
+            "NeedleMovingRenderingAlgorithm": "Nearest-neighbor",
+            "NeedleSteadyRenderingAlgorithm": "Bilinear Interpolation",
+            "ArcColor": {
+              "Red": 20,
+              "Green": 151,
+              "Blue": 197
+            },
+            "ArcCapStyle": "Butt"
           }
         ],
         "Interactions": [
@@ -430,8 +308,7 @@
                 "Type": "ScrollList",
                 "Name": "scrollList1",
                 "X": 4,
-                "Y": 7,
-                "Width": 307,
+                "Width": 309,
                 "Height": 407,
                 "ItemTemplateName": "CustomContainer1",
                 "NumberofItems": 15,
@@ -576,7 +453,17 @@
     "FrameworkFeatures": {
       "LCD16bppSerialFlash": {
         "Id": "LCD16bppSerialFlash",
-        "IsEnabled": false
+        "Features": [
+          {
+            "Id": "TextureMapperImageFormats",
+            "Features": [
+              {
+                "Id": "L8_ARGB888",
+                "IsEnabled": true
+              }
+            ]
+          }
+        ]
       }
     },
     "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",

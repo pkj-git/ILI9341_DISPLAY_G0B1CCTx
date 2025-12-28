@@ -38,6 +38,15 @@
     </TextGroup>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_CD0X" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Batt Current</Translation>
+      </Text>
+      <Text Id="__SingleUse_LJ7H" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">00.0</Translation>
+      </Text>
+      <Text Id="__SingleUse_4XAG" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">: &lt;value&gt;  A</Translation>
+      </Text>
       <Text Id="__SingleUse_ITE7" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">000.00</Translation>
       </Text>
@@ -47,71 +56,11 @@
       <Text Id="__SingleUse_6X4E" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">New Text            </Translation>
       </Text>
-      <Text Id="__SingleUse_NOYW" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">000.0</Translation>
-      </Text>
-      <Text Id="__SingleUse_4JTC" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">: &lt;value&gt; C</Translation>
-      </Text>
-      <Text Id="__SingleUse_ARVK" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">0.00</Translation>
-      </Text>
-      <Text Id="__SingleUse_XZ9Z" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">: &lt;value&gt; V</Translation>
-      </Text>
-      <Text Id="__SingleUse_TW9T" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">0.00</Translation>
-      </Text>
-      <Text Id="__SingleUse_DJX4" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">: &lt;value&gt; V</Translation>
-      </Text>
-      <Text Id="__SingleUse_S0LI" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">000.0</Translation>
-      </Text>
-      <Text Id="__SingleUse_7P8H" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">: &lt;value&gt; C</Translation>
-      </Text>
-      <Text Id="__SingleUse_6NTR" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">00.0</Translation>
-      </Text>
-      <Text Id="__SingleUse_MGMI" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">: &lt;value&gt; %</Translation>
-      </Text>
-      <Text Id="__SingleUse_HSW2" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">00.0</Translation>
-      </Text>
-      <Text Id="__SingleUse_LPO7" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">: &lt;value&gt; %</Translation>
-      </Text>
       <Text Id="__SingleUse_RRXQ" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">00.0</Translation>
       </Text>
       <Text Id="__SingleUse_J14G" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">: &lt;value&gt;  V</Translation>
-      </Text>
-      <Text Id="__SingleUse_8KGZ" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Cell Min Temp</Translation>
-      </Text>
-      <Text Id="__SingleUse_TDOZ" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Cell Max Temp</Translation>
-      </Text>
-      <Text Id="__SingleUse_F584" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Cell Min</Translation>
-      </Text>
-      <Text Id="__SingleUse_BVFP" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Cell Max</Translation>
-      </Text>
-      <Text Id="__SingleUse_YY37" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">00.0</Translation>
-      </Text>
-      <Text Id="__SingleUse_MWFX" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">SoC: &lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_3YFS" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">SoH     </Translation>
-      </Text>
-      <Text Id="__SingleUse_FZ4G" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">SoC </Translation>
       </Text>
       <Text Id="__SingleUse_GK3L" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Batt Volt</Translation>

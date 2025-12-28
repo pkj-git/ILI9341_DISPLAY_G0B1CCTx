@@ -54,7 +54,7 @@ Screen1ViewBase::Screen1ViewBase() :
     scrollableContainer1.setScrollbarsColor(touchgfx::Color::getColorFromRGB(0, 102, 153));
     scrollableContainer1.setScrollbarsAlpha(255);
     scrollableContainer1.setScrollbarsPermanentlyVisible();
-    scrollList1.setPosition(4, 7, 307, 407);
+    scrollList1.setPosition(4, 0, 309, 407);
     scrollList1.setHorizontal(false);
     scrollList1.setCircular(false);
     scrollList1.setEasingEquation(touchgfx::EasingEquations::cubicEaseOut);

@@ -7,6 +7,8 @@ screenView::screenView()
 void screenView::setupScreen()
 {
     screenViewBase::setupScreen();
+    gauge1.updateValue(90, 0);
+    gauge1.invalidate();
 }
 
 void screenView::tearDownScreen()
