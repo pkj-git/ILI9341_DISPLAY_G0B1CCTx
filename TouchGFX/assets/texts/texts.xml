@@ -4,18 +4,41 @@
     <Language Id="GB" />
   </Languages>
   <Texts>
-    <TextGroup Id="Group2">
-      <Text Id="remaining_capacity" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Remaining Cap</Translation>
+    <TextGroup Id="Units">
+      <Text Id="voltage_unit" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">V</Translation>
       </Text>
-      <Text Id="pack_capacity" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Pack Cap</Translation>
+      <Text Id="current_unit" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">A</Translation>
       </Text>
-      <Text Id="mos_temp" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">MOS Temp</Translation>
+      <Text Id="cell_volt_unit" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">mV</Translation>
       </Text>
-      <Text Id="amb_temp" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Ambient Temp</Translation>
+      <Text Id="temp_unit" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">C</Translation>
+      </Text>
+      <Text Id="capacity_unit" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Ah</Translation>
+      </Text>
+      <Text Id="soc_unit" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">%</Translation>
+      </Text>
+    </TextGroup>
+    <TextGroup Id="FrontPage">
+      <Text Id="Batt_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Batt Volt</Translation>
+      </Text>
+      <Text Id="Batt_Current" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Batt Current</Translation>
+      </Text>
+      <Text Id="soc" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">SoC</Translation>
+      </Text>
+      <Text Id="Cell_max_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell Max Volt</Translation>
+      </Text>
+      <Text Id="Cell_min_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell Min Volt</Translation>
       </Text>
       <Text Id="cell_max_temp" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Cell Max Temp</Translation>
@@ -23,47 +46,81 @@
       <Text Id="cell_min_temp" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Cell Min Temp</Translation>
       </Text>
-      <Text Id="Cell_min_volt" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Cell Min Volt</Translation>
+      <Text Id="pack_capacity" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Pack Cap</Translation>
       </Text>
-      <Text Id="Cell_max_volt" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Cell Max Volt</Translation>
+      <Text Id="remaining_capacity" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Remaining Cap</Translation>
       </Text>
-      <Text Id="Batt_Current" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Batt Current</Translation>
+      <Text Id="mos_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">MOS Temp</Translation>
       </Text>
-      <Text Id="Batt_volt" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Batt Volt</Translation>
+      <Text Id="amb_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Ambient Temp</Translation>
       </Text>
     </TextGroup>
-    <TextGroup Id="Group1" />
+    <TextGroup Id="CellVoltage">
+      <Text Id="cell_volt_1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell1 Volt</Translation>
+      </Text>
+      <Text Id="cell_volt_2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell2 Volt</Translation>
+      </Text>
+      <Text Id="cell_volt_3" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell3 Volt</Translation>
+      </Text>
+      <Text Id="cell_volt_4" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell4 Volt</Translation>
+      </Text>
+      <Text Id="cell_volt_5" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell5 Volt</Translation>
+      </Text>
+      <Text Id="cell_volt_6" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell6 Volt</Translation>
+      </Text>
+      <Text Id="cell_volt_7" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell7 Volt</Translation>
+      </Text>
+      <Text Id="cell_volt_8" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell8 Volt</Translation>
+      </Text>
+      <Text Id="cell_volt_9" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell9 Volt</Translation>
+      </Text>
+      <Text Id="cell_volt_10" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell10 Volt</Translation>
+      </Text>
+      <Text Id="cell_volt_11" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell11 Volt</Translation>
+      </Text>
+      <Text Id="cell_volt_12" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell12 Volt</Translation>
+      </Text>
+      <Text Id="cell_volt_13" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell13 Volt</Translation>
+      </Text>
+      <Text Id="cell_volt_14" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell14 Volt</Translation>
+      </Text>
+      <Text Id="cell_volt_15" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell15 Volt</Translation>
+      </Text>
+      <Text Id="cell_volt_16" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell16 Volt</Translation>
+      </Text>
+    </TextGroup>
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_CD0X" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Batt Current</Translation>
-      </Text>
-      <Text Id="__SingleUse_LJ7H" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">00.0</Translation>
-      </Text>
-      <Text Id="__SingleUse_4XAG" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">: &lt;value&gt;  A</Translation>
+      <Text Id="__SingleUse_CL4W" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">C     </Translation>
       </Text>
       <Text Id="__SingleUse_ITE7" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">000.00</Translation>
+        <Translation Language="GB">0000.00</Translation>
       </Text>
       <Text Id="__SingleUse_BQ5O" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">: &lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_6X4E" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">New Text            </Translation>
-      </Text>
-      <Text Id="__SingleUse_RRXQ" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">00.0</Translation>
-      </Text>
-      <Text Id="__SingleUse_J14G" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">: &lt;value&gt;  V</Translation>
-      </Text>
-      <Text Id="__SingleUse_GK3L" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Batt Volt</Translation>
       </Text>
     </TextGroup>
   </Texts>

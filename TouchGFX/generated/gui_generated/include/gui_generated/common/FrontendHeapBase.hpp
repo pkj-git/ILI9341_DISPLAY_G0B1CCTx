@@ -12,10 +12,10 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
-#include <gui/screen_screen/screenView.hpp>
-#include <gui/screen_screen/screenPresenter.hpp>
-#include <gui/screen1_screen/Screen1View.hpp>
-#include <gui/screen1_screen/Screen1Presenter.hpp>
+#include <gui/frontpage_screen/FrontPageView.hpp>
+#include <gui/frontpage_screen/FrontPagePresenter.hpp>
+#include <gui/cellvoltage_screen/CellVoltageView.hpp>
+#include <gui/cellvoltage_screen/CellVoltagePresenter.hpp>
 
 
 /**
@@ -38,8 +38,8 @@ public:
      * A list of all view types. Must end with meta::Nil.
      * @note All view types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< screenView,
-            touchgfx::meta::TypeList< Screen1View,
+    typedef touchgfx::meta::TypeList< FrontPageView,
+            touchgfx::meta::TypeList< CellVoltageView,
             touchgfx::meta::Nil >
             > GeneratedViewTypes;
 
@@ -52,8 +52,8 @@ public:
      * A list of all presenter types. Must end with meta::Nil.
      * @note All presenter types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< screenPresenter,
-            touchgfx::meta::TypeList< Screen1Presenter,
+    typedef touchgfx::meta::TypeList< FrontPagePresenter,
+            touchgfx::meta::TypeList< CellVoltagePresenter,
             touchgfx::meta::Nil >
             > GeneratedPresenterTypes;
 
@@ -77,7 +77,7 @@ public:
 
     virtual void gotoStartScreen(FrontendApplication& app)
     {
-        app.gotoscreenScreenNoTransition();
+        app.gotoFrontPageScreenNoTransition();
     }
 protected:
     FrontendHeapBase(touchgfx::AbstractPartition& presenters, touchgfx::AbstractPartition& views, touchgfx::AbstractPartition& transitions, FrontendApplication& app)

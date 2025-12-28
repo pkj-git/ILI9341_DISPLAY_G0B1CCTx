@@ -73,7 +73,34 @@ static void MX_SPI2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
- volatile serialData_t serialData;
+ volatile serialData_t serialData={
+		 .batt_volt = 58.75,
+		 .batt_current = 300.2,
+		 .soc = 60,
+		 .soh = 99,
+		 .cell_volt_max = 3264,
+		 .cell_volt_min = 3200,
+		 .cell_temp_max = 150.0,
+		 .cell_temp_min = 20,
+		 .mos_temp = 25.0,
+		 .ambient_temp = 22.0,
+		 .pack_capacity = 300,
+		 .remaining_capacity = 280,
+		 .cell_volt = {3200, 3201, 3202, 3203, 3204, 3205, 3206, 3207, 3208, 3209, 3210, 3211, 3212, 3213, 3214, 3215}
+ };
+ /*float batt_volt;
+ float batt_current;
+ float soc;
+ float soh;
+ float cell_volt_max;
+ float cell_volt_min;
+ float cell_temp_max;
+ float cell_temp_min;
+ float mos_temp;
+ float ambient_temp;
+ float pack_capacity;
+ float remaining_capacity;*/
+
  volatile bool data_ready;
  volatile bool data_reading;
 static void mockUartData();

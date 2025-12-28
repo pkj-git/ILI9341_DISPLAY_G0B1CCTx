@@ -28,6 +28,7 @@ protected:
     touchgfx::Box box1;
     touchgfx::TextArea Label;
     touchgfx::TextAreaWithOneWildcard label_value;
+    touchgfx::TextArea unit;
 
     /*
      * Wildcard Buffers

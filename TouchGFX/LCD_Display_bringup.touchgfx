@@ -2,11 +2,11 @@
   "Application": {
     "Screens": [
       {
-        "Name": "screen",
+        "Name": "FrontPage",
         "Components": [
           {
             "Type": "Box",
-            "Name": "box1",
+            "Name": "Background",
             "Width": 320,
             "Height": 240,
             "Color": {
@@ -16,15 +16,45 @@
           },
           {
             "Type": "Image",
-            "Name": "image1",
+            "Name": "Logo",
             "Width": 75,
             "Height": 38,
             "RelativeFilename": "Eastman_logo_brand_resize.png",
             "Alpha": 119
           },
           {
+            "Type": "ScrollableContainer",
+            "Name": "scrollableContainer",
+            "X": 2,
+            "Y": 44,
+            "Width": 318,
+            "Height": 134,
+            "VerticalScrollEnabled": true,
+            "ScrollbarsVisible": true,
+            "ScrollbarsVisibleOnPressed": true,
+            "ScrollbarsColor": {
+              "Green": 102,
+              "Blue": 153
+            },
+            "ScrollbarsAlpha": 255,
+            "Components": [
+              {
+                "Type": "ScrollList",
+                "Name": "scrollList1",
+                "X": 4,
+                "Width": 309,
+                "Height": 301,
+                "ItemTemplateName": "CustomContainer1",
+                "NumberofItems": 11,
+                "Easing": "Linear",
+                "EasingOption": "Out",
+                "DragAcceleration": 0.5
+              }
+            ]
+          },
+          {
             "Type": "FlexButton",
-            "Name": "flexButton1",
+            "Name": "next_button",
             "X": 266,
             "Y": 190,
             "Width": 47,
@@ -48,104 +78,45 @@
                   "Blue": 153
                 },
                 "ColorPressed": {
-                  "Red": 5,
-                  "Green": 32,
-                  "Blue": 43
+                  "Green": 102,
+                  "Blue": 153
                 },
                 "ColorBorderReleased": {
                   "Green": 102,
                   "Blue": 153
                 },
                 "ColorBorderPressed": {
-                  "Red": 5,
-                  "Green": 32,
-                  "Blue": 43
+                  "Green": 102,
+                  "Blue": 153
                 }
               }
             ]
           },
           {
-            "Type": "TextArea",
-            "Name": "textArea1",
-            "X": 6,
-            "Y": 26,
-            "Width": 87,
-            "Height": 24,
-            "TextId": "__SingleUse_GK3L",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea2",
-            "X": 160,
-            "Y": 29,
-            "Width": 90,
-            "Height": 24,
-            "TextId": "__SingleUse_J14G",
-            "TextRotation": "0",
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_RRXQ",
-              "UseBuffer": true,
-              "BufferSize": 10
+            "Type": "Box",
+            "Name": "box2",
+            "X": 310,
+            "Y": 34,
+            "Width": 10,
+            "Height": 10,
+            "Color": {
+              "Red": 196,
+              "Green": 188,
+              "Blue": 188
             }
           },
           {
-            "Type": "TextArea",
-            "Name": "textArea1_1",
-            "X": 6,
-            "Y": 53,
-            "Width": 127,
-            "Height": 24,
-            "TextId": "__SingleUse_CD0X",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea2_1",
-            "X": 160,
-            "Y": 56,
-            "Width": 90,
-            "Height": 24,
-            "TextId": "__SingleUse_4XAG",
-            "TextRotation": "0",
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_LJ7H",
-              "UseBuffer": true,
-              "BufferSize": 10
+            "Type": "Box",
+            "Name": "box2_1",
+            "X": 310,
+            "Y": 177,
+            "Width": 10,
+            "Height": 10,
+            "Color": {
+              "Red": 196,
+              "Green": 188,
+              "Blue": 188
             }
-          },
-          {
-            "Type": "Gauge",
-            "Name": "gauge1",
-            "X": 13,
-            "Y": 102,
-            "Width": 120,
-            "Height": 120,
-            "Preset": "alternate_theme\\presets\\gauges\\tiny\\active.json",
-            "FileNameBackground": "__generated\\alternate_theme_images_widgets_gauge_tiny_backgrounds_active.png",
-            "RotationCenterX": 60.0,
-            "RotationCenterY": 60.0,
-            "StartAngle": -90.0,
-            "EndAngle": 90.0,
-            "RangeMax": 100.0,
-            "InitialValue": 100.0,
-            "Easing": "Linear",
-            "EasingOption": "In",
-            "FileNameNeedle": "__generated\\alternate_theme_images_widgets_gauge_tiny_needles_rough.png",
-            "NeedleRotationCenterX": 5.0,
-            "NeedleRotationCenterY": 33.0,
-            "NeedleMovingRenderingAlgorithm": "Nearest-neighbor",
-            "NeedleSteadyRenderingAlgorithm": "Bilinear Interpolation",
-            "ArcColor": {
-              "Red": 20,
-              "Green": 151,
-              "Blue": 197
-            },
-            "ArcCapStyle": "Butt"
           }
         ],
         "Interactions": [
@@ -153,41 +124,19 @@
             "InteractionName": "Interaction1",
             "Trigger": {
               "Type": "TriggerClicked",
-              "TriggerComponent": "flexButton1"
+              "TriggerComponent": "next_button"
             },
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Screen1"
+              "ActionComponent": "CellVoltage"
             }
           }
         ]
       },
       {
-        "Name": "Screen1",
+        "Name": "CellVoltage",
         "Components": [
-          {
-            "Type": "Box",
-            "Name": "box1",
-            "Width": 320,
-            "Height": 240,
-            "Color": {
-              "Red": 230,
-              "Green": 14,
-              "Blue": 14
-            }
-          },
-          {
-            "Type": "Button",
-            "Name": "button1",
-            "X": 40,
-            "Y": 95,
-            "Width": 240,
-            "Height": 50,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
-            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
-          },
           {
             "Type": "Box",
             "Name": "box1_1",
@@ -207,8 +156,38 @@
             "Alpha": 119
           },
           {
+            "Type": "ScrollableContainer",
+            "Name": "scrollableContainer1",
+            "X": 2,
+            "Y": 44,
+            "Width": 318,
+            "Height": 134,
+            "VerticalScrollEnabled": true,
+            "ScrollbarsVisible": true,
+            "ScrollbarsVisibleOnPressed": true,
+            "ScrollbarsColor": {
+              "Green": 102,
+              "Blue": 153
+            },
+            "ScrollbarsAlpha": 255,
+            "Components": [
+              {
+                "Type": "ScrollList",
+                "Name": "scrollList1",
+                "X": 4,
+                "Width": 309,
+                "Height": 435,
+                "ItemTemplateName": "CustomContainer1",
+                "NumberofItems": 16,
+                "Easing": "Cubic",
+                "EasingOption": "Out",
+                "DragAcceleration": 0.5
+              }
+            ]
+          },
+          {
             "Type": "FlexButton",
-            "Name": "flexButton1",
+            "Name": "next_button",
             "X": 266,
             "Y": 190,
             "Width": 47,
@@ -248,7 +227,7 @@
           },
           {
             "Type": "FlexButton",
-            "Name": "flexButton1_1",
+            "Name": "back_button",
             "X": 7,
             "Y": 190,
             "Width": 47,
@@ -289,36 +268,6 @@
             ]
           },
           {
-            "Type": "ScrollableContainer",
-            "Name": "scrollableContainer1",
-            "X": 2,
-            "Y": 44,
-            "Width": 318,
-            "Height": 134,
-            "VerticalScrollEnabled": true,
-            "ScrollbarsVisible": true,
-            "ScrollbarsVisibleOnPressed": true,
-            "ScrollbarsColor": {
-              "Green": 102,
-              "Blue": 153
-            },
-            "ScrollbarsAlpha": 255,
-            "Components": [
-              {
-                "Type": "ScrollList",
-                "Name": "scrollList1",
-                "X": 4,
-                "Width": 309,
-                "Height": 407,
-                "ItemTemplateName": "CustomContainer1",
-                "NumberofItems": 15,
-                "Easing": "Cubic",
-                "EasingOption": "Out",
-                "DragAcceleration": 0.5
-              }
-            ]
-          },
-          {
             "Type": "Box",
             "Name": "box2",
             "X": 310,
@@ -333,7 +282,7 @@
           },
           {
             "Type": "Box",
-            "Name": "box2_1",
+            "Name": "Background",
             "X": 310,
             "Y": 177,
             "Width": 10,
@@ -350,24 +299,12 @@
             "InteractionName": "Interaction1",
             "Trigger": {
               "Type": "TriggerClicked",
-              "TriggerComponent": "button1"
+              "TriggerComponent": "back_button"
             },
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "screen"
-            }
-          },
-          {
-            "InteractionName": "Interaction2",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "flexButton1_1"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "screen"
+              "ActionComponent": "FrontPage"
             }
           }
         ]
@@ -406,9 +343,9 @@
           {
             "Type": "TextArea",
             "Name": "label_value",
-            "X": 185,
+            "X": 162,
             "Y": 3,
-            "Width": 88,
+            "Width": 101,
             "Height": 24,
             "TextId": "__SingleUse_BQ5O",
             "TextRotation": "0",
@@ -418,6 +355,17 @@
               "UseBuffer": true,
               "BufferSize": 10
             }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "unit",
+            "X": 271,
+            "Y": 3,
+            "Width": 49,
+            "Height": 24,
+            "TextId": "__SingleUse_CL4W",
+            "TextRotation": "0",
+            "AutoSize": true
           }
         ],
         "Interactions": []
@@ -429,7 +377,7 @@
       "Height": 240
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "screen",
+    "StartupScreenName": "FrontPage",
     "SelectedStartupLanguage": "GB",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "UIPath": ".",

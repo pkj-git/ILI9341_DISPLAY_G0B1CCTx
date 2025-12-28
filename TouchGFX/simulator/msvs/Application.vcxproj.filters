@@ -142,29 +142,17 @@
     <Filter Include="Source Files\gui\model">
       <UniqueIdentifier>AED6055C-8D0B-D74B-6624-98C3D7922533</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\screen_screen">
-      <UniqueIdentifier>F0EE3AB9-9FC8-E02B-3802-371E65C1BAA1</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\generated\gui_generated">
       <UniqueIdentifier>EFA5D132-629B-A234-2DEE-932E8C8B5469</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\gui\common">
       <UniqueIdentifier>A657DDD3-3F91-DF27-CF79-519CA3252982</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\screen_screen">
-      <UniqueIdentifier>3E4885CE-E2F5-944F-DD20-0E83A0DA68C0</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\generated\gui_generated">
       <UniqueIdentifier>BD0D5E68-DCD5-8412-FDAB-14EE1F2FD150</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\gui\common">
       <UniqueIdentifier>18969E53-9386-87FE-331A-F0218B0ADE43</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\screen_screen">
-      <UniqueIdentifier>2CF708D8-2A33-9E4B-603D-C5C7CB5C8BAC</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\screen_screen">
-      <UniqueIdentifier>F5493CA6-808E-3F87-5A68-CF0630538AE0</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\generated\simulator\include">
       <UniqueIdentifier>5AE2BE3D-2D44-7949-9C22-3352A4E0E4A5</UniqueIdentifier>
@@ -184,18 +172,6 @@
     <Filter Include="Header Files\generated\simulator\include\simulator\video">
       <UniqueIdentifier>32073033-5C18-E7EC-828A-0169382C7A95</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\screen1_screen">
-      <UniqueIdentifier>E85CE7BE-AFCE-2AC5-5FE7-58E682DD1C27</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\screen1_screen">
-      <UniqueIdentifier>BA4AB6E4-7234-8A80-3E11-9567ECC4BEE4</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\screen1_screen">
-      <UniqueIdentifier>503C55BC-8AFE-4D67-29FE-5704111017B7</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\screen1_screen">
-      <UniqueIdentifier>8C4CA7D2-6CFB-758D-A18D-DF63E5F29E7B</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\gui\containers">
       <UniqueIdentifier>9062D9E4-6C66-0595-7AB1-9E84BE7D516E</UniqueIdentifier>
     </Filter>
@@ -207,6 +183,30 @@
     </Filter>
     <Filter Include="Header Files\generated\gui_generated\containers">
       <UniqueIdentifier>98EA2549-7987-C851-3CE5-CEF8B979D348</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\frontpage_screen">
+      <UniqueIdentifier>CDE43B50-C15B-DBD1-6ECA-5BA9DD0E6755</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\frontpage_screen">
+      <UniqueIdentifier>ED7E1E2A-090D-1D5E-DAA4-7BC039E5C8C4</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\cellvoltage_screen">
+      <UniqueIdentifier>8A8D51C4-7FF1-F1B3-0936-017B7E670E3C</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\cellvoltage_screen">
+      <UniqueIdentifier>3DB99D82-0E4F-1D69-A471-E5516DB80979</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\frontpage_screen">
+      <UniqueIdentifier>9290E939-2340-2266-971B-2B4E3E080448</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\cellvoltage_screen">
+      <UniqueIdentifier>94AE940E-BBCF-4E47-F713-CFFFE7338515</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\cellvoltage_screen">
+      <UniqueIdentifier>6D66A49B-3F76-EEC3-7236-05C1BDCC3833</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\frontpage_screen">
+      <UniqueIdentifier>322F022E-3B28-BAAA-1BA8-6F399D90E4DB</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -237,32 +237,35 @@
     <ClCompile Include="..\..\gui\src\model\Model.cpp">
       <Filter>Source Files\gui\model</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen_screen\screenPresenter.cpp">
-      <Filter>Source Files\gui\screen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen_screen\screenView.cpp">
-      <Filter>Source Files\gui\screen_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\screen_screen\screenViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\screen_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp">
       <Filter>Source Files\generated\simulator\video</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1Presenter.cpp">
-      <Filter>Source Files\gui\screen1_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\screen1_screen\Screen1View.cpp">
-      <Filter>Source Files\gui\screen1_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\screen1_screen\Screen1ViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\screen1_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\containers\CustomContainer1.cpp">
       <Filter>Source Files\gui\containers</Filter>
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\containers\CustomContainer1Base.cpp">
       <Filter>Source Files\generated\gui_generated\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\common\SprintFloat.cpp">
+      <Filter>Source Files\gui\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\cellvoltage_screen\CellVoltagePresenter.cpp">
+      <Filter>Source Files\gui\cellvoltage_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\cellvoltage_screen\CellVoltageView.cpp">
+      <Filter>Source Files\gui\cellvoltage_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\cellvoltage_screen\CellVoltageViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\cellvoltage_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\frontpage_screen\FrontPagePresenter.cpp">
+      <Filter>Source Files\gui\frontpage_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\frontpage_screen\FrontPageView.cpp">
+      <Filter>Source Files\gui\frontpage_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\frontpage_screen\FrontPageViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\frontpage_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -700,35 +703,41 @@
     <ClInclude Include="..\..\gui\include\gui\model\ModelListener.hpp">
       <Filter>Header Files\gui\model</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen_screen\screenPresenter.hpp">
-      <Filter>Header Files\gui\screen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen_screen\screenView.hpp">
-      <Filter>Header Files\gui\screen_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen_screen\screenViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\screen_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\SimConstants.hpp">
       <Filter>Header Files\generated\gui_generated\common</Filter>
     </ClInclude>
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp">
       <Filter>Header Files\generated\simulator\include\simulator\video</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1Presenter.hpp">
-      <Filter>Header Files\gui\screen1_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\screen1_screen\Screen1View.hpp">
-      <Filter>Header Files\gui\screen1_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen1_screen\Screen1ViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\screen1_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\containers\CustomContainer1.hpp">
       <Filter>Header Files\gui\containers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\CustomContainer1Base.hpp">
       <Filter>Header Files\generated\gui_generated\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\common\SprintFloat.hpp">
+      <Filter>Header Files\gui\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\cellvoltage_screen\CellVoltagePresenter.hpp">
+      <Filter>Header Files\gui\cellvoltage_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\cellvoltage_screen\CellVoltageView.hpp">
+      <Filter>Header Files\gui\cellvoltage_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\cellvoltage_screen\CellVoltageViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\cellvoltage_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\frontpage_screen\FrontPagePresenter.hpp">
+      <Filter>Header Files\gui\frontpage_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\frontpage_screen\FrontPageView.hpp">
+      <Filter>Header Files\gui\frontpage_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\frontpage_screen\FrontPageViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\frontpage_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\common\ScreenDefs.hpp">
+      <Filter>Header Files\gui\common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
