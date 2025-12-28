@@ -10,7 +10,8 @@
 
 enum class ScreenId : uint8_t {
 	kFRONT,
-	CELL_VOLTAG
+	kCELL_VOLTAGE,
+	kTEMPERATURE,
 };
 
 

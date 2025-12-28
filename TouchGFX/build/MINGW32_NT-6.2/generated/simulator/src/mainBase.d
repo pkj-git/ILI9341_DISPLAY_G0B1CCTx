@@ -109,6 +109,9 @@ build/MINGW32_NT-6.2/generated/simulator/src/mainBase.o: \
  gui/include/gui/cellvoltage_screen/CellVoltageView.hpp \
  generated/gui_generated/include/gui_generated/cellvoltage_screen/CellVoltageViewBase.hpp \
  gui/include/gui/cellvoltage_screen/CellVoltagePresenter.hpp \
+ gui/include/gui/temperature_screen/TemperatureView.hpp \
+ generated/gui_generated/include/gui_generated/temperature_screen/TemperatureViewBase.hpp \
+ gui/include/gui/temperature_screen/TemperaturePresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/FlashDataReader.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp
@@ -221,6 +224,9 @@ gui/include/gui/common/ScreenDefs.hpp:
 gui/include/gui/cellvoltage_screen/CellVoltageView.hpp:
 generated/gui_generated/include/gui_generated/cellvoltage_screen/CellVoltageViewBase.hpp:
 gui/include/gui/cellvoltage_screen/CellVoltagePresenter.hpp:
+gui/include/gui/temperature_screen/TemperatureView.hpp:
+generated/gui_generated/include/gui_generated/temperature_screen/TemperatureViewBase.hpp:
+gui/include/gui/temperature_screen/TemperaturePresenter.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/FlashDataReader.hpp:
 ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp:

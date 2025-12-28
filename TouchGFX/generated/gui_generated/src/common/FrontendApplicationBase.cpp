@@ -18,6 +18,8 @@
 #include <gui/frontpage_screen/FrontPagePresenter.hpp>
 #include <gui/cellvoltage_screen/CellVoltageView.hpp>
 #include <gui/cellvoltage_screen/CellVoltagePresenter.hpp>
+#include <gui/temperature_screen/TemperatureView.hpp>
+#include <gui/temperature_screen/TemperaturePresenter.hpp>
 
 using namespace touchgfx;
 
@@ -67,4 +69,17 @@ void FrontendApplicationBase::gotoCellVoltageScreenNoTransition()
 void FrontendApplicationBase::gotoCellVoltageScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<CellVoltageView, CellVoltagePresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Temperature
+
+void FrontendApplicationBase::gotoTemperatureScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoTemperatureScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoTemperatureScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<TemperatureView, TemperaturePresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

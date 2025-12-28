@@ -86,7 +86,8 @@ static void MX_SPI2_Init(void);
 		 .ambient_temp = 22.0,
 		 .pack_capacity = 300,
 		 .remaining_capacity = 280,
-		 .cell_volt = {3200, 3201, 3202, 3203, 3204, 3205, 3206, 3207, 3208, 3209, 3210, 3211, 3212, 3213, 3214, 3215}
+		 .cell_volt = {3200, 3201, 3202, 3203, 3204, 3205, 3206, 3207, 3208, 3209, 3210, 3211, 3212, 3213, 3214, 3215},
+		 .cell_temp = {25, 100.2, -1, -2.5}
  };
  /*float batt_volt;
  float batt_current;

@@ -1,5 +1,7 @@
-build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.o: \
- generated/gui_generated/src/common/FrontendApplicationBase.cpp \
+build/MINGW32_NT-6.2/generated/gui_generated/src/temperature_screen/TemperatureViewBase.o: \
+ generated/gui_generated/src/temperature_screen/TemperatureViewBase.cpp \
+ generated/gui_generated/include/gui_generated/temperature_screen/TemperatureViewBase.hpp \
+ gui/include/gui/common/FrontendApplication.hpp \
  generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
  ../Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp \
@@ -40,16 +42,9 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/FrameBufferListener.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Gestures.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp \
- gui/include/gui/model/Model.hpp gui/include/gui/common/FrontendHeap.hpp \
- generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp \
- ../Middlewares/ST/touchgfx/framework/include/common/Meta.hpp \
- ../Middlewares/ST/touchgfx/framework/include/common/Partition.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp \
- gui/include/gui/common/FrontendApplication.hpp \
- gui/include/gui/frontpage_screen/FrontPageView.hpp \
- generated/gui_generated/include/gui_generated/frontpage_screen/FrontPageViewBase.hpp \
+ gui/include/gui/model/Model.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
- gui/include/gui/frontpage_screen/FrontPagePresenter.hpp \
+ gui/include/gui/temperature_screen/TemperaturePresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
@@ -82,15 +77,10 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/TouchButtonTrigger.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp \
- gui/include/gui/cellvoltage_screen/CellVoltageView.hpp \
- generated/gui_generated/include/gui_generated/cellvoltage_screen/CellVoltageViewBase.hpp \
- gui/include/gui/cellvoltage_screen/CellVoltagePresenter.hpp \
- gui/include/gui/temperature_screen/TemperatureView.hpp \
- generated/gui_generated/include/gui_generated/temperature_screen/TemperatureViewBase.hpp \
- gui/include/gui/temperature_screen/TemperaturePresenter.hpp \
- generated/texts/include/texts/TextKeysAndLanguages.hpp \
- ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
+ generated/images/include/images/BitmapDatabase.hpp
+generated/gui_generated/include/gui_generated/temperature_screen/TemperatureViewBase.hpp:
+gui/include/gui/common/FrontendApplication.hpp:
 generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
 ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:
 ../Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp:
@@ -132,16 +122,8 @@ generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Gestures.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp:
 gui/include/gui/model/Model.hpp:
-gui/include/gui/common/FrontendHeap.hpp:
-generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp:
-../Middlewares/ST/touchgfx/framework/include/common/Meta.hpp:
-../Middlewares/ST/touchgfx/framework/include/common/Partition.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp:
-gui/include/gui/common/FrontendApplication.hpp:
-gui/include/gui/frontpage_screen/FrontPageView.hpp:
-generated/gui_generated/include/gui_generated/frontpage_screen/FrontPageViewBase.hpp:
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
-gui/include/gui/frontpage_screen/FrontPagePresenter.hpp:
+gui/include/gui/temperature_screen/TemperaturePresenter.hpp:
 gui/include/gui/model/ModelListener.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
@@ -174,12 +156,5 @@ gui/include/gui/common/ScreenDefs.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/TouchButtonTrigger.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp:
-gui/include/gui/cellvoltage_screen/CellVoltageView.hpp:
-generated/gui_generated/include/gui_generated/cellvoltage_screen/CellVoltageViewBase.hpp:
-gui/include/gui/cellvoltage_screen/CellVoltagePresenter.hpp:
-gui/include/gui/temperature_screen/TemperatureView.hpp:
-generated/gui_generated/include/gui_generated/temperature_screen/TemperatureViewBase.hpp:
-gui/include/gui/temperature_screen/TemperaturePresenter.hpp:
-generated/texts/include/texts/TextKeysAndLanguages.hpp:
-../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp:
-../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
+generated/images/include/images/BitmapDatabase.hpp:

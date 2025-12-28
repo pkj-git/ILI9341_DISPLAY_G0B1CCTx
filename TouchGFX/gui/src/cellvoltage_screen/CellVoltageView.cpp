@@ -22,7 +22,7 @@ void CellVoltageView::tearDownScreen()
 }
 
 void CellVoltageView::scrollList1UpdateItem(CustomContainer1& item, int16_t itemIndex) {
-	item.updateData(itemIndex, ScreenId::CELL_VOLTAG);
+	item.updateData(itemIndex, ScreenId::kCELL_VOLTAGE);
 }
 #ifndef SIMULATOR
 void  CellVoltageView::process_uart(volatile serialData_t& data) {

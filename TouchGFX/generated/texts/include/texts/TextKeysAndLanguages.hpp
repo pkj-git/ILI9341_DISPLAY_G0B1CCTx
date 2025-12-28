@@ -27,8 +27,6 @@ enum TEXTS
     T_CELL_MIN_TEMP,
     T_PACK_CAPACITY,
     T_REMAINING_CAPACITY,
-    T_MOS_TEMP,
-    T_AMB_TEMP,
     T_CELL_VOLT_1,
     T_CELL_VOLT_2,
     T_CELL_VOLT_3,
@@ -49,6 +47,12 @@ enum TEXTS
     T___SINGLEUSE_ITE7,
     T___SINGLEUSE_BQ5O,
     T___SINGLEUSE_6X4E,
+    T_TEMP_1,
+    T_TEMP_2,
+    T_TEMP_3,
+    T_TEMP_4,
+    T_MOS_TEMP,
+    T_AMB_TEMP,
     NUMBER_OF_TEXT_KEYS
 };
 

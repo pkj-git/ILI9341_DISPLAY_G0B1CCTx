@@ -30,6 +30,9 @@
     <ClCompile Include="..\..\gui\src\frontpage_screen\FrontPagePresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\frontpage_screen\FrontPageView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\frontpage_screen\FrontPageViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\temperature_screen\TemperaturePresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\temperature_screen\TemperatureView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\temperature_screen\TemperatureViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -190,6 +193,9 @@
     <ClInclude Include="..\..\gui\include\gui\frontpage_screen\FrontPageView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\frontpage_screen\FrontPageViewBase.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\common\ScreenDefs.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\temperature_screen\TemperaturePresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\temperature_screen\TemperatureView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\temperature_screen\TemperatureViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

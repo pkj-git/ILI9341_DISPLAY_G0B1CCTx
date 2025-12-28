@@ -26,6 +26,9 @@ public:
     // CellVoltage
     void gotoCellVoltageScreenNoTransition();
 
+    // Temperature
+    void gotoTemperatureScreenNoTransition();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -36,6 +39,9 @@ protected:
 
     // CellVoltage
     void gotoCellVoltageScreenNoTransitionImpl();
+
+    // Temperature
+    void gotoTemperatureScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

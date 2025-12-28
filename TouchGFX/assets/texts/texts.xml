@@ -52,12 +52,6 @@
       <Text Id="remaining_capacity" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Remaining Cap</Translation>
       </Text>
-      <Text Id="mos_temp" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">MOS Temp</Translation>
-      </Text>
-      <Text Id="amb_temp" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Ambient Temp</Translation>
-      </Text>
     </TextGroup>
     <TextGroup Id="CellVoltage">
       <Text Id="cell_volt_1" Alignment="Left" TypographyId="Default">
@@ -121,6 +115,26 @@
       </Text>
       <Text Id="__SingleUse_6X4E" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">New Text            </Translation>
+      </Text>
+    </TextGroup>
+    <TextGroup Id="Temperature">
+      <Text Id="Temp_1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Temperature 1</Translation>
+      </Text>
+      <Text Id="Temp_2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Temperature 2</Translation>
+      </Text>
+      <Text Id="Temp_3" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Temperature 3</Translation>
+      </Text>
+      <Text Id="Temp_4" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Temperature 4</Translation>
+      </Text>
+      <Text Id="mos_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">MOS Temp</Translation>
+      </Text>
+      <Text Id="amb_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Ambient Temp</Translation>
       </Text>
     </TextGroup>
   </Texts>

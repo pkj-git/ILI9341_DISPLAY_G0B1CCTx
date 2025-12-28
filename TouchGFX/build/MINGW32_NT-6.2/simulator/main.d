@@ -108,6 +108,9 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  gui/include/gui/cellvoltage_screen/CellVoltageView.hpp \
  generated/gui_generated/include/gui_generated/cellvoltage_screen/CellVoltageViewBase.hpp \
  gui/include/gui/cellvoltage_screen/CellVoltagePresenter.hpp \
+ gui/include/gui/temperature_screen/TemperatureView.hpp \
+ generated/gui_generated/include/gui_generated/temperature_screen/TemperatureViewBase.hpp \
+ gui/include/gui/temperature_screen/TemperaturePresenter.hpp \
  generated/gui_generated/include/gui_generated/common/SimConstants.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/SDL2TouchController.hpp \
  generated/simulator/include/simulator/mainBase.hpp
@@ -220,6 +223,9 @@ gui/include/gui/common/ScreenDefs.hpp:
 gui/include/gui/cellvoltage_screen/CellVoltageView.hpp:
 generated/gui_generated/include/gui_generated/cellvoltage_screen/CellVoltageViewBase.hpp:
 gui/include/gui/cellvoltage_screen/CellVoltagePresenter.hpp:
+gui/include/gui/temperature_screen/TemperatureView.hpp:
+generated/gui_generated/include/gui_generated/temperature_screen/TemperatureViewBase.hpp:
+gui/include/gui/temperature_screen/TemperaturePresenter.hpp:
 generated/gui_generated/include/gui_generated/common/SimConstants.hpp:
 ../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/SDL2TouchController.hpp:
 generated/simulator/include/simulator/mainBase.hpp:

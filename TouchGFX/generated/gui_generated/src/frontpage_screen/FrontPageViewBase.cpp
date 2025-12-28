@@ -27,7 +27,7 @@ FrontPageViewBase::FrontPageViewBase() :
     scrollableContainer.setScrollbarsColor(touchgfx::Color::getColorFromRGB(0, 102, 153));
     scrollableContainer.setScrollbarsAlpha(255);
     scrollableContainer.setScrollbarsPermanentlyVisible();
-    scrollList1.setPosition(4, 0, 309, 301);
+    scrollList1.setPosition(4, 0, 309, 248);
     scrollList1.setHorizontal(false);
     scrollList1.setCircular(false);
     scrollList1.setEasingEquation(touchgfx::EasingEquations::linearEaseOut);

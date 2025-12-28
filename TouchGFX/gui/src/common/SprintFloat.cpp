@@ -11,7 +11,9 @@ void ConvertToFloatString(touchgfx::Unicode::UnicodeChar* buffer, const uint16_t
     int32_t scaled = static_cast<int32_t>(val * 100.0f);  // fixed-point
     int32_t before = scaled / 100;
     int32_t after  = scaled % 100;
-
+    if(after < 0) {
+    	after *= -1;
+    }
     touchgfx::Unicode::snprintf(buffer, size, "%d.%02d", before, after);
 }
 

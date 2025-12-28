@@ -14,7 +14,7 @@ void CustomContainer1::initialize()
 {
     CustomContainer1Base::initialize();
 }
-static constexpr uint8_t front_page_text_size{11U};
+static constexpr uint8_t front_page_text_size{9U};
 static constexpr TEXTS front_page_text_indx[front_page_text_size] = {
 	    T_BATT_VOLT,
 	    T_BATT_CURRENT,
@@ -25,11 +25,8 @@ static constexpr TEXTS front_page_text_indx[front_page_text_size] = {
 	    T_CELL_MIN_TEMP,
 	    T_PACK_CAPACITY,
 	    T_REMAINING_CAPACITY,
-	    T_MOS_TEMP,
-	    T_AMB_TEMP,
 };
 static constexpr uint8_t cell_voltage_page_text_size{16U};
-
 static constexpr TEXTS cell_voltage_page_text_indx[cell_voltage_page_text_size] = {
 	    T_CELL_VOLT_1,
 	    T_CELL_VOLT_2,
@@ -49,6 +46,15 @@ static constexpr TEXTS cell_voltage_page_text_indx[cell_voltage_page_text_size] 
 	    T_CELL_VOLT_16
 };
 
+static constexpr uint8_t temperature_page_text_size{6U};
+static constexpr TEXTS temperature_page_text_indx[cell_voltage_page_text_size] = {
+	    T_TEMP_1,
+	    T_TEMP_2,
+	    T_TEMP_3,
+	    T_TEMP_4,
+	    T_MOS_TEMP,
+	    T_AMB_TEMP,
+};
 void CustomContainer1::updateData(int index, ScreenId screen_id) {
 
 	TEXTS textIndex{};
@@ -60,9 +66,17 @@ void CustomContainer1::updateData(int index, ScreenId screen_id) {
 			textIndex = T_BATT_VOLT;
 		}
 	}
-	else if(screen_id == ScreenId::CELL_VOLTAG) {
+	else if(screen_id == ScreenId::kCELL_VOLTAGE) {
 		if(textIndex < cell_voltage_page_text_size) {
 	       textIndex = cell_voltage_page_text_indx[index];
+		}
+		else {
+			textIndex = T_BATT_VOLT;
+		}
+	}
+	else if(screen_id == ScreenId::kTEMPERATURE) {
+		if(textIndex < temperature_page_text_size) {
+	       textIndex = temperature_page_text_indx[index];
 		}
 		else {
 			textIndex = T_BATT_VOLT;
@@ -158,6 +172,15 @@ void CustomContainer1::updateData(int index, ScreenId screen_id) {
 		unit.setTypedText(TEXTS::T_CELL_VOLT_UNIT);
 #ifndef SIMULATOR
 		Unicode::snprintf(label_valueBuffer, LABEL_VALUE_SIZE, "%d", static_cast<uint32_t>(data_screen1_copy.cell_volt[index]));
+#endif
+		break;
+	case TEXTS::T_TEMP_1:
+	case TEXTS::T_TEMP_2:
+	case TEXTS::T_TEMP_3:
+	case TEXTS::T_TEMP_4:
+		unit.setTypedText(TEXTS::T_TEMP_UNIT);
+#ifndef SIMULATOR
+		ConvertToFloatString(label_valueBuffer, LABEL_VALUE_SIZE, data_screen1_copy.cell_temp[index%4]);
 #endif
 		break;
 	default:

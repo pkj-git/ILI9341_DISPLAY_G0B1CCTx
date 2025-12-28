@@ -208,6 +208,18 @@
     <Filter Include="Header Files\generated\gui_generated\frontpage_screen">
       <UniqueIdentifier>322F022E-3B28-BAAA-1BA8-6F399D90E4DB</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\temperature_screen">
+      <UniqueIdentifier>203DC37A-4628-2F26-E6DF-A07335640968</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\temperature_screen">
+      <UniqueIdentifier>07662711-B3F2-C13A-049C-2E3B7EA1431C</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\temperature_screen">
+      <UniqueIdentifier>FB853B1B-6301-7D97-C3DD-2B3347786026</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\temperature_screen">
+      <UniqueIdentifier>683A240D-DF40-CCED-DC62-47A667B7C7FA</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -266,6 +278,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\frontpage_screen\FrontPageViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\frontpage_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\temperature_screen\TemperaturePresenter.cpp">
+      <Filter>Source Files\gui\temperature_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\temperature_screen\TemperatureView.cpp">
+      <Filter>Source Files\gui\temperature_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\temperature_screen\TemperatureViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\temperature_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -738,6 +759,15 @@
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\common\ScreenDefs.hpp">
       <Filter>Header Files\gui\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\temperature_screen\TemperaturePresenter.hpp">
+      <Filter>Header Files\gui\temperature_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\temperature_screen\TemperatureView.hpp">
+      <Filter>Header Files\gui\temperature_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\temperature_screen\TemperatureViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\temperature_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
