@@ -11,6 +11,7 @@
 #include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/containers/buttons/Buttons.hpp>
+#include <touchgfx/containers/ScrollableContainer.hpp>
 #include <touchgfx/containers/scrollers/ScrollList.hpp>
 #include <gui/containers/CustomContainer1.hpp>
 
@@ -41,8 +42,11 @@ protected:
     touchgfx::Image image1;
     touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton1;
     touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton1_1;
+    touchgfx::ScrollableContainer scrollableContainer1;
     touchgfx::ScrollList scrollList1;
-    touchgfx::DrawableListItems<CustomContainer1, 6> scrollList1ListItems;
+    touchgfx::DrawableListItems<CustomContainer1, 17> scrollList1ListItems;
+    touchgfx::Box box2;
+    touchgfx::Box box2_1;
 
 private:
 

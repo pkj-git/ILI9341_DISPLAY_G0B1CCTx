@@ -3,7 +3,9 @@
 
 #include <gui/model/Model.hpp>
 extern "C" {
+#ifndef SIMULATOR
 #include "serial_data.h"
+#endif
 }
 class ModelListener
 {
@@ -16,7 +18,9 @@ public:
     {
         model = m;
     }
+#ifndef SIMULATOR
     virtual void process_uart(volatile serialData_t& data) {};
+#endif
 protected:
     Model* model;
 };

@@ -16,7 +16,8 @@ void Screen1Presenter::deactivate()
 {
 
 }
-
+#ifndef SIMULATOR
 void Screen1Presenter::process_uart(volatile serialData_t& data) {
 	view.process_uart(data);
 }
+#endif

@@ -49,7 +49,12 @@ Screen1ViewBase::Screen1ViewBase() :
     flexButton1_1.setPosition(7, 190, 47, 44);
     add(flexButton1_1);
 
-    scrollList1.setPosition(7, 45, 309, 134);
+    scrollableContainer1.setPosition(2, 44, 318, 134);
+    scrollableContainer1.enableHorizontalScroll(false);
+    scrollableContainer1.setScrollbarsColor(touchgfx::Color::getColorFromRGB(0, 102, 153));
+    scrollableContainer1.setScrollbarsAlpha(255);
+    scrollableContainer1.setScrollbarsPermanentlyVisible();
+    scrollList1.setPosition(4, 7, 307, 407);
     scrollList1.setHorizontal(false);
     scrollList1.setCircular(false);
     scrollList1.setEasingEquation(touchgfx::EasingEquations::cubicEaseOut);
@@ -61,7 +66,17 @@ Screen1ViewBase::Screen1ViewBase() :
     scrollList1.setOvershootPercentage(0);
     scrollList1.setDrawableSize(27, 0);
     scrollList1.setDrawables(scrollList1ListItems, updateItemCallback);
-    add(scrollList1);
+    scrollableContainer1.add(scrollList1);
+
+    add(scrollableContainer1);
+
+    box2.setPosition(310, 34, 10, 10);
+    box2.setColor(touchgfx::Color::getColorFromRGB(196, 188, 188));
+    add(box2);
+
+    box2_1.setPosition(310, 177, 10, 10);
+    box2_1.setColor(touchgfx::Color::getColorFromRGB(196, 188, 188));
+    add(box2_1);
 }
 
 Screen1ViewBase::~Screen1ViewBase()

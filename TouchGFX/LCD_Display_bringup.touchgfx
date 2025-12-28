@@ -411,17 +411,61 @@
             ]
           },
           {
-            "Type": "ScrollList",
-            "Name": "scrollList1",
-            "X": 7,
-            "Y": 45,
-            "Width": 309,
+            "Type": "ScrollableContainer",
+            "Name": "scrollableContainer1",
+            "X": 2,
+            "Y": 44,
+            "Width": 318,
             "Height": 134,
-            "ItemTemplateName": "CustomContainer1",
-            "NumberofItems": 15,
-            "Easing": "Cubic",
-            "EasingOption": "Out",
-            "DragAcceleration": 0.5
+            "VerticalScrollEnabled": true,
+            "ScrollbarsVisible": true,
+            "ScrollbarsVisibleOnPressed": true,
+            "ScrollbarsColor": {
+              "Green": 102,
+              "Blue": 153
+            },
+            "ScrollbarsAlpha": 255,
+            "Components": [
+              {
+                "Type": "ScrollList",
+                "Name": "scrollList1",
+                "X": 4,
+                "Y": 7,
+                "Width": 307,
+                "Height": 407,
+                "ItemTemplateName": "CustomContainer1",
+                "NumberofItems": 15,
+                "Easing": "Cubic",
+                "EasingOption": "Out",
+                "DragAcceleration": 0.5
+              }
+            ]
+          },
+          {
+            "Type": "Box",
+            "Name": "box2",
+            "X": 310,
+            "Y": 34,
+            "Width": 10,
+            "Height": 10,
+            "Color": {
+              "Red": 196,
+              "Green": 188,
+              "Blue": 188
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "box2_1",
+            "X": 310,
+            "Y": 177,
+            "Width": 10,
+            "Height": 10,
+            "Color": {
+              "Red": 196,
+              "Green": 188,
+              "Blue": 188
+            }
           }
         ],
         "Interactions": [
