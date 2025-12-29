@@ -18,6 +18,8 @@
 #include <gui/cellvoltage_screen/CellVoltagePresenter.hpp>
 #include <gui/temperature_screen/TemperatureView.hpp>
 #include <gui/temperature_screen/TemperaturePresenter.hpp>
+#include <gui/settable_parameters_screen/Settable_parametersView.hpp>
+#include <gui/settable_parameters_screen/Settable_parametersPresenter.hpp>
 
 
 /**
@@ -43,7 +45,8 @@ public:
     typedef touchgfx::meta::TypeList< FrontPageView,
             touchgfx::meta::TypeList< CellVoltageView,
             touchgfx::meta::TypeList< TemperatureView,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::TypeList< Settable_parametersView,
+            touchgfx::meta::Nil > > >
             > GeneratedViewTypes;
 
     /**
@@ -58,7 +61,8 @@ public:
     typedef touchgfx::meta::TypeList< FrontPagePresenter,
             touchgfx::meta::TypeList< CellVoltagePresenter,
             touchgfx::meta::TypeList< TemperaturePresenter,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::TypeList< Settable_parametersPresenter,
+            touchgfx::meta::Nil > > >
             > GeneratedPresenterTypes;
 
     /**

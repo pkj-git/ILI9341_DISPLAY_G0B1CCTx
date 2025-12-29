@@ -503,13 +503,309 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Settable_parameters"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Settable_parameters",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1_1",
+            "Width": 320,
+            "Height": 240,
+            "Color": {
+              "Red": 255,
+              "Green": 215
+            }
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "decrease_button",
+            "X": 262,
+            "Y": 134,
+            "Width": 47,
+            "Height": 44,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "IconReleased": "__generated\\icon_theme_images_navigation_arrow_drop_down_50_50_E8F6FB.svg.png",
+                "IconPressed": "__generated\\icon_theme_images_navigation_arrow_drop_down_50_50_E8F6FB.svg.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 59,
+                "Height": 50,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorBorderReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorBorderPressed": {
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "increase_button",
+            "X": 262,
+            "Y": 76,
+            "Width": 47,
+            "Height": 44,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "IconReleased": "__generated\\icon_theme_images_navigation_arrow_drop_up_50_50_E8F6FB.svg.png",
+                "IconPressed": "__generated\\icon_theme_images_navigation_arrow_drop_up_50_50_E8F6FB.svg.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 59,
+                "Height": 50,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorBorderReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorBorderPressed": {
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "next_button_1_1",
+            "X": 262,
+            "Y": 8,
+            "Width": 47,
+            "Height": 44,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "IconReleased": "__generated\\icon_theme_images_navigation_check_50_50_E8F6FB.svg.png",
+                "IconPressed": "__generated\\icon_theme_images_navigation_check_50_50_E8F6FB.svg.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 59,
+                "Height": 50,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorBorderReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorBorderPressed": {
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 75,
+            "Height": 38,
+            "RelativeFilename": "Eastman_logo_brand_resize.png",
+            "Alpha": 119
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "back_button",
+            "X": 7,
+            "Y": 190,
+            "Width": 47,
+            "Height": 44,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "IconReleased": "__generated\\icon_theme_images_navigation_chevron_left_50_50_E8F6FB.svg.png",
+                "IconPressed": "__generated\\icon_theme_images_navigation_chevron_left_50_50_E8F6FB.svg.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 59,
+                "Height": 50,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 5,
+                  "Green": 32,
+                  "Blue": 43
+                },
+                "ColorBorderReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorBorderPressed": {
+                  "Red": 5,
+                  "Green": 32,
+                  "Blue": 43
+                }
+              }
+            ]
+          },
+          {
+            "Type": "ScrollWheel",
+            "Name": "scrollWheel1",
+            "X": 11,
+            "Y": 70,
+            "Width": 224,
+            "Height": 108,
+            "ItemTemplateName": "settable",
+            "NumberofItems": 10,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.0,
+            "DragAcceleration": 1.0
+          },
+          {
+            "Type": "Box",
+            "Name": "box2",
+            "X": 6,
+            "Y": 61,
+            "Width": 235,
+            "Height": 40,
+            "Color": {
+              "Green": 102,
+              "Blue": 153
+            },
+            "Alpha": 129
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "back_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "Temperature"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "increase_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "increament"
+            }
+          },
+          {
+            "InteractionName": "Interaction4",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "decrease_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "decrement"
             }
           }
         ]
       }
     ],
     "CustomContainerDefinitions": [
+      {
+        "Name": "settable",
+        "X": 5,
+        "Y": 23,
+        "Width": 224,
+        "Height": 27,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "X": -2,
+            "Y": 2,
+            "Width": 226,
+            "Height": 25,
+            "Color": {
+              "Red": 255,
+              "Green": 215
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Label",
+            "Y": 1,
+            "Width": 176,
+            "Height": 24,
+            "TextId": "__SingleUse_OXGJ",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "label_value",
+            "X": 116,
+            "Y": 3,
+            "Width": 101,
+            "Height": 24,
+            "TextId": "__SingleUse_RZLH",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_2VE7",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": []
+      },
       {
         "Name": "CustomContainer1",
         "X": 5,

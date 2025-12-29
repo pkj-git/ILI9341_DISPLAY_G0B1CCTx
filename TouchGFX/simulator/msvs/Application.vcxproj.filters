@@ -220,6 +220,18 @@
     <Filter Include="Source Files\generated\gui_generated\temperature_screen">
       <UniqueIdentifier>683A240D-DF40-CCED-DC62-47A667B7C7FA</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\gui\settable_parameters_screen">
+      <UniqueIdentifier>DA0D7E83-8C62-4658-B9B5-3BD409E79DCF</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\settable_parameters_screen">
+      <UniqueIdentifier>7441C915-142E-A4FB-A4AD-33FB5DE56871</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\settable_parameters_screen">
+      <UniqueIdentifier>1EFC138A-5327-123F-C2B6-1B9751230C43</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\settable_parameters_screen">
+      <UniqueIdentifier>D057672F-A530-0949-205C-ABF575E55C61</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -287,6 +299,21 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\temperature_screen\TemperatureViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\temperature_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\containers\settable.cpp">
+      <Filter>Source Files\gui\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\settable_parameters_screen\Settable_parametersPresenter.cpp">
+      <Filter>Source Files\gui\settable_parameters_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\settable_parameters_screen\Settable_parametersView.cpp">
+      <Filter>Source Files\gui\settable_parameters_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\settable_parameters_screen\Settable_parametersViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\settable_parameters_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\settableBase.cpp">
+      <Filter>Source Files\generated\gui_generated\containers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -768,6 +795,21 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\temperature_screen\TemperatureViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\temperature_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\containers\settable.hpp">
+      <Filter>Header Files\gui\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\settable_parameters_screen\Settable_parametersPresenter.hpp">
+      <Filter>Header Files\gui\settable_parameters_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\settable_parameters_screen\Settable_parametersView.hpp">
+      <Filter>Header Files\gui\settable_parameters_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\settable_parameters_screen\Settable_parametersViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\settable_parameters_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\settableBase.hpp">
+      <Filter>Header Files\generated\gui_generated\containers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -111,6 +111,13 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  gui/include/gui/temperature_screen/TemperatureView.hpp \
  generated/gui_generated/include/gui_generated/temperature_screen/TemperatureViewBase.hpp \
  gui/include/gui/temperature_screen/TemperaturePresenter.hpp \
+ gui/include/gui/settable_parameters_screen/Settable_parametersView.hpp \
+ generated/gui_generated/include/gui_generated/settable_parameters_screen/Settable_parametersViewBase.hpp \
+ gui/include/gui/settable_parameters_screen/Settable_parametersPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp \
+ gui/include/gui/containers/settable.hpp \
+ generated/gui_generated/include/gui_generated/containers/settableBase.hpp \
  generated/gui_generated/include/gui_generated/common/SimConstants.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/SDL2TouchController.hpp \
  generated/simulator/include/simulator/mainBase.hpp
@@ -226,6 +233,13 @@ gui/include/gui/cellvoltage_screen/CellVoltagePresenter.hpp:
 gui/include/gui/temperature_screen/TemperatureView.hpp:
 generated/gui_generated/include/gui_generated/temperature_screen/TemperatureViewBase.hpp:
 gui/include/gui/temperature_screen/TemperaturePresenter.hpp:
+gui/include/gui/settable_parameters_screen/Settable_parametersView.hpp:
+generated/gui_generated/include/gui_generated/settable_parameters_screen/Settable_parametersViewBase.hpp:
+gui/include/gui/settable_parameters_screen/Settable_parametersPresenter.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp:
+gui/include/gui/containers/settable.hpp:
+generated/gui_generated/include/gui_generated/containers/settableBase.hpp:
 generated/gui_generated/include/gui_generated/common/SimConstants.hpp:
 ../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/SDL2TouchController.hpp:
 generated/simulator/include/simulator/mainBase.hpp:

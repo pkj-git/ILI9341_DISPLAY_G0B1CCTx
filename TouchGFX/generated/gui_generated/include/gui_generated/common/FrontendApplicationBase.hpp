@@ -29,6 +29,9 @@ public:
     // Temperature
     void gotoTemperatureScreenNoTransition();
 
+    // Settable_parameters
+    void gotoSettable_parametersScreenNoTransition();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -42,6 +45,9 @@ protected:
 
     // Temperature
     void gotoTemperatureScreenNoTransitionImpl();
+
+    // Settable_parameters
+    void gotoSettable_parametersScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

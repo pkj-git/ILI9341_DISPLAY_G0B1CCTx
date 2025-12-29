@@ -20,6 +20,8 @@
 #include <gui/cellvoltage_screen/CellVoltagePresenter.hpp>
 #include <gui/temperature_screen/TemperatureView.hpp>
 #include <gui/temperature_screen/TemperaturePresenter.hpp>
+#include <gui/settable_parameters_screen/Settable_parametersView.hpp>
+#include <gui/settable_parameters_screen/Settable_parametersPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -82,4 +84,17 @@ void FrontendApplicationBase::gotoTemperatureScreenNoTransition()
 void FrontendApplicationBase::gotoTemperatureScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<TemperatureView, TemperaturePresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Settable_parameters
+
+void FrontendApplicationBase::gotoSettable_parametersScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoSettable_parametersScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoSettable_parametersScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<Settable_parametersView, Settable_parametersPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

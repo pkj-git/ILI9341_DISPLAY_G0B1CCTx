@@ -96,9 +96,9 @@ void TemperatureViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButt
     if (&src == &next_button)
     {
         //Interaction2
-        //When next_button clicked change screen to Temperature
-        //Go to Temperature with no screen transition
-        application().gotoTemperatureScreenNoTransition();
+        //When next_button clicked change screen to Settable_parameters
+        //Go to Settable_parameters with no screen transition
+        application().gotoSettable_parametersScreenNoTransition();
     }
 }
 
