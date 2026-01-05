@@ -46,6 +46,7 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/screen_screen/screenViewBase.o:
  ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp \
  gui/include/gui/screen_screen/screenPresenter.hpp \
  gui/include/gui/model/ModelListener.hpp \
+ generated/simulator/include/serial_data.h \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
@@ -69,6 +70,13 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/screen_screen/screenViewBase.o:
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/TouchButtonTrigger.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ScrollableContainer.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
+ gui/include/gui/containers/Page1.hpp \
+ generated/gui_generated/include/gui_generated/containers/Page1Base.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
  generated/texts/include/texts/TextKeysAndLanguages.hpp \
  generated/images/include/images/BitmapDatabase.hpp
@@ -118,6 +126,7 @@ gui/include/gui/model/Model.hpp:
 ../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:
 gui/include/gui/screen_screen/screenPresenter.hpp:
 gui/include/gui/model/ModelListener.hpp:
+generated/simulator/include/serial_data.h:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
@@ -141,6 +150,13 @@ gui/include/gui/model/ModelListener.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/TouchButtonTrigger.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/ScrollableContainer.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
+gui/include/gui/containers/Page1.hpp:
+generated/gui_generated/include/gui_generated/containers/Page1Base.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
 generated/texts/include/texts/TextKeysAndLanguages.hpp:
 generated/images/include/images/BitmapDatabase.hpp:

@@ -5,22 +5,6 @@
         "Name": "screen",
         "Components": [
           {
-            "Type": "TextArea",
-            "Name": "textArea1_1_2",
-            "X": 7,
-            "Y": 72,
-            "Width": 102,
-            "Height": 24,
-            "TextId": "__SingleUse_MWFX",
-            "TextRotation": "0",
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_YY37",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
             "Type": "Box",
             "Name": "box1",
             "Width": 320,
@@ -81,193 +65,33 @@
             ]
           },
           {
-            "Type": "TextArea",
-            "Name": "textArea1",
-            "X": 6,
-            "Y": 26,
-            "Width": 87,
-            "Height": 24,
-            "TextId": "__SingleUse_GK3L",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1_1",
-            "X": 8,
-            "Y": 53,
-            "Width": 47,
-            "Height": 24,
-            "TextId": "__SingleUse_FZ4G",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1_1_3",
-            "X": 8,
-            "Y": 109,
-            "Width": 84,
-            "Height": 24,
-            "TextId": "__SingleUse_BVFP",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1_1_3_1",
-            "X": 8,
-            "Y": 136,
-            "Width": 78,
-            "Height": 24,
-            "TextId": "__SingleUse_F584",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1_1_3_1_1",
-            "X": 6,
-            "Y": 160,
-            "Width": 144,
-            "Height": 24,
-            "TextId": "__SingleUse_TDOZ",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1_1_3_1_1_1",
-            "X": 6,
-            "Y": 190,
-            "Width": 138,
-            "Height": 24,
-            "TextId": "__SingleUse_8KGZ",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1_1_1",
-            "X": 8,
-            "Y": 81,
-            "Width": 76,
-            "Height": 24,
-            "TextId": "__SingleUse_3YFS",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea2",
-            "X": 160,
-            "Y": 29,
-            "Width": 90,
-            "Height": 24,
-            "TextId": "__SingleUse_J14G",
-            "TextRotation": "0",
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_RRXQ",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea2_1",
-            "X": 160,
-            "Y": 53,
-            "Width": 91,
-            "Height": 24,
-            "TextId": "__SingleUse_LPO7",
-            "TextRotation": "0",
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_HSW2",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea2_2",
-            "X": 160,
-            "Y": 81,
-            "Width": 91,
-            "Height": 24,
-            "TextId": "__SingleUse_MGMI",
-            "TextRotation": "0",
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_6NTR",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea2_3",
-            "X": 160,
-            "Y": 109,
-            "Width": 83,
-            "Height": 24,
-            "TextId": "__SingleUse_XZ9Z",
-            "TextRotation": "0",
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_ARVK",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea2_1_1",
-            "X": 160,
-            "Y": 133,
-            "Width": 83,
-            "Height": 24,
-            "TextId": "__SingleUse_DJX4",
-            "TextRotation": "0",
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_TW9T",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea2_2_1",
-            "X": 160,
-            "Y": 160,
-            "Width": 96,
-            "Height": 24,
-            "TextId": "__SingleUse_7P8H",
-            "TextRotation": "0",
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_S0LI",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea2_2_1_1",
-            "X": 160,
-            "Y": 190,
-            "Width": 96,
-            "Height": 24,
-            "TextId": "__SingleUse_4JTC",
-            "TextRotation": "0",
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_NOYW",
-              "UseBuffer": true,
-              "BufferSize": 10
-            }
+            "Type": "ScrollableContainer",
+            "Name": "scrollableContainer1",
+            "Y": 38,
+            "Width": 320,
+            "Height": 145,
+            "HorizontalScrollEnabled": true,
+            "VerticalScrollEnabled": true,
+            "ScrollbarsVisible": true,
+            "ScrollbarsVisibleOnPressed": true,
+            "ScrollbarsAlpha": 255,
+            "Components": [
+              {
+                "Type": "ScrollList",
+                "Name": "scrollList1",
+                "X": 11,
+                "Y": 9,
+                "Width": 320,
+                "Height": 272,
+                "ItemTemplateName": "Page1",
+                "NumberofItems": 15,
+                "Easing": "Back",
+                "EasingOption": "Out",
+                "SwipeAcceleration": 1.0,
+                "DragAcceleration": 1.0,
+                "OverShootPercentage": 75
+              }
+            ]
           }
         ],
         "Interactions": [
@@ -279,167 +103,56 @@
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Screen1"
-            }
-          }
-        ]
-      },
-      {
-        "Name": "Screen1",
-        "Components": [
-          {
-            "Type": "Box",
-            "Name": "box1",
-            "Width": 320,
-            "Height": 240,
-            "Color": {
-              "Red": 230,
-              "Green": 14,
-              "Blue": 14
-            }
-          },
-          {
-            "Type": "Button",
-            "Name": "button1",
-            "X": 40,
-            "Y": 95,
-            "Width": 240,
-            "Height": 50,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
-            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
-          },
-          {
-            "Type": "Box",
-            "Name": "box1_1",
-            "Width": 320,
-            "Height": 240,
-            "Color": {
-              "Red": 255,
-              "Green": 215
-            }
-          },
-          {
-            "Type": "Image",
-            "Name": "image1",
-            "Width": 75,
-            "Height": 38,
-            "RelativeFilename": "Eastman_logo_brand_resize.png",
-            "Alpha": 119
-          },
-          {
-            "Type": "FlexButton",
-            "Name": "flexButton1",
-            "X": 266,
-            "Y": 190,
-            "Width": 47,
-            "Height": 44,
-            "ButtonTrigger": {
-              "Type": "ClickButtonTrigger"
-            },
-            "ButtonStyles": [
-              {
-                "Type": "IconButtonStyle",
-                "IconReleased": "__generated\\icon_theme_images_image_navigate_next_50_50_E8F6FB.svg.png",
-                "IconPressed": "__generated\\icon_theme_images_image_navigate_next_50_50_E8F6FB.svg.png"
-              },
-              {
-                "Type": "BoxWithBorderButtonStyle",
-                "Width": 59,
-                "Height": 50,
-                "BorderSize": 5,
-                "ColorReleased": {
-                  "Green": 102,
-                  "Blue": 153
-                },
-                "ColorPressed": {
-                  "Green": 102,
-                  "Blue": 153
-                },
-                "ColorBorderReleased": {
-                  "Green": 102,
-                  "Blue": 153
-                },
-                "ColorBorderPressed": {
-                  "Green": 102,
-                  "Blue": 153
-                }
-              }
-            ]
-          },
-          {
-            "Type": "FlexButton",
-            "Name": "flexButton1_1",
-            "X": 7,
-            "Y": 190,
-            "Width": 47,
-            "Height": 44,
-            "ButtonTrigger": {
-              "Type": "ClickButtonTrigger"
-            },
-            "ButtonStyles": [
-              {
-                "Type": "IconButtonStyle",
-                "IconReleased": "__generated\\icon_theme_images_navigation_chevron_left_50_50_E8F6FB.svg.png",
-                "IconPressed": "__generated\\icon_theme_images_navigation_chevron_left_50_50_E8F6FB.svg.png"
-              },
-              {
-                "Type": "BoxWithBorderButtonStyle",
-                "Width": 59,
-                "Height": 50,
-                "BorderSize": 5,
-                "ColorReleased": {
-                  "Green": 102,
-                  "Blue": 153
-                },
-                "ColorPressed": {
-                  "Red": 5,
-                  "Green": 32,
-                  "Blue": 43
-                },
-                "ColorBorderReleased": {
-                  "Green": 102,
-                  "Blue": 153
-                },
-                "ColorBorderPressed": {
-                  "Red": 5,
-                  "Green": 32,
-                  "Blue": 43
-                }
-              }
-            ]
-          }
-        ],
-        "Interactions": [
-          {
-            "InteractionName": "Interaction1",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "button1"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "screen"
-            }
-          },
-          {
-            "InteractionName": "Interaction2",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "flexButton1_1"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "screen"
+              "ScreenTransitionType": "ScreenTransitionNone"
             }
           }
         ]
       }
     ],
-    "CustomContainerDefinitions": [],
+    "CustomContainerDefinitions": [
+      {
+        "Name": "Page1",
+        "Width": 320,
+        "Height": 27,
+        "Components": [
+          {
+            "Type": "TextArea",
+            "Name": "Label",
+            "Width": 92,
+            "Height": 20,
+            "TextId": "__SingleUse_184Z",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Unit",
+            "X": 216,
+            "Width": 14,
+            "Height": 20,
+            "TextId": "__SingleUse_6LW3",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "labelValue",
+            "X": 128,
+            "Width": 81,
+            "Height": 20,
+            "TextId": "__SingleUse_BKTS",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_3W3Q",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": []
+      }
+    ],
     "Name": "LCD_Display_bringup",
     "Resolution": {
       "Width": 320,

@@ -8,10 +8,11 @@
 #include <mvp/View.hpp>
 #include <gui/screen_screen/screenPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
-#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/containers/buttons/Buttons.hpp>
-#include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/containers/ScrollableContainer.hpp>
+#include <touchgfx/containers/scrollers/ScrollList.hpp>
+#include <gui/containers/Page1.hpp>
 
 class screenViewBase : public touchgfx::View<screenPresenter>
 {
@@ -19,6 +20,11 @@ public:
     screenViewBase();
     virtual ~screenViewBase();
     virtual void setupScreen();
+
+    virtual void scrollList1UpdateItem(Page1& item, int16_t itemIndex)
+    {
+        // Override and implement this function in screen
+    }
 
 protected:
     FrontendApplication& application() {
@@ -29,56 +35,24 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::TextAreaWithOneWildcard textArea1_1_2;
     touchgfx::Box box1;
     touchgfx::Image image1;
     touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton1;
-    touchgfx::TextArea textArea1;
-    touchgfx::TextArea textArea1_1;
-    touchgfx::TextArea textArea1_1_3;
-    touchgfx::TextArea textArea1_1_3_1;
-    touchgfx::TextArea textArea1_1_3_1_1;
-    touchgfx::TextArea textArea1_1_3_1_1_1;
-    touchgfx::TextArea textArea1_1_1;
-    touchgfx::TextAreaWithOneWildcard textArea2;
-    touchgfx::TextAreaWithOneWildcard textArea2_1;
-    touchgfx::TextAreaWithOneWildcard textArea2_2;
-    touchgfx::TextAreaWithOneWildcard textArea2_3;
-    touchgfx::TextAreaWithOneWildcard textArea2_1_1;
-    touchgfx::TextAreaWithOneWildcard textArea2_2_1;
-    touchgfx::TextAreaWithOneWildcard textArea2_2_1_1;
-
-    /*
-     * Wildcard Buffers
-     */
-    static const uint16_t TEXTAREA1_1_2_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar textArea1_1_2Buffer[TEXTAREA1_1_2_SIZE];
-    static const uint16_t TEXTAREA2_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar textArea2Buffer[TEXTAREA2_SIZE];
-    static const uint16_t TEXTAREA2_1_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar textArea2_1Buffer[TEXTAREA2_1_SIZE];
-    static const uint16_t TEXTAREA2_2_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar textArea2_2Buffer[TEXTAREA2_2_SIZE];
-    static const uint16_t TEXTAREA2_3_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar textArea2_3Buffer[TEXTAREA2_3_SIZE];
-    static const uint16_t TEXTAREA2_1_1_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar textArea2_1_1Buffer[TEXTAREA2_1_1_SIZE];
-    static const uint16_t TEXTAREA2_2_1_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar textArea2_2_1Buffer[TEXTAREA2_2_1_SIZE];
-    static const uint16_t TEXTAREA2_2_1_1_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar textArea2_2_1_1Buffer[TEXTAREA2_2_1_1_SIZE];
+    touchgfx::ScrollableContainer scrollableContainer1;
+    touchgfx::ScrollList scrollList1;
+    touchgfx::DrawableListItems<Page1, 12> scrollList1ListItems;
 
 private:
 
     /*
      * Callback Declarations
      */
-    touchgfx::Callback<screenViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
+    touchgfx::Callback<screenViewBase, touchgfx::DrawableListItemsInterface*, int16_t, int16_t> updateItemCallback;
 
     /*
      * Callback Handler Declarations
      */
-    void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
+    void updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex);
 
 };
 

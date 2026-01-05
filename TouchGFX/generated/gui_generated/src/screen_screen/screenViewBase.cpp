@@ -3,24 +3,14 @@
 /*********************************************************************************/
 #include <gui_generated/screen_screen/screenViewBase.hpp>
 #include <touchgfx/Color.hpp>
-#include <texts/TextKeysAndLanguages.hpp>
 #include <images/BitmapDatabase.hpp>
 
 screenViewBase::screenViewBase() :
-    flexButtonCallback(this, &screenViewBase::flexButtonCallbackHandler)
+    updateItemCallback(this, &screenViewBase::updateItemCallbackHandler)
 {
     __background.setPosition(0, 0, 320, 240);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
-
-    textArea1_1_2.setXY(7, 72);
-    textArea1_1_2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea1_1_2.setLinespacing(0);
-    Unicode::snprintf(textArea1_1_2Buffer, TEXTAREA1_1_2_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_YY37).getText());
-    textArea1_1_2.setWildcard(textArea1_1_2Buffer);
-    textArea1_1_2.resizeToCurrentText();
-    textArea1_1_2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_MWFX));
-    add(textArea1_1_2);
 
     box1.setPosition(0, 0, 320, 240);
     box1.setColor(touchgfx::Color::getColorFromRGB(255, 215, 0));
@@ -36,114 +26,28 @@ screenViewBase::screenViewBase() :
     flexButton1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43), touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43));
     flexButton1.setIconBitmaps(Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID), Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID));
     flexButton1.setIconXY(0, 0);
-    flexButton1.setAction(flexButtonCallback);
     flexButton1.setPosition(266, 190, 47, 44);
     add(flexButton1);
 
-    textArea1.setXY(6, 26);
-    textArea1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea1.setLinespacing(0);
-    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GK3L));
-    add(textArea1);
+    scrollableContainer1.setPosition(0, 38, 320, 145);
+    scrollableContainer1.setScrollbarsColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    scrollableContainer1.setScrollbarsAlpha(255);
+    scrollableContainer1.setScrollbarsPermanentlyVisible();
+    scrollList1.setPosition(11, 9, 320, 272);
+    scrollList1.setHorizontal(false);
+    scrollList1.setCircular(false);
+    scrollList1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
+    scrollList1.setSwipeAcceleration(10);
+    scrollList1.setDragAcceleration(10);
+    scrollList1.setNumberOfItems(15);
+    scrollList1.setPadding(0, 0);
+    scrollList1.setSnapping(false);
+    scrollList1.setOvershootPercentage(75);
+    scrollList1.setDrawableSize(27, 0);
+    scrollList1.setDrawables(scrollList1ListItems, updateItemCallback);
+    scrollableContainer1.add(scrollList1);
 
-    textArea1_1.setXY(8, 53);
-    textArea1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea1_1.setLinespacing(0);
-    textArea1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_FZ4G));
-    add(textArea1_1);
-
-    textArea1_1_3.setXY(8, 109);
-    textArea1_1_3.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea1_1_3.setLinespacing(0);
-    textArea1_1_3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_BVFP));
-    add(textArea1_1_3);
-
-    textArea1_1_3_1.setXY(8, 136);
-    textArea1_1_3_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea1_1_3_1.setLinespacing(0);
-    textArea1_1_3_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_F584));
-    add(textArea1_1_3_1);
-
-    textArea1_1_3_1_1.setXY(6, 160);
-    textArea1_1_3_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea1_1_3_1_1.setLinespacing(0);
-    textArea1_1_3_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TDOZ));
-    add(textArea1_1_3_1_1);
-
-    textArea1_1_3_1_1_1.setXY(6, 190);
-    textArea1_1_3_1_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea1_1_3_1_1_1.setLinespacing(0);
-    textArea1_1_3_1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_8KGZ));
-    add(textArea1_1_3_1_1_1);
-
-    textArea1_1_1.setXY(8, 81);
-    textArea1_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea1_1_1.setLinespacing(0);
-    textArea1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_3YFS));
-    add(textArea1_1_1);
-
-    textArea2.setXY(160, 29);
-    textArea2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea2.setLinespacing(0);
-    Unicode::snprintf(textArea2Buffer, TEXTAREA2_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_RRXQ).getText());
-    textArea2.setWildcard(textArea2Buffer);
-    textArea2.resizeToCurrentText();
-    textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_J14G));
-    add(textArea2);
-
-    textArea2_1.setXY(160, 53);
-    textArea2_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea2_1.setLinespacing(0);
-    Unicode::snprintf(textArea2_1Buffer, TEXTAREA2_1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_HSW2).getText());
-    textArea2_1.setWildcard(textArea2_1Buffer);
-    textArea2_1.resizeToCurrentText();
-    textArea2_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_LPO7));
-    add(textArea2_1);
-
-    textArea2_2.setXY(160, 81);
-    textArea2_2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea2_2.setLinespacing(0);
-    Unicode::snprintf(textArea2_2Buffer, TEXTAREA2_2_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_6NTR).getText());
-    textArea2_2.setWildcard(textArea2_2Buffer);
-    textArea2_2.resizeToCurrentText();
-    textArea2_2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_MGMI));
-    add(textArea2_2);
-
-    textArea2_3.setXY(160, 109);
-    textArea2_3.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea2_3.setLinespacing(0);
-    Unicode::snprintf(textArea2_3Buffer, TEXTAREA2_3_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_ARVK).getText());
-    textArea2_3.setWildcard(textArea2_3Buffer);
-    textArea2_3.resizeToCurrentText();
-    textArea2_3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XZ9Z));
-    add(textArea2_3);
-
-    textArea2_1_1.setXY(160, 133);
-    textArea2_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea2_1_1.setLinespacing(0);
-    Unicode::snprintf(textArea2_1_1Buffer, TEXTAREA2_1_1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_TW9T).getText());
-    textArea2_1_1.setWildcard(textArea2_1_1Buffer);
-    textArea2_1_1.resizeToCurrentText();
-    textArea2_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DJX4));
-    add(textArea2_1_1);
-
-    textArea2_2_1.setXY(160, 160);
-    textArea2_2_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea2_2_1.setLinespacing(0);
-    Unicode::snprintf(textArea2_2_1Buffer, TEXTAREA2_2_1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_S0LI).getText());
-    textArea2_2_1.setWildcard(textArea2_2_1Buffer);
-    textArea2_2_1.resizeToCurrentText();
-    textArea2_2_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_7P8H));
-    add(textArea2_2_1);
-
-    textArea2_2_1_1.setXY(160, 190);
-    textArea2_2_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea2_2_1_1.setLinespacing(0);
-    Unicode::snprintf(textArea2_2_1_1Buffer, TEXTAREA2_2_1_1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_NOYW).getText());
-    textArea2_2_1_1.setWildcard(textArea2_2_1_1Buffer);
-    textArea2_2_1_1.resizeToCurrentText();
-    textArea2_2_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_4JTC));
-    add(textArea2_2_1_1);
+    add(scrollableContainer1);
 }
 
 screenViewBase::~screenViewBase()
@@ -153,16 +57,17 @@ screenViewBase::~screenViewBase()
 
 void screenViewBase::setupScreen()
 {
-
+    scrollList1.initialize();
+    for (int i = 0; i < scrollList1ListItems.getNumberOfDrawables(); i++)
+    {
+        scrollList1ListItems[i].initialize();
+    }
 }
 
-void screenViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
+void screenViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex)
 {
-    if (&src == &flexButton1)
+    if (items == &scrollList1ListItems)
     {
-        //Interaction1
-        //When flexButton1 clicked change screen to Screen1
-        //Go to Screen1 with no screen transition
-        application().gotoScreen1ScreenNoTransition();
+        scrollList1UpdateItem(scrollList1ListItems[containerIndex], itemIndex);
     }
 }
