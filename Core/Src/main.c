@@ -25,6 +25,7 @@
 #include "ili9341.h"
 #include "ft6x06.h"
 #include "w25q128.h"
+#include "serial_data.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -72,6 +73,10 @@ static void MX_SPI2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+volatile serialData_t serialData;
+volatile bool data_ready;
+volatile bool data_reading;
+static void mockUartData();
 
 /* USER CODE END 0 */
 
@@ -466,7 +471,22 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 	if (htim->Instance == TIM2) {
 		touchgfxSignalVSync();
 	}
+  static uint32_t counter = 0;
+  counter++;
+  if (counter >= 20) { // every 1 second
+    counter = 0;
+    mockUartData();
+  }
 }
+
+static void mockUartData() {
+	while(data_reading) {}
+		data_ready = false;
+		serialData.batt_volt += 0.01;
+		data_ready = true;
+
+}
+
 
 /* USER CODE END 4 */
 
