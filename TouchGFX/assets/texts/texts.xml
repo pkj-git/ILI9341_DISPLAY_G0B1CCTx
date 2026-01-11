@@ -4,19 +4,38 @@
     <Language Id="GB" />
   </Languages>
   <Texts>
-    <TextGroup Id="Group1" />
+    <TextGroup Id="Page1">
+      <Text Id="batt_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Batt Volt</Translation>
+      </Text>
+      <Text Id="batt_current" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Batt Current</Translation>
+      </Text>
+      <Text Id="cell_max_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell Max Volt</Translation>
+      </Text>
+      <Text Id="cell_min_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell Min Volt</Translation>
+      </Text>
+      <Text Id="cell_max_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell Max Temp</Translation>
+      </Text>
+      <Text Id="cell_min_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell Min Temp</Translation>
+      </Text>
+      <Text Id="remaining_cap" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Remaining Cap</Translation>
+      </Text>
+      <Text Id="soc" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">SoC</Translation>
+      </Text>
+      <Text Id="soh" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">SoH</Translation>
+      </Text>
+    </TextGroup>
     <TextGroup Id="Unsorted">
       <Text Id="__SingleUse_6LW3" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">C</Translation>
-      </Text>
-      <Text Id="__SingleUse_3W3Q" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">000.00</Translation>
-      </Text>
-      <Text Id="__SingleUse_BKTS" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">:&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_184Z" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
       </Text>
     </TextGroup>
   </Texts>

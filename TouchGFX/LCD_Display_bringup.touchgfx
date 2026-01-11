@@ -120,7 +120,6 @@
             "Name": "Label",
             "Width": 92,
             "Height": 20,
-            "TextId": "__SingleUse_184Z",
             "TextRotation": "0",
             "AutoSize": true
           },
@@ -140,11 +139,9 @@
             "X": 128,
             "Width": 81,
             "Height": 20,
-            "TextId": "__SingleUse_BKTS",
             "TextRotation": "0",
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "__SingleUse_3W3Q",
               "UseBuffer": true,
               "BufferSize": 10
             }

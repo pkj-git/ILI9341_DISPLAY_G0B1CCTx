@@ -10,8 +10,14 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE;
 // Remap all strings
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
-    19, // T___SINGLEUSE_6LW3: "C"
-    12, // T___SINGLEUSE_3W3Q: "000.00"
-    0,  // T___SINGLEUSE_BKTS: ":<>"
-    3   // T___SINGLEUSE_184Z: "New Text"
+    83, // T_BATT_VOLT: "Batt Volt"
+    70, // T_BATT_CURRENT: "Batt Current"
+    14, // T_CELL_MAX_VOLT: "Cell Max Volt"
+    42, // T_CELL_MIN_VOLT: "Cell Min Volt"
+    0,  // T_CELL_MAX_TEMP: "Cell Max Temp"
+    28, // T_CELL_MIN_TEMP: "Cell Min Temp"
+    56, // T_REMAINING_CAP: "Remaining Cap"
+    93, // T_SOC: "SoC"
+    97, // T_SOH: "SoH"
+    95  // T___SINGLEUSE_6LW3: "C"
 };
