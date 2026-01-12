@@ -9,9 +9,10 @@ Page1Base::Page1Base()
 {
     setWidth(320);
     setHeight(27);
-    Label.setXY(0, 0);
+    Label.setXY(0, 1);
     Label.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     Label.setLinespacing(0);
+    Label.setTypedText(touchgfx::TypedText(T___SINGLEUSE_RF47));
     add(Label);
 
     Unit.setXY(216, 0);
@@ -23,9 +24,10 @@ Page1Base::Page1Base()
     labelValue.setXY(128, 0);
     labelValue.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     labelValue.setLinespacing(0);
-    labelValueBuffer[0] = 0;
+    Unicode::snprintf(labelValueBuffer, LABELVALUE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_PT1M).getText());
     labelValue.setWildcard(labelValueBuffer);
     labelValue.resizeToCurrentText();
+    labelValue.setTypedText(touchgfx::TypedText(T___SINGLEUSE_YN65));
     add(labelValue);
 }
 

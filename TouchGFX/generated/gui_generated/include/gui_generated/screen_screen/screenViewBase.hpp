@@ -48,11 +48,13 @@ private:
      * Callback Declarations
      */
     touchgfx::Callback<screenViewBase, touchgfx::DrawableListItemsInterface*, int16_t, int16_t> updateItemCallback;
+    touchgfx::Callback<screenViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
 
     /*
      * Callback Handler Declarations
      */
     void updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex);
+    void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
 
 };
 

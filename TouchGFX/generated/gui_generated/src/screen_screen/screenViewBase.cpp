@@ -6,7 +6,8 @@
 #include <images/BitmapDatabase.hpp>
 
 screenViewBase::screenViewBase() :
-    updateItemCallback(this, &screenViewBase::updateItemCallbackHandler)
+    updateItemCallback(this, &screenViewBase::updateItemCallbackHandler),
+    flexButtonCallback(this, &screenViewBase::flexButtonCallbackHandler)
 {
     __background.setPosition(0, 0, 320, 240);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
@@ -26,6 +27,7 @@ screenViewBase::screenViewBase() :
     flexButton1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43), touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43));
     flexButton1.setIconBitmaps(Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID), Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID));
     flexButton1.setIconXY(0, 0);
+    flexButton1.setAction(flexButtonCallback);
     flexButton1.setPosition(266, 190, 47, 44);
     add(flexButton1);
 
@@ -61,6 +63,17 @@ void screenViewBase::setupScreen()
     for (int i = 0; i < scrollList1ListItems.getNumberOfDrawables(); i++)
     {
         scrollList1ListItems[i].initialize();
+    }
+}
+
+void screenViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
+{
+    if (&src == &flexButton1)
+    {
+        //Interaction1
+        //When flexButton1 clicked change screen to screen
+        //Go to screen with no screen transition
+        application().gotoscreenScreenNoTransition();
     }
 }
 

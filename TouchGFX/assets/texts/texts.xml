@@ -34,6 +34,15 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_PT1M" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">000.00</Translation>
+      </Text>
+      <Text Id="__SingleUse_YN65" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_RF47" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">New Text</Translation>
+      </Text>
       <Text Id="__SingleUse_6LW3" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">C</Translation>
       </Text>

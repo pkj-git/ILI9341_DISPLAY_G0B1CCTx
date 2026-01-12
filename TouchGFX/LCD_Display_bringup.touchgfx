@@ -103,7 +103,8 @@
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone"
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "screen"
             }
           }
         ]
@@ -118,8 +119,10 @@
           {
             "Type": "TextArea",
             "Name": "Label",
+            "Y": 1,
             "Width": 92,
-            "Height": 20,
+            "Height": 24,
+            "TextId": "__SingleUse_RF47",
             "TextRotation": "0",
             "AutoSize": true
           },
@@ -128,7 +131,7 @@
             "Name": "Unit",
             "X": 216,
             "Width": 14,
-            "Height": 20,
+            "Height": 24,
             "TextId": "__SingleUse_6LW3",
             "TextRotation": "0",
             "AutoSize": true
@@ -138,10 +141,12 @@
             "Name": "labelValue",
             "X": 128,
             "Width": 81,
-            "Height": 20,
+            "Height": 24,
+            "TextId": "__SingleUse_YN65",
             "TextRotation": "0",
             "AutoSize": true,
             "Wildcard1": {
+              "TextId": "__SingleUse_PT1M",
               "UseBuffer": true,
               "BufferSize": 10
             }
