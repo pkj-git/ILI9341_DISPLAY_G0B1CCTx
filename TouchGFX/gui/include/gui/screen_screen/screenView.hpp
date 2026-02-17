@@ -15,8 +15,10 @@ public:
  //   void increment_counter() override;
     virtual void process_uart(volatile serialData_t& data);
     void scrollList1UpdateItem(Page1& item, int16_t itemIndex) override;
+    void updateScreen() override;
 
 protected:
+private:
 };
 
 #endif // SCREENVIEW_HPP

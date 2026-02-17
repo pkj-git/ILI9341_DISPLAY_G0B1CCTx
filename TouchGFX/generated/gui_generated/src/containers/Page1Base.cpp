@@ -15,13 +15,13 @@ Page1Base::Page1Base()
     Label.setTypedText(touchgfx::TypedText(T___SINGLEUSE_RF47));
     add(Label);
 
-    Unit.setXY(216, 0);
+    Unit.setXY(262, 0);
     Unit.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     Unit.setLinespacing(0);
     Unit.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6LW3));
     add(Unit);
 
-    labelValue.setXY(128, 0);
+    labelValue.setXY(174, 0);
     labelValue.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     labelValue.setLinespacing(0);
     Unicode::snprintf(labelValueBuffer, LABELVALUE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_PT1M).getText());

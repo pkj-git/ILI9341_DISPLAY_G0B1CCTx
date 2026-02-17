@@ -483,6 +483,9 @@ static void mockUartData() {
 	while(data_reading) {}
 		data_ready = false;
 		serialData.batt_volt += 0.01;
+		serialData.batt_current += 0.1;
+		serialData.soc += 0.1;
+		serialData.soh += 0.1;
 		data_ready = true;
 
 }

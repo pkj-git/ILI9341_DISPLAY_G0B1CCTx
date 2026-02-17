@@ -25,6 +25,15 @@ public:
     {
         // Override and implement this function in screen
     }
+    virtual void handleTickEvent();
+
+    /*
+     * Virtual Action Handlers
+     */
+    virtual void updateScreen()
+    {
+        // Override and implement this function in screen
+    }
 
 protected:
     FrontendApplication& application() {
@@ -40,7 +49,7 @@ protected:
     touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton1;
     touchgfx::ScrollableContainer scrollableContainer1;
     touchgfx::ScrollList scrollList1;
-    touchgfx::DrawableListItems<Page1, 12> scrollList1ListItems;
+    touchgfx::DrawableListItems<Page1, 14> scrollList1ListItems;
 
 private:
 
@@ -55,6 +64,12 @@ private:
      */
     void updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex);
     void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
+
+    /*
+     * Tick Counter Declarations
+     */
+    static const uint32_t TICK_REFRESHSCREEN_INTERVAL = 10;
+    uint32_t frameCountRefreshScreenInterval;
 
 };
 

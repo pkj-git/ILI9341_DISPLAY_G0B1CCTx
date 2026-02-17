@@ -79,12 +79,12 @@
               {
                 "Type": "ScrollList",
                 "Name": "scrollList1",
-                "X": 11,
-                "Y": 9,
+                "X": 7,
+                "Y": 10,
                 "Width": 320,
-                "Height": 272,
+                "Height": 328,
                 "ItemTemplateName": "Page1",
-                "NumberofItems": 15,
+                "NumberofItems": 13,
                 "Easing": "Back",
                 "EasingOption": "Out",
                 "SwipeAcceleration": 1.0,
@@ -106,6 +106,17 @@
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "screen"
             }
+          },
+          {
+            "InteractionName": "RefreshScreen",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 10
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "updateScreen"
+            }
           }
         ]
       }
@@ -120,7 +131,7 @@
             "Type": "TextArea",
             "Name": "Label",
             "Y": 1,
-            "Width": 92,
+            "Width": 162,
             "Height": 24,
             "TextId": "__SingleUse_RF47",
             "TextRotation": "0",
@@ -129,7 +140,7 @@
           {
             "Type": "TextArea",
             "Name": "Unit",
-            "X": 216,
+            "X": 262,
             "Width": 14,
             "Height": 24,
             "TextId": "__SingleUse_6LW3",
@@ -139,7 +150,7 @@
           {
             "Type": "TextArea",
             "Name": "labelValue",
-            "X": 128,
+            "X": 174,
             "Width": 81,
             "Height": 24,
             "TextId": "__SingleUse_YN65",

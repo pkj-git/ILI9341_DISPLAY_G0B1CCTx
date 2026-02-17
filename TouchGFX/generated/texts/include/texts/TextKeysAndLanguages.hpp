@@ -21,6 +21,8 @@ enum TEXTS
     T_REMAINING_CAP,
     T_SOC,
     T_SOH,
+    T_AMB_TEMP,
+    T_MOS_TEMP,
     T___SINGLEUSE_PT1M,
     T___SINGLEUSE_YN65,
     T___SINGLEUSE_RF47,

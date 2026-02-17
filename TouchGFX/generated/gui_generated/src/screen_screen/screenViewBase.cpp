@@ -7,7 +7,8 @@
 
 screenViewBase::screenViewBase() :
     updateItemCallback(this, &screenViewBase::updateItemCallbackHandler),
-    flexButtonCallback(this, &screenViewBase::flexButtonCallbackHandler)
+    flexButtonCallback(this, &screenViewBase::flexButtonCallbackHandler),
+    frameCountRefreshScreenInterval(0)
 {
     __background.setPosition(0, 0, 320, 240);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
@@ -35,13 +36,13 @@ screenViewBase::screenViewBase() :
     scrollableContainer1.setScrollbarsColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     scrollableContainer1.setScrollbarsAlpha(255);
     scrollableContainer1.setScrollbarsPermanentlyVisible();
-    scrollList1.setPosition(11, 9, 320, 272);
+    scrollList1.setPosition(7, 10, 320, 328);
     scrollList1.setHorizontal(false);
     scrollList1.setCircular(false);
     scrollList1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
     scrollList1.setSwipeAcceleration(10);
     scrollList1.setDragAcceleration(10);
-    scrollList1.setNumberOfItems(15);
+    scrollList1.setNumberOfItems(13);
     scrollList1.setPadding(0, 0);
     scrollList1.setSnapping(false);
     scrollList1.setOvershootPercentage(75);
@@ -74,6 +75,19 @@ void screenViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonCon
         //When flexButton1 clicked change screen to screen
         //Go to screen with no screen transition
         application().gotoscreenScreenNoTransition();
+    }
+}
+
+void screenViewBase::handleTickEvent()
+{
+    frameCountRefreshScreenInterval++;
+    if(frameCountRefreshScreenInterval == TICK_REFRESHSCREEN_INTERVAL)
+    {
+        //RefreshScreen
+        //When every N tick call virtual function
+        //Call updateScreen
+        updateScreen();
+        frameCountRefreshScreenInterval = 0;
     }
 }
 
