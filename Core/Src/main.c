@@ -26,6 +26,7 @@
 #include "ft6x06.h"
 #include "w25q128.h"
 #include "serial_data.h"
+#include <stdlib.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -77,7 +78,10 @@ volatile serialData_t serialData;
 volatile bool data_ready;
 volatile bool data_reading;
 static void mockUartData();
-
+static float randFloat(float min, float max) {
+    float scale = rand() / (float) RAND_MAX;   // 0.0 → 1.0
+    return min + scale * (max - min);
+}
 /* USER CODE END 0 */
 
 /**
@@ -482,10 +486,29 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 static void mockUartData() {
 	while(data_reading) {}
 		data_ready = false;
-		serialData.batt_volt += 0.01;
-		serialData.batt_current += 0.1;
-		serialData.soc += 0.1;
-		serialData.soh += 0.1;
+ serialData.batt_volt          = randFloat(42.0f, 54.0f);   // Example: 14s pack
+    serialData.batt_current       = randFloat(-50.0f, 150.0f); // Charge/discharge
+    serialData.soc                = randFloat(0.0f, 100.0f);
+    serialData.soh                = randFloat(80.0f, 100.0f);
+
+    serialData.cell_volt_max      = randFloat(3.0f, 4.2f);
+    serialData.cell_volt_min      = randFloat(3.0f, 4.2f);
+
+    serialData.cell_temp_max      = randFloat(20.0f, 60.0f);
+    serialData.cell_temp_min      = randFloat(10.0f, 40.0f);
+
+    serialData.mos_temp           = randFloat(20.0f, 80.0f);
+    serialData.ambient_temp       = randFloat(10.0f, 45.0f);
+
+    serialData.pack_capacity      = randFloat(40.0f, 60.0f);   // Ah
+    serialData.remaining_capacity = randFloat(0.0f, serialData.pack_capacity);
+
+    // Randomize all 16 cell voltages
+    for (int i = 0; i < 16; i++) {
+        serialData.cell_volt[i] = randFloat(3.0f, 4.2f);
+        serialData.cell_temp[i] = randFloat(-20.0f, 60.0f);
+    }
+
 		data_ready = true;
 
 }

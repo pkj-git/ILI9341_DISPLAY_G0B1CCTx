@@ -211,6 +211,18 @@
     <Filter Include="Header Files\generated\gui_generated\screen2_screen">
       <UniqueIdentifier>97E24E51-D324-A019-E2DF-53A62B715F4F</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\cellvoltage_screen">
+      <UniqueIdentifier>9A233BAC-5E5C-032B-6571-4C85E410A29F</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\cellvoltage_screen">
+      <UniqueIdentifier>CA83D8C5-836B-EDEC-48BC-7CFC15EA7165</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\cellvoltage_screen">
+      <UniqueIdentifier>7C3B158C-B4BA-557D-5C4F-CF061CB69961</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\cellvoltage_screen">
+      <UniqueIdentifier>EA3FB8DB-911C-7B1B-7BAC-5F8745E4D341</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -275,6 +287,21 @@
     </ClCompile>
     <ClCompile Include="..\..\gui\src\common\floatPrint.cpp">
       <Filter>Source Files\gui\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\containers\CellVoltage.cpp">
+      <Filter>Source Files\gui\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\CellVoltageBase.cpp">
+      <Filter>Source Files\generated\gui_generated\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\cellvoltage_screen\CellVoltagePresenter.cpp">
+      <Filter>Source Files\gui\cellvoltage_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\cellvoltage_screen\CellVoltageView.cpp">
+      <Filter>Source Files\gui\cellvoltage_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\cellvoltage_screen\CellVoltageViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\cellvoltage_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -753,6 +780,21 @@
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\common\floatPrint.hpp">
       <Filter>Header Files\gui\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\containers\CellVoltage.hpp">
+      <Filter>Header Files\gui\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\CellVoltageBase.hpp">
+      <Filter>Header Files\generated\gui_generated\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\cellvoltage_screen\CellVoltagePresenter.hpp">
+      <Filter>Header Files\gui\cellvoltage_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\cellvoltage_screen\CellVoltageView.hpp">
+      <Filter>Header Files\gui\cellvoltage_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\cellvoltage_screen\CellVoltageViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\cellvoltage_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -23,17 +23,17 @@ screenViewBase::screenViewBase() :
     image1.setAlpha(119);
     add(image1);
 
-    flexButton1.setBoxWithBorderPosition(0, 0, 59, 50);
-    flexButton1.setBorderSize(5);
-    flexButton1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43), touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43));
-    flexButton1.setIconBitmaps(Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID), Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID));
-    flexButton1.setIconXY(0, 0);
-    flexButton1.setAction(flexButtonCallback);
-    flexButton1.setPosition(266, 190, 47, 44);
-    add(flexButton1);
+    next_button.setBoxWithBorderPosition(0, 0, 59, 50);
+    next_button.setBorderSize(5);
+    next_button.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43), touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43));
+    next_button.setIconBitmaps(Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID), Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID));
+    next_button.setIconXY(0, 0);
+    next_button.setAction(flexButtonCallback);
+    next_button.setPosition(266, 190, 47, 44);
+    add(next_button);
 
     scrollableContainer1.setPosition(0, 38, 320, 145);
-    scrollableContainer1.setScrollbarsColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    scrollableContainer1.setScrollbarsColor(touchgfx::Color::getColorFromRGB(0, 102, 153));
     scrollableContainer1.setScrollbarsAlpha(255);
     scrollableContainer1.setScrollbarsPermanentlyVisible();
     scrollList1.setPosition(7, 15, 320, 328);
@@ -69,10 +69,10 @@ void screenViewBase::setupScreen()
 
 void screenViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
 {
-    if (&src == &flexButton1)
+    if (&src == &next_button)
     {
         //Interaction1
-        //When flexButton1 clicked change screen to Screen2
+        //When next_button clicked change screen to Screen2
         //Go to Screen2 with no screen transition
         application().gotoScreen2ScreenNoTransition();
     }

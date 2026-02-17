@@ -17,6 +17,8 @@
 #include <gui/screen_screen/screenPresenter.hpp>
 #include <gui/screen2_screen/Screen2View.hpp>
 #include <gui/screen2_screen/Screen2Presenter.hpp>
+#include <gui/cellvoltage_screen/CellVoltageView.hpp>
+#include <gui/cellvoltage_screen/CellVoltagePresenter.hpp>
 
 using namespace touchgfx;
 
@@ -65,4 +67,17 @@ void FrontendApplicationBase::gotoScreen2ScreenNoTransition()
 void FrontendApplicationBase::gotoScreen2ScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<Screen2View, Screen2Presenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// CellVoltage
+
+void FrontendApplicationBase::gotoCellVoltageScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoCellVoltageScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoCellVoltageScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<CellVoltageView, CellVoltagePresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

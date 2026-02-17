@@ -16,3 +16,6 @@ void Screen2Presenter::deactivate()
 {
 
 }
+void Screen2Presenter::process_uart(volatile serialData_t& data) {
+	view.process_uart(data);
+}

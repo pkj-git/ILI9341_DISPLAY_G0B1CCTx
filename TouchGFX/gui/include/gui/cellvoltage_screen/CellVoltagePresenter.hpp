@@ -1,17 +1,17 @@
-#ifndef SCREEN2PRESENTER_HPP
-#define SCREEN2PRESENTER_HPP
+#ifndef CELLVOLTAGEPRESENTER_HPP
+#define CELLVOLTAGEPRESENTER_HPP
 
 #include <gui/model/ModelListener.hpp>
 #include <mvp/Presenter.hpp>
 
 using namespace touchgfx;
 
-class Screen2View;
+class CellVoltageView;
 
-class Screen2Presenter : public touchgfx::Presenter, public ModelListener
+class CellVoltagePresenter : public touchgfx::Presenter, public ModelListener
 {
 public:
-    Screen2Presenter(Screen2View& v);
+    CellVoltagePresenter(CellVoltageView& v);
 
     /**
      * The activate function is called automatically when this screen is "switched in"
@@ -25,13 +25,14 @@ public:
      */
     virtual void deactivate();
 
-    virtual ~Screen2Presenter() {}
     void process_uart(volatile serialData_t& data) override;
 
-private:
-    Screen2Presenter();
+    virtual ~CellVoltagePresenter() {}
 
-    Screen2View& view;
+private:
+    CellVoltagePresenter();
+
+    CellVoltageView& view;
 };
 
-#endif // SCREEN2PRESENTER_HPP
+#endif // CELLVOLTAGEPRESENTER_HPP

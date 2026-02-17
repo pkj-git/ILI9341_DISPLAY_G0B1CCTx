@@ -32,6 +32,11 @@
     <ClCompile Include="..\..\gui\src\screen2_screen\Screen2View.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\screen2_screen\Screen2ViewBase.cpp"/>
     <ClCompile Include="..\..\gui\src\common\floatPrint.cpp"/>
+    <ClCompile Include="..\..\gui\src\containers\CellVoltage.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\CellVoltageBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\cellvoltage_screen\CellVoltagePresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\cellvoltage_screen\CellVoltageView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\cellvoltage_screen\CellVoltageViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -194,6 +199,11 @@
     <ClInclude Include="..\..\gui\include\gui\screen2_screen\Screen2View.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen2_screen\Screen2ViewBase.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\common\floatPrint.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\containers\CellVoltage.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\CellVoltageBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\cellvoltage_screen\CellVoltagePresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\cellvoltage_screen\CellVoltageView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\cellvoltage_screen\CellVoltageViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

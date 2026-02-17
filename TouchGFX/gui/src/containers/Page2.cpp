@@ -33,7 +33,7 @@ void Page2::updateData(int16_t itemIndex, volatile serialData_t& data) {
     Label.setTypedText(TypedText(cellTextKeys[itemIndex]));
 
     // Format the cell voltage (or temp) value and invalidate
-    float value = data.cell_volt[itemIndex];
+    float value = data.cell_temp[itemIndex];
     formatFloat2(labelValueBuffer, LABELVALUE_SIZE, value);
     labelValue.invalidate();
 }

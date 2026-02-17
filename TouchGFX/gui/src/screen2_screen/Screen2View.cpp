@@ -10,6 +10,8 @@ Screen2View::Screen2View()
 void Screen2View::setupScreen()
 {
     Screen2ViewBase::setupScreen();
+    scrollableContainer1.setScrollbarWidth(10);
+    scrollableContainer1.childGeometryChanged();
 }
 
 void Screen2View::tearDownScreen()

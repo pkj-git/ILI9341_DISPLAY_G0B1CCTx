@@ -4,6 +4,56 @@
     <Language Id="GB" />
   </Languages>
   <Texts>
+    <TextGroup Id="CellVoltage">
+      <Text Id="cell1_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell1 Volt</Translation>
+      </Text>
+      <Text Id="cell2_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell2 Volt</Translation>
+      </Text>
+      <Text Id="cell3_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell3 Volt</Translation>
+      </Text>
+      <Text Id="cell4_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell4 Volt</Translation>
+      </Text>
+      <Text Id="cell5_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell5 Volt</Translation>
+      </Text>
+      <Text Id="cell6_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell6 Volt</Translation>
+      </Text>
+      <Text Id="cell7_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell7 Volt</Translation>
+      </Text>
+      <Text Id="cell8_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell8 Volt</Translation>
+      </Text>
+      <Text Id="cell9_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell9 Volt</Translation>
+      </Text>
+      <Text Id="cell10_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell10 Volt</Translation>
+      </Text>
+      <Text Id="cell11volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell11 Volt</Translation>
+      </Text>
+      <Text Id="cell12_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell12 Volt</Translation>
+      </Text>
+      <Text Id="cell13_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell13 Volt</Translation>
+      </Text>
+      <Text Id="cell14_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell14 Volt</Translation>
+      </Text>
+      <Text Id="cell15_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell15 Volt</Translation>
+      </Text>
+      <Text Id="cell16_volt" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell16 Volt</Translation>
+      </Text>
+    </TextGroup>
     <TextGroup Id="Page2">
       <Text Id="cell1_temp" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Cell1 Temp</Translation>
@@ -90,6 +140,18 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_GQPJ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">000.00</Translation>
+      </Text>
+      <Text Id="__SingleUse_63OO" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_MPM2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">mV</Translation>
+      </Text>
+      <Text Id="__SingleUse_D72O" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">New Text          </Translation>
+      </Text>
       <Text Id="__SingleUse_E2PF" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">000.00</Translation>
       </Text>

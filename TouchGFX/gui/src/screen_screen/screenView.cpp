@@ -9,6 +9,9 @@ screenView::screenView()
 void screenView::setupScreen()
 {
     screenViewBase::setupScreen();
+    scrollableContainer1.setScrollbarWidth(10);
+    scrollableContainer1.childGeometryChanged();
+
 }
 
 void screenView::tearDownScreen()
