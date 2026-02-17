@@ -18,6 +18,8 @@
 #include <gui/screen2_screen/Screen2Presenter.hpp>
 #include <gui/cellvoltage_screen/CellVoltageView.hpp>
 #include <gui/cellvoltage_screen/CellVoltagePresenter.hpp>
+#include <gui/settableparams_screen/SettableParamsView.hpp>
+#include <gui/settableparams_screen/SettableParamsPresenter.hpp>
 
 
 /**
@@ -43,7 +45,8 @@ public:
     typedef touchgfx::meta::TypeList< screenView,
             touchgfx::meta::TypeList< Screen2View,
             touchgfx::meta::TypeList< CellVoltageView,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::TypeList< SettableParamsView,
+            touchgfx::meta::Nil > > >
             > GeneratedViewTypes;
 
     /**
@@ -58,7 +61,8 @@ public:
     typedef touchgfx::meta::TypeList< screenPresenter,
             touchgfx::meta::TypeList< Screen2Presenter,
             touchgfx::meta::TypeList< CellVoltagePresenter,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::TypeList< SettableParamsPresenter,
+            touchgfx::meta::Nil > > >
             > GeneratedPresenterTypes;
 
     /**

@@ -4,6 +4,20 @@
     <Language Id="GB" />
   </Languages>
   <Texts>
+    <TextGroup Id="SettableParams">
+      <Text Id="max_chg_cv" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Max CHG CV</Translation>
+      </Text>
+      <Text Id="max_chg_cc" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Max CHG CC</Translation>
+      </Text>
+      <Text Id="min_dsg_cv" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Min DSGG CV</Translation>
+      </Text>
+      <Text Id="min_dsg_cc" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Min DSGG CC</Translation>
+      </Text>
+    </TextGroup>
     <TextGroup Id="CellVoltage">
       <Text Id="cell1_volt" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Cell1 Volt</Translation>
@@ -140,17 +154,26 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_GQPJ" Alignment="Left" TypographyId="Default">
+      <Text Id="__SingleUse_SNXW" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">000.00</Translation>
       </Text>
-      <Text Id="__SingleUse_63OO" Alignment="Left" TypographyId="Default">
+      <Text Id="__SingleUse_5TF9" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">:&lt;value&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_MPM2" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">mV</Translation>
+      <Text Id="__SingleUse_PRA0" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">C</Translation>
       </Text>
-      <Text Id="__SingleUse_D72O" Alignment="Left" TypographyId="Default">
+      <Text Id="__SingleUse_0B7C" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">New Text          </Translation>
+      </Text>
+      <Text Id="__SingleUse_UXA2" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">000.00</Translation>
+      </Text>
+      <Text Id="__SingleUse_AJ5I" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_OAZE" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">New Text       </Translation>
       </Text>
       <Text Id="__SingleUse_E2PF" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">000.00</Translation>

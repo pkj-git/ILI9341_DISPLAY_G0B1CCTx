@@ -28,6 +28,7 @@ CellVoltageViewBase::CellVoltageViewBase() :
     next_button.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43), touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43));
     next_button.setIconBitmaps(Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID), Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID));
     next_button.setIconXY(0, 0);
+    next_button.setAction(flexButtonCallback);
     next_button.setPosition(266, 190, 47, 44);
     add(next_button);
 
@@ -83,6 +84,13 @@ void CellVoltageViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButt
         //When back_button clicked change screen to Screen2
         //Go to Screen2 with no screen transition
         application().gotoScreen2ScreenNoTransition();
+    }
+    if (&src == &next_button)
+    {
+        //Interaction2
+        //When next_button clicked change screen to SettableParams
+        //Go to SettableParams with no screen transition
+        application().gotoSettableParamsScreenNoTransition();
     }
 }
 

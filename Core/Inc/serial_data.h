@@ -22,6 +22,7 @@ typedef struct  {
  float remaining_capacity;
  float cell_volt[16];
  float cell_temp[16];
+ float settable_param[4];
 }serialData_t;
 
 #endif /* INC_SERIAL_DATA_H_ */

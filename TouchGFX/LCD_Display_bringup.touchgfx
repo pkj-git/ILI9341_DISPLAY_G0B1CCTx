@@ -463,11 +463,244 @@
               "Type": "ActionCustom",
               "FunctionName": "updateScreen"
             }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "next_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "SettableParams"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "SettableParams",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 320,
+            "Height": 240,
+            "Color": {
+              "Red": 255,
+              "Green": 215
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 75,
+            "Height": 38,
+            "RelativeFilename": "Eastman_logo_brand_resize.png",
+            "Alpha": 119
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "back_button",
+            "X": 7,
+            "Y": 190,
+            "Width": 47,
+            "Height": 44,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "IconReleased": "__generated\\icon_theme_images_image_navigate_before_50_50_E8F6FB.svg.png",
+                "IconPressed": "__generated\\icon_theme_images_image_navigate_next_50_50_E8F6FB.svg.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 59,
+                "Height": 50,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 5,
+                  "Green": 32,
+                  "Blue": 43
+                },
+                "ColorBorderReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorBorderPressed": {
+                  "Red": 5,
+                  "Green": 32,
+                  "Blue": 43
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "back_button_1",
+            "X": 268,
+            "Y": 57,
+            "Width": 47,
+            "Height": 44,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_up_50_50_E8F6FB.svg.png",
+                "IconPressed": "__generated\\icon_theme_images_image_navigate_next_50_50_E8F6FB.svg.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 59,
+                "Height": 50,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 5,
+                  "Green": 32,
+                  "Blue": 43
+                },
+                "ColorBorderReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorBorderPressed": {
+                  "Red": 5,
+                  "Green": 32,
+                  "Blue": 43
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "back_button_1_1",
+            "X": 268,
+            "Y": 125,
+            "Width": 47,
+            "Height": 44,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_down_50_50_E8F6FB.svg.png",
+                "IconPressed": "__generated\\icon_theme_images_image_navigate_next_50_50_E8F6FB.svg.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 59,
+                "Height": 50,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 5,
+                  "Green": 32,
+                  "Blue": 43
+                },
+                "ColorBorderReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorBorderPressed": {
+                  "Red": 5,
+                  "Green": 32,
+                  "Blue": 43
+                }
+              }
+            ]
+          },
+          {
+            "Type": "ScrollableContainer",
+            "Name": "scrollableContainer1",
+            "Width": 250,
+            "Height": 250,
+            "HorizontalScrollEnabled": true,
+            "VerticalScrollEnabled": true,
+            "ScrollbarsVisibleOnPressed": true,
+            "ScrollbarsAlpha": 255,
+            "Components": [
+              {
+                "Type": "ScrollWheel",
+                "Name": "scrollWheel1",
+                "Y": 57,
+                "Width": 261,
+                "Height": 101,
+                "ItemTemplateName": "Settable",
+                "NumberofItems": 10,
+                "Easing": "Back",
+                "EasingOption": "Out",
+                "SwipeAcceleration": 1.0,
+                "DragAcceleration": 1.0,
+                "OverShootPercentage": 75
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 10
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "updateScreen"
+            }
           }
         ]
       }
     ],
     "CustomContainerDefinitions": [
+      {
+        "Name": "Settable",
+        "Width": 261,
+        "Height": 25,
+        "Components": [
+          {
+            "Type": "TextArea",
+            "Name": "Label",
+            "Y": 1,
+            "Width": 141,
+            "Height": 24,
+            "TextId": "__SingleUse_OAZE",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "labelValue",
+            "X": 145,
+            "Width": 81,
+            "Height": 24,
+            "TextId": "__SingleUse_AJ5I",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_UXA2",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": []
+      },
       {
         "Name": "CellVoltage",
         "Width": 320,
@@ -479,7 +712,7 @@
             "Y": 1,
             "Width": 162,
             "Height": 24,
-            "TextId": "__SingleUse_D72O",
+            "TextId": "__SingleUse_0B7C",
             "TextRotation": "0",
             "AutoSize": true
           },
@@ -487,9 +720,9 @@
             "Type": "TextArea",
             "Name": "Unit",
             "X": 262,
-            "Width": 33,
+            "Width": 14,
             "Height": 24,
-            "TextId": "__SingleUse_MPM2",
+            "TextId": "__SingleUse_PRA0",
             "TextRotation": "0",
             "AutoSize": true
           },
@@ -499,11 +732,11 @@
             "X": 174,
             "Width": 81,
             "Height": 24,
-            "TextId": "__SingleUse_63OO",
+            "TextId": "__SingleUse_5TF9",
             "TextRotation": "0",
             "AutoSize": true,
             "Wildcard1": {
-              "TextId": "__SingleUse_GQPJ",
+              "TextId": "__SingleUse_SNXW",
               "UseBuffer": true,
               "BufferSize": 10
             }

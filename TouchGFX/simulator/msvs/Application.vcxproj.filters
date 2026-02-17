@@ -223,6 +223,18 @@
     <Filter Include="Header Files\generated\gui_generated\cellvoltage_screen">
       <UniqueIdentifier>EA3FB8DB-911C-7B1B-7BAC-5F8745E4D341</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\settableparams_screen">
+      <UniqueIdentifier>2254672D-28DC-32DF-ED72-7E68D5D3B5DD</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\settableparams_screen">
+      <UniqueIdentifier>F9A1A3CA-230D-7A93-A354-A46494D83414</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\settableparams_screen">
+      <UniqueIdentifier>1701B4AF-3E06-652E-44A6-9DA711265555</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\settableparams_screen">
+      <UniqueIdentifier>971D3A4B-7806-2363-C433-43FF0A0806E1</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -302,6 +314,21 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\cellvoltage_screen\CellVoltageViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\cellvoltage_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\containers\Settable.cpp">
+      <Filter>Source Files\gui\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\SettableBase.cpp">
+      <Filter>Source Files\generated\gui_generated\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\settableparams_screen\SettableParamsPresenter.cpp">
+      <Filter>Source Files\gui\settableparams_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\settableparams_screen\SettableParamsView.cpp">
+      <Filter>Source Files\gui\settableparams_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\settableparams_screen\SettableParamsViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\settableparams_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -795,6 +822,21 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\cellvoltage_screen\CellVoltageViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\cellvoltage_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\containers\Settable.hpp">
+      <Filter>Header Files\gui\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\SettableBase.hpp">
+      <Filter>Header Files\generated\gui_generated\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\settableparams_screen\SettableParamsPresenter.hpp">
+      <Filter>Header Files\gui\settableparams_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\settableparams_screen\SettableParamsView.hpp">
+      <Filter>Header Files\gui\settableparams_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\settableparams_screen\SettableParamsViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\settableparams_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

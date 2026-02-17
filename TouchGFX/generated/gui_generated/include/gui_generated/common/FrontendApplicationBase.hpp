@@ -29,6 +29,9 @@ public:
     // CellVoltage
     void gotoCellVoltageScreenNoTransition();
 
+    // SettableParams
+    void gotoSettableParamsScreenNoTransition();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -42,6 +45,9 @@ protected:
 
     // CellVoltage
     void gotoCellVoltageScreenNoTransitionImpl();
+
+    // SettableParams
+    void gotoSettableParamsScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

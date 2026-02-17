@@ -11,7 +11,7 @@ public:
     virtual ~CellVoltageView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
-    void process_uart(volatile serialData_t& data);
+    virtual void process_uart(volatile serialData_t& data);
     void updateScreen();
     void scrollList1UpdateItem(CellVoltage& item, int16_t itemIndex) override;
 protected:

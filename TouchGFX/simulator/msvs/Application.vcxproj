@@ -37,6 +37,11 @@
     <ClCompile Include="..\..\gui\src\cellvoltage_screen\CellVoltagePresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\cellvoltage_screen\CellVoltageView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\cellvoltage_screen\CellVoltageViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\containers\Settable.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\SettableBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\settableparams_screen\SettableParamsPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\settableparams_screen\SettableParamsView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\settableparams_screen\SettableParamsViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -204,6 +209,11 @@
     <ClInclude Include="..\..\gui\include\gui\cellvoltage_screen\CellVoltagePresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\cellvoltage_screen\CellVoltageView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\cellvoltage_screen\CellVoltageViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\containers\Settable.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\SettableBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\settableparams_screen\SettableParamsPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\settableparams_screen\SettableParamsView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\settableparams_screen\SettableParamsViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

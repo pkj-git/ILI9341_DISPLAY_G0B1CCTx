@@ -19,6 +19,8 @@
 #include <gui/screen2_screen/Screen2Presenter.hpp>
 #include <gui/cellvoltage_screen/CellVoltageView.hpp>
 #include <gui/cellvoltage_screen/CellVoltagePresenter.hpp>
+#include <gui/settableparams_screen/SettableParamsView.hpp>
+#include <gui/settableparams_screen/SettableParamsPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -80,4 +82,17 @@ void FrontendApplicationBase::gotoCellVoltageScreenNoTransition()
 void FrontendApplicationBase::gotoCellVoltageScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<CellVoltageView, CellVoltagePresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// SettableParams
+
+void FrontendApplicationBase::gotoSettableParamsScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoSettableParamsScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoSettableParamsScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<SettableParamsView, SettableParamsPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
