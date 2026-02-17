@@ -4,7 +4,56 @@
     <Language Id="GB" />
   </Languages>
   <Texts>
-    <TextGroup Id="Group1" />
+    <TextGroup Id="Page2">
+      <Text Id="cell1_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell1 Temp</Translation>
+      </Text>
+      <Text Id="cell2_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell2 Temp</Translation>
+      </Text>
+      <Text Id="cell3_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell3 Temp</Translation>
+      </Text>
+      <Text Id="cell4_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell4 Temp</Translation>
+      </Text>
+      <Text Id="cell5_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell5 Temp</Translation>
+      </Text>
+      <Text Id="cell6_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell6 Temp</Translation>
+      </Text>
+      <Text Id="cell7_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell7 Temp</Translation>
+      </Text>
+      <Text Id="cell8_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell8 Temp</Translation>
+      </Text>
+      <Text Id="cell9_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell9 Temp</Translation>
+      </Text>
+      <Text Id="cell10_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell10 Temp</Translation>
+      </Text>
+      <Text Id="cell11_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell11 Temp</Translation>
+      </Text>
+      <Text Id="cell12_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell12 Temp</Translation>
+      </Text>
+      <Text Id="cell13_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell13 Temp</Translation>
+      </Text>
+      <Text Id="cell14_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell14 Temp</Translation>
+      </Text>
+      <Text Id="cell15_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell15 Temp</Translation>
+      </Text>
+      <Text Id="cell16_temp" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Cell16 Temp</Translation>
+      </Text>
+    </TextGroup>
     <TextGroup Id="Page1">
       <Text Id="batt_volt" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Batt Volt</Translation>
@@ -41,6 +90,18 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_E2PF" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">000.00</Translation>
+      </Text>
+      <Text Id="__SingleUse_SQ4Z" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">:&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_IAO8" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">C</Translation>
+      </Text>
+      <Text Id="__SingleUse_TCN1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">New Text          </Translation>
+      </Text>
       <Text Id="__SingleUse_PT1M" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">000.00</Translation>
       </Text>

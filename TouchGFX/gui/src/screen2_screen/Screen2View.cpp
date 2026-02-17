@@ -1,25 +1,27 @@
-#include <gui/screen_screen/screenView.hpp>
+#include <gui/screen2_screen/Screen2View.hpp>
 #include <cstring>
 static volatile serialData_t data_screen1_copy;
-screenView::screenView()
+
+Screen2View::Screen2View()
 {
 
 }
 
-void screenView::setupScreen()
+void Screen2View::setupScreen()
 {
-    screenViewBase::setupScreen();
+    Screen2ViewBase::setupScreen();
 }
 
-void screenView::tearDownScreen()
+void Screen2View::tearDownScreen()
 {
-    screenViewBase::tearDownScreen();
+    Screen2ViewBase::tearDownScreen();
 }
-void screenView::scrollList1UpdateItem(Page1& item, int16_t itemIndex) {
+
+void Screen2View::scrollList1UpdateItem(Page2& item, int16_t itemIndex) {
 	item.updateData(itemIndex, data_screen1_copy);
 }
 
-void  screenView::process_uart(volatile serialData_t& data) {
+void  Screen2View::process_uart(volatile serialData_t& data) {
 	memcpy(const_cast<serialData_t*>(&data_screen1_copy),
 	       const_cast<const serialData_t*>(&data),
 	       sizeof(serialData_t));
@@ -31,7 +33,7 @@ void  screenView::process_uart(volatile serialData_t& data) {
 }
 
 
-void screenView::updateScreen() {
+void Screen2View::updateScreen() {
 	for (int i = 0; i < scrollList1.getNumberOfItems(); i++)
 	{
 		scrollList1.itemChanged(i);

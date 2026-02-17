@@ -80,7 +80,7 @@
                 "Type": "ScrollList",
                 "Name": "scrollList1",
                 "X": 7,
-                "Y": 10,
+                "Y": 15,
                 "Width": 320,
                 "Height": 328,
                 "ItemTemplateName": "Page1",
@@ -104,7 +104,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "screen"
+              "ActionComponent": "Screen2"
             }
           },
           {
@@ -119,9 +119,159 @@
             }
           }
         ]
+      },
+      {
+        "Name": "Screen2",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 320,
+            "Height": 240,
+            "Color": {
+              "Red": 255,
+              "Green": 215
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 75,
+            "Height": 38,
+            "RelativeFilename": "Eastman_logo_brand_resize.png",
+            "Alpha": 119
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "flexButton1",
+            "X": 266,
+            "Y": 190,
+            "Width": 47,
+            "Height": 44,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "IconReleased": "__generated\\icon_theme_images_image_navigate_next_50_50_E8F6FB.svg.png",
+                "IconPressed": "__generated\\icon_theme_images_image_navigate_next_50_50_E8F6FB.svg.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 59,
+                "Height": 50,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 5,
+                  "Green": 32,
+                  "Blue": 43
+                },
+                "ColorBorderReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorBorderPressed": {
+                  "Red": 5,
+                  "Green": 32,
+                  "Blue": 43
+                }
+              }
+            ]
+          },
+          {
+            "Type": "ScrollableContainer",
+            "Name": "scrollableContainer1",
+            "Y": 38,
+            "Width": 320,
+            "Height": 141,
+            "HorizontalScrollEnabled": true,
+            "VerticalScrollEnabled": true,
+            "ScrollbarsVisible": true,
+            "ScrollbarsVisibleOnPressed": true,
+            "ScrollbarsAlpha": 255,
+            "Components": [
+              {
+                "Type": "ScrollList",
+                "Name": "scrollList1",
+                "X": 7,
+                "Y": 8,
+                "Width": 320,
+                "Height": 355,
+                "ItemTemplateName": "Page2",
+                "NumberofItems": 15,
+                "Easing": "Back",
+                "EasingOption": "Out",
+                "SwipeAcceleration": 1.0,
+                "DragAcceleration": 1.0,
+                "OverShootPercentage": 75
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Refresh",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 10
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "updateScreen"
+            }
+          }
+        ]
       }
     ],
     "CustomContainerDefinitions": [
+      {
+        "Name": "Page2",
+        "Width": 320,
+        "Height": 27,
+        "Components": [
+          {
+            "Type": "TextArea",
+            "Name": "Label",
+            "Y": 1,
+            "Width": 162,
+            "Height": 24,
+            "TextId": "__SingleUse_TCN1",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Unit",
+            "X": 262,
+            "Width": 14,
+            "Height": 24,
+            "TextId": "__SingleUse_IAO8",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "labelValue",
+            "X": 174,
+            "Width": 81,
+            "Height": 24,
+            "TextId": "__SingleUse_SQ4Z",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_E2PF",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": []
+      },
       {
         "Name": "Page1",
         "Width": 320,
