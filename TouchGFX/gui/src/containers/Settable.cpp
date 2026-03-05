@@ -24,8 +24,8 @@ void Settable::decrementItem(int index) {
 }
 
 void Settable::updateData(int16_t itemIndex, volatile serialData_t& data) {
-    // itemIndex expected to be 0..4 for Para1 to Param4
-    if (itemIndex < 0 || itemIndex > 4) {
+    // itemIndex expected to be 0..3 for Para1 to Param4
+   if (itemIndex < 0 || itemIndex >= 4) {
         formatFloat2(labelValueBuffer, LABELVALUE_SIZE, 0.0f);
         labelValue.invalidate();
         return;

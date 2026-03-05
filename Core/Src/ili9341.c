@@ -206,6 +206,8 @@ void ILI9341_SetWindow(uint16_t start_x, uint16_t start_y, uint16_t end_x, uint1
 
 void ILI9341_WritePixel(uint16_t x, uint16_t y, uint16_t color)
 {
+	//while (__HAL_SPI_GET_FLAG(&hspi1, SPI_FLAG_BSY) != RESET) {}
+
 	uint8_t data[2];
 	data[0] = color >> 8;
 	data[1] = color;
@@ -286,16 +288,25 @@ void ILI9341_SoftReset(void)
 
 void LCD_WR_REG(uint8_t data)
 {
+	while (__HAL_SPI_GET_FLAG(&hspi1, SPI_FLAG_BSY) != RESET) {}
+
 	DC_L();
-	if (HAL_SPI_Transmit(&hspi1, &data, 1, 1000) != HAL_OK) {
+	static HAL_StatusTypeDef res1 = HAL_OK;
+	res1 = HAL_SPI_Transmit(&hspi1, &data, 1, 0xffffffff);
+	if (res1 != HAL_OK) {
 		Error_Handler();
 	}
 }
 
 static void LCD_WR_DATA(uint8_t data)
 {
+	while (__HAL_SPI_GET_FLAG(&hspi1, SPI_FLAG_BSY) != RESET) {}
+
+
 	DC_H();
-	if (HAL_SPI_Transmit(&hspi1, &data, 1, 1000) != HAL_OK) {
+	static HAL_StatusTypeDef res2 = HAL_OK;
+	//res2 = HAL_SPI_Transmit(&hspi1, &data, 1, 1000);
+	if (HAL_SPI_Transmit(&hspi1, &data, 1, 0xffffffff) != HAL_OK) {
 		Error_Handler();
 	}
 }

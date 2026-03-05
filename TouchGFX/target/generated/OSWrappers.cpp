@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2025 STMicroelectronics.
+  * Copyright (c) 2026 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -108,7 +108,9 @@ void OSWrappers::signalRenderingDone()
  */
 bool OSWrappers::isVSyncAvailable()
 {
-    return vsync_sem;
+    uint8_t was_available = vsync_sem;
+    vsync_sem = 0;
+    return was_available;
 }
 
 /*
