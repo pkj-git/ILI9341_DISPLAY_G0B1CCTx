@@ -59,7 +59,7 @@ SettableParamsViewBase::SettableParamsViewBase() :
     scrollWheel1.setSwipeAcceleration(10);
     scrollWheel1.setDragAcceleration(10);
     scrollWheel1.setNumberOfItems(4);
-    scrollWheel1.setSelectedItemOffset(0);
+    scrollWheel1.setSelectedItemOffset(20);
     scrollWheel1.setOvershootPercentage(75);
     scrollWheel1.setDrawableSize(25, 0);
     scrollWheel1.setDrawables(scrollWheel1ListItems, updateItemCallback);

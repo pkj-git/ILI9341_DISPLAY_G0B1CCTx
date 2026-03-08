@@ -14113,8 +14113,8 @@ Disassembly of section .text:
  8007266:	9803      	ldr	r0, [sp, #12]
  8007268:	2104      	movs	r1, #4
  800726a:	f002 fb03 	bl	8009874 <_ZN8touchgfx10ScrollBase16setNumberOfItemsEs>
- 800726e:	0039      	movs	r1, r7
- 8007270:	9803      	ldr	r0, [sp, #12]
+ 800726e:	9803      	ldr	r0, [sp, #12]
+ 8007270:	2101      	movs	r1, #1
  8007272:	f001 fddc 	bl	8008e2e <_ZN8touchgfx15ScrollWheelBase21setSelectedItemOffsetEs>
  8007276:	224b      	movs	r2, #75	@ 0x4b
  8007278:	4b1f      	ldr	r3, [pc, #124]	@ (80072f8 <_ZN22SettableParamsViewBaseC1Ev+0x374>)
@@ -14130,20 +14130,20 @@ Disassembly of section .text:
  800728e:	9a0b      	ldr	r2, [sp, #44]	@ 0x2c
  8007290:	9803      	ldr	r0, [sp, #12]
  8007292:	f002 fcc3 	bl	8009c1c <_ZN8touchgfx11ScrollWheel12setDrawablesERNS_26DrawableListItemsInterfaceERNS_15GenericCallbackIPS1_ssEE>
- 8007296:	003a      	movs	r2, r7
- 8007298:	0039      	movs	r1, r7
+ 8007296:	2114      	movs	r1, #20
+ 8007298:	003a      	movs	r2, r7
  800729a:	9803      	ldr	r0, [sp, #12]
- 800729c:	f002 fa47 	bl	800972e <_ZN8touchgfx10ScrollBase13animateToItemEss>
- 80072a0:	9903      	ldr	r1, [sp, #12]
- 80072a2:	9804      	ldr	r0, [sp, #16]
- 80072a4:	f003 fe53 	bl	800af4e <_ZN8touchgfx19ScrollableContainer3addERNS_8DrawableE>
- 80072a8:	1d20      	adds	r0, r4, #4
- 80072aa:	9904      	ldr	r1, [sp, #16]
- 80072ac:	f002 fce5 	bl	8009c7a <_ZN8touchgfx9Container3addERNS_8DrawableE>
- 80072b0:	0020      	movs	r0, r4
- 80072b2:	b00f      	add	sp, #60	@ 0x3c
- 80072b4:	bdf0      	pop	{r4, r5, r6, r7, pc}
- 80072b6:	46c0      	nop			@ (mov r8, r8)
+ 800729c:	4249      	negs	r1, r1
+ 800729e:	f002 fa46 	bl	800972e <_ZN8touchgfx10ScrollBase13animateToItemEss>
+ 80072a2:	9903      	ldr	r1, [sp, #12]
+ 80072a4:	9804      	ldr	r0, [sp, #16]
+ 80072a6:	f003 fe52 	bl	800af4e <_ZN8touchgfx19ScrollableContainer3addERNS_8DrawableE>
+ 80072aa:	1d20      	adds	r0, r4, #4
+ 80072ac:	9904      	ldr	r1, [sp, #16]
+ 80072ae:	f002 fce4 	bl	8009c7a <_ZN8touchgfx9Container3addERNS_8DrawableE>
+ 80072b2:	0020      	movs	r0, r4
+ 80072b4:	b00f      	add	sp, #60	@ 0x3c
+ 80072b6:	bdf0      	pop	{r4, r5, r6, r7, pc}
  80072b8:	080174a4 	.word	0x080174a4
  80072bc:	08017fcc 	.word	0x08017fcc
  80072c0:	0801745c 	.word	0x0801745c

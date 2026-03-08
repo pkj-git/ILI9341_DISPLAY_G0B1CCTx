@@ -14,6 +14,7 @@ SettableParamsView::SettableParamsView()
 void SettableParamsView::setupScreen()
 {
     SettableParamsViewBase::setupScreen();
+    //scrollWheel1.setSelectedItemOffset(20);
 }
 
 void SettableParamsView::tearDownScreen()
