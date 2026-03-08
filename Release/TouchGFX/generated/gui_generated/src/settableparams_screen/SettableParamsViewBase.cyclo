@@ -30,7 +30,7 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:79:7:touchgfx::DrawableListItems<Settable, 5>::~DrawableListItems()	2
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:218:8:touchgfx::Callback<SettableParamsViewBase, touchgfx::DrawableListItemsInterface*, short int, short int>::~Callback()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<SettableParamsViewBase, const touchgfx::AbstractButtonContainer&>::~Callback()	1
-../TouchGFX/generated/gui_generated/src/settableparams_screen/SettableParamsViewBase.cpp:72:1:SettableParamsViewBase::~SettableParamsViewBase()	1
+../TouchGFX/generated/gui_generated/src/settableparams_screen/SettableParamsViewBase.cpp:83:1:SettableParamsViewBase::~SettableParamsViewBase()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:101:21:int16_t touchgfx::DrawableListItems<TYPE, SIZE>::getNumberOfDrawables() [with TYPE = Settable; int SIZE = 5]	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp:123:18:void touchgfx::BoxWithBorderButtonStyle<T>::handlePressedUpdated() [with T = touchgfx::ClickButtonTrigger]	3
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = SettableParamsViewBase; T1 = const touchgfx::AbstractButtonContainer&]	2
@@ -48,16 +48,16 @@
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/IconButtonStyle.hpp:44:7:virtual touchgfx::IconButtonStyle<touchgfx::BoxWithBorderButtonStyle<touchgfx::ClickButtonTrigger> >::~IconButtonStyle()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:218:8:virtual touchgfx::Callback<SettableParamsViewBase, touchgfx::DrawableListItemsInterface*, short int, short int>::~Callback()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<SettableParamsViewBase, const touchgfx::AbstractButtonContainer&>::~Callback()	1
-../TouchGFX/generated/gui_generated/src/settableparams_screen/SettableParamsViewBase.cpp:72:1:virtual SettableParamsViewBase::~SettableParamsViewBase()	1
-../TouchGFX/generated/gui_generated/src/settableparams_screen/SettableParamsViewBase.cpp:77:6:virtual void SettableParamsViewBase::setupScreen()	2
+../TouchGFX/generated/gui_generated/src/settableparams_screen/SettableParamsViewBase.cpp:83:1:virtual SettableParamsViewBase::~SettableParamsViewBase()	1
+../TouchGFX/generated/gui_generated/src/settableparams_screen/SettableParamsViewBase.cpp:88:6:virtual void SettableParamsViewBase::setupScreen()	2
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	2
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/AbstractButtonContainer.hpp:99:18:virtual void touchgfx::AbstractButtonContainer::executeAction()	3
-../TouchGFX/generated/gui_generated/src/settableparams_screen/SettableParamsViewBase.cpp:86:6:void SettableParamsViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer&)	3
-../TouchGFX/generated/gui_generated/src/settableparams_screen/SettableParamsViewBase.cpp:104:6:virtual void SettableParamsViewBase::handleTickEvent()	2
-../TouchGFX/generated/gui_generated/src/settableparams_screen/SettableParamsViewBase.cpp:117:6:void SettableParamsViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface*, int16_t, int16_t)	2
+../TouchGFX/generated/gui_generated/src/settableparams_screen/SettableParamsViewBase.cpp:122:6:virtual void SettableParamsViewBase::handleTickEvent()	2
+../TouchGFX/generated/gui_generated/src/settableparams_screen/SettableParamsViewBase.cpp:135:6:void SettableParamsViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface*, int16_t, int16_t)	2
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:82:23:touchgfx::Drawable* touchgfx::DrawableListItems<TYPE, SIZE>::getDrawable(int16_t) [with TYPE = Settable; int SIZE = 5]	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	3
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/ClickButtonTrigger.hpp:47:18:virtual void touchgfx::ClickButtonTrigger::handleClickEvent(const touchgfx::ClickEvent&)	6
+../TouchGFX/generated/gui_generated/src/settableparams_screen/SettableParamsViewBase.cpp:97:6:void SettableParamsViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer&)	4
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:48:5:touchgfx::Drawable::Drawable()	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	1
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/IconButtonStyle.hpp:59:18:void touchgfx::IconButtonStyle<T>::setIconBitmaps(const touchgfx::Bitmap&, const touchgfx::Bitmap&) [with T = touchgfx::BoxWithBorderButtonStyle<touchgfx::ClickButtonTrigger>]	1

@@ -54,12 +54,14 @@ protected:
     touchgfx::Box __background;
     touchgfx::Box box1;
     touchgfx::Image image1;
-    touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  back_button;
     touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  increment_btn;
     touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  decrement_btn;
     touchgfx::ScrollableContainer scrollableContainer1;
     touchgfx::ScrollWheel scrollWheel1;
     touchgfx::DrawableListItems<Settable, 5> scrollWheel1ListItems;
+    touchgfx::Box box2;
+    touchgfx::Box box2_1;
+    touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  back_button;
 
 private:
 

@@ -201,7 +201,7 @@
               {
                 "Type": "IconButtonStyle",
                 "IconReleased": "__generated\\icon_theme_images_image_navigate_before_50_50_E8F6FB.svg.png",
-                "IconPressed": "__generated\\icon_theme_images_image_navigate_next_50_50_E8F6FB.svg.png"
+                "IconPressed": "__generated\\icon_theme_images_image_navigate_before_50_50_E8F6FB.svg.png"
               },
               {
                 "Type": "BoxWithBorderButtonStyle",
@@ -378,7 +378,7 @@
               {
                 "Type": "IconButtonStyle",
                 "IconReleased": "__generated\\icon_theme_images_image_navigate_before_50_50_E8F6FB.svg.png",
-                "IconPressed": "__generated\\icon_theme_images_image_navigate_next_50_50_E8F6FB.svg.png"
+                "IconPressed": "__generated\\icon_theme_images_image_navigate_before_50_50_E8F6FB.svg.png"
               },
               {
                 "Type": "BoxWithBorderButtonStyle",
@@ -501,48 +501,6 @@
           },
           {
             "Type": "FlexButton",
-            "Name": "back_button",
-            "X": 7,
-            "Y": 190,
-            "Width": 47,
-            "Height": 44,
-            "ButtonTrigger": {
-              "Type": "ClickButtonTrigger"
-            },
-            "ButtonStyles": [
-              {
-                "Type": "IconButtonStyle",
-                "IconReleased": "__generated\\icon_theme_images_image_navigate_before_50_50_E8F6FB.svg.png",
-                "IconPressed": "__generated\\icon_theme_images_image_navigate_next_50_50_E8F6FB.svg.png"
-              },
-              {
-                "Type": "BoxWithBorderButtonStyle",
-                "Width": 59,
-                "Height": 50,
-                "BorderSize": 5,
-                "ColorReleased": {
-                  "Green": 102,
-                  "Blue": 153
-                },
-                "ColorPressed": {
-                  "Red": 5,
-                  "Green": 32,
-                  "Blue": 43
-                },
-                "ColorBorderReleased": {
-                  "Green": 102,
-                  "Blue": 153
-                },
-                "ColorBorderPressed": {
-                  "Red": 5,
-                  "Green": 32,
-                  "Blue": 43
-                }
-              }
-            ]
-          },
-          {
-            "Type": "FlexButton",
             "Name": "increment_btn",
             "X": 268,
             "Y": 57,
@@ -652,6 +610,72 @@
                 "OverShootPercentage": 75
               }
             ]
+          },
+          {
+            "Type": "Box",
+            "Name": "box2",
+            "Y": 57,
+            "Width": 261,
+            "Height": 22,
+            "Color": {
+              "Red": 255,
+              "Green": 215
+            },
+            "Alpha": 189
+          },
+          {
+            "Type": "Box",
+            "Name": "box2_1",
+            "Y": 101,
+            "Width": 261,
+            "Height": 57,
+            "Color": {
+              "Red": 255,
+              "Green": 215
+            },
+            "Alpha": 189
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "back_button",
+            "X": 7,
+            "Y": 190,
+            "Width": 47,
+            "Height": 44,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "IconReleased": "__generated\\icon_theme_images_image_navigate_before_50_50_E8F6FB.svg.png",
+                "IconPressed": "__generated\\icon_theme_images_image_navigate_before_50_50_E8F6FB.svg.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 59,
+                "Height": 50,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 5,
+                  "Green": 32,
+                  "Blue": 43
+                },
+                "ColorBorderReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorBorderPressed": {
+                  "Red": 5,
+                  "Green": 32,
+                  "Blue": 43
+                }
+              }
+            ]
           }
         ],
         "Interactions": [
@@ -686,6 +710,18 @@
             "Action": {
               "Type": "ActionCustom",
               "FunctionName": "decrement_settable_param"
+            }
+          },
+          {
+            "InteractionName": "Interaction4",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "back_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "CellVoltage"
             }
           }
         ]

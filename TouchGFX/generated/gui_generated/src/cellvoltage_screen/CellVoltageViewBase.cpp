@@ -35,7 +35,7 @@ CellVoltageViewBase::CellVoltageViewBase() :
     back_button.setBoxWithBorderPosition(0, 0, 59, 50);
     back_button.setBorderSize(5);
     back_button.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43), touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43));
-    back_button.setIconBitmaps(Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_BEFORE_50_50_E8F6FB_SVG_ID), Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID));
+    back_button.setIconBitmaps(Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_BEFORE_50_50_E8F6FB_SVG_ID), Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_BEFORE_50_50_E8F6FB_SVG_ID));
     back_button.setIconXY(0, 0);
     back_button.setAction(flexButtonCallback);
     back_button.setPosition(7, 190, 47, 44);

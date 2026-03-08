@@ -26,12 +26,12 @@ void csHIGH (void)
 
 void SPI_Write (uint8_t *data, uint8_t len)
 {
-	HAL_SPI_Transmit(&W25Q_SPI, data, len, 2000);
+	HAL_SPI_Transmit(&W25Q_SPI, data, len, 0xFFFFFFFF);
 }
 
 void SPI_Read (uint8_t *data, uint32_t len)
 {
-	HAL_SPI_Receive(&W25Q_SPI, data, len, 5000);
+	HAL_SPI_Receive(&W25Q_SPI, data, len, 0xFFFFFFFF);
 }
 
 /**************************************************************************************************/

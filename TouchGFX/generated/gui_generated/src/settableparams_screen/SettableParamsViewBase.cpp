@@ -23,14 +23,6 @@ SettableParamsViewBase::SettableParamsViewBase() :
     image1.setAlpha(119);
     add(image1);
 
-    back_button.setBoxWithBorderPosition(0, 0, 59, 50);
-    back_button.setBorderSize(5);
-    back_button.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43), touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43));
-    back_button.setIconBitmaps(Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_BEFORE_50_50_E8F6FB_SVG_ID), Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID));
-    back_button.setIconXY(0, 0);
-    back_button.setPosition(7, 190, 47, 44);
-    add(back_button);
-
     increment_btn.setBoxWithBorderPosition(0, 0, 59, 50);
     increment_btn.setBorderSize(5);
     increment_btn.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43), touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43));
@@ -67,6 +59,25 @@ SettableParamsViewBase::SettableParamsViewBase() :
     scrollableContainer1.add(scrollWheel1);
 
     add(scrollableContainer1);
+
+    box2.setPosition(0, 57, 261, 22);
+    box2.setColor(touchgfx::Color::getColorFromRGB(255, 215, 0));
+    box2.setAlpha(189);
+    add(box2);
+
+    box2_1.setPosition(0, 101, 261, 57);
+    box2_1.setColor(touchgfx::Color::getColorFromRGB(255, 215, 0));
+    box2_1.setAlpha(189);
+    add(box2_1);
+
+    back_button.setBoxWithBorderPosition(0, 0, 59, 50);
+    back_button.setBorderSize(5);
+    back_button.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43), touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43));
+    back_button.setIconBitmaps(Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_BEFORE_50_50_E8F6FB_SVG_ID), Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_BEFORE_50_50_E8F6FB_SVG_ID));
+    back_button.setIconXY(0, 0);
+    back_button.setAction(flexButtonCallback);
+    back_button.setPosition(7, 190, 47, 44);
+    add(back_button);
 }
 
 SettableParamsViewBase::~SettableParamsViewBase()
@@ -98,6 +109,13 @@ void SettableParamsViewBase::flexButtonCallbackHandler(const touchgfx::AbstractB
         //When decrement_btn clicked call virtual function
         //Call decrement_settable_param
         decrement_settable_param();
+    }
+    if (&src == &back_button)
+    {
+        //Interaction4
+        //When back_button clicked change screen to CellVoltage
+        //Go to CellVoltage with no screen transition
+        application().gotoCellVoltageScreenNoTransition();
     }
 }
 
