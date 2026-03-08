@@ -486,7 +486,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 static void mockUartData() {
 	//while(data_reading) {}
 		data_ready = false;
- serialData.batt_volt          = randFloat(42.0f, 54.0f);   // Example: 14s pack
+  serialData.batt_volt          = randFloat(42.0f, 54.0f);   // Example: 14s pack
     serialData.batt_current       = randFloat(-50.0f, 150.0f); // Charge/discharge
     serialData.soc                = randFloat(0.0f, 100.0f);
     serialData.soh                = randFloat(80.0f, 100.0f);
@@ -507,7 +507,11 @@ static void mockUartData() {
     for (int i = 0; i < 16; i++) {
         serialData.cell_volt[i] = randFloat(3.0f, 4.2f);
         serialData.cell_temp[i] = randFloat(-20.0f, 60.0f);
-        serialData.settable_param[i] = randFloat(-20.0f, 60.0f);
+    }
+    
+    // Settable limit is 4
+    for (int i = 0; i < 4; i++) {
+        serialData.settable_param[i] = 0;
     }
 
 		data_ready = true;

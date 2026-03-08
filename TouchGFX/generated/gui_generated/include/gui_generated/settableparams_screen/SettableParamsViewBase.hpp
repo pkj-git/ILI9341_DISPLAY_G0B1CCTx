@@ -34,6 +34,14 @@ public:
     {
         // Override and implement this function in SettableParams
     }
+    virtual void increment_settable_param()
+    {
+        // Override and implement this function in SettableParams
+    }
+    virtual void decrement_settable_param()
+    {
+        // Override and implement this function in SettableParams
+    }
 
 protected:
     FrontendApplication& application() {
@@ -47,8 +55,8 @@ protected:
     touchgfx::Box box1;
     touchgfx::Image image1;
     touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  back_button;
-    touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  back_button_1;
-    touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  back_button_1_1;
+    touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  increment_btn;
+    touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  decrement_btn;
     touchgfx::ScrollableContainer scrollableContainer1;
     touchgfx::ScrollWheel scrollWheel1;
     touchgfx::DrawableListItems<Settable, 5> scrollWheel1ListItems;
@@ -59,11 +67,13 @@ private:
      * Callback Declarations
      */
     touchgfx::Callback<SettableParamsViewBase, touchgfx::DrawableListItemsInterface*, int16_t, int16_t> updateItemCallback;
+    touchgfx::Callback<SettableParamsViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
 
     /*
      * Callback Handler Declarations
      */
     void updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex);
+    void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
 
     /*
      * Tick Counter Declarations

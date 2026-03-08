@@ -7,6 +7,7 @@
 
 SettableParamsViewBase::SettableParamsViewBase() :
     updateItemCallback(this, &SettableParamsViewBase::updateItemCallbackHandler),
+    flexButtonCallback(this, &SettableParamsViewBase::flexButtonCallbackHandler),
     frameCountInteraction1Interval(0)
 {
     __background.setPosition(0, 0, 320, 240);
@@ -30,21 +31,23 @@ SettableParamsViewBase::SettableParamsViewBase() :
     back_button.setPosition(7, 190, 47, 44);
     add(back_button);
 
-    back_button_1.setBoxWithBorderPosition(0, 0, 59, 50);
-    back_button_1.setBorderSize(5);
-    back_button_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43), touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43));
-    back_button_1.setIconBitmaps(Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_UP_50_50_E8F6FB_SVG_ID), Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID));
-    back_button_1.setIconXY(0, 0);
-    back_button_1.setPosition(268, 57, 47, 44);
-    add(back_button_1);
+    increment_btn.setBoxWithBorderPosition(0, 0, 59, 50);
+    increment_btn.setBorderSize(5);
+    increment_btn.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43), touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43));
+    increment_btn.setIconBitmaps(Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_UP_50_50_E8F6FB_SVG_ID), Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID));
+    increment_btn.setIconXY(0, 0);
+    increment_btn.setAction(flexButtonCallback);
+    increment_btn.setPosition(268, 57, 47, 44);
+    add(increment_btn);
 
-    back_button_1_1.setBoxWithBorderPosition(0, 0, 59, 50);
-    back_button_1_1.setBorderSize(5);
-    back_button_1_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43), touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43));
-    back_button_1_1.setIconBitmaps(Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_DOWN_50_50_E8F6FB_SVG_ID), Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID));
-    back_button_1_1.setIconXY(0, 0);
-    back_button_1_1.setPosition(268, 125, 47, 44);
-    add(back_button_1_1);
+    decrement_btn.setBoxWithBorderPosition(0, 0, 59, 50);
+    decrement_btn.setBorderSize(5);
+    decrement_btn.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43), touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(5, 32, 43));
+    decrement_btn.setIconBitmaps(Bitmap(BITMAP_ICON_THEME_IMAGES_HARDWARE_KEYBOARD_ARROW_DOWN_50_50_E8F6FB_SVG_ID), Bitmap(BITMAP_ICON_THEME_IMAGES_IMAGE_NAVIGATE_NEXT_50_50_E8F6FB_SVG_ID));
+    decrement_btn.setIconXY(0, 0);
+    decrement_btn.setAction(flexButtonCallback);
+    decrement_btn.setPosition(268, 125, 47, 44);
+    add(decrement_btn);
 
     scrollableContainer1.setPosition(0, 0, 250, 250);
     scrollableContainer1.setScrollbarsColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
@@ -55,7 +58,7 @@ SettableParamsViewBase::SettableParamsViewBase() :
     scrollWheel1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
     scrollWheel1.setSwipeAcceleration(10);
     scrollWheel1.setDragAcceleration(10);
-    scrollWheel1.setNumberOfItems(10);
+    scrollWheel1.setNumberOfItems(4);
     scrollWheel1.setSelectedItemOffset(0);
     scrollWheel1.setOvershootPercentage(75);
     scrollWheel1.setDrawableSize(25, 0);
@@ -77,6 +80,24 @@ void SettableParamsViewBase::setupScreen()
     for (int i = 0; i < scrollWheel1ListItems.getNumberOfDrawables(); i++)
     {
         scrollWheel1ListItems[i].initialize();
+    }
+}
+
+void SettableParamsViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
+{
+    if (&src == &increment_btn)
+    {
+        //Interaction2
+        //When increment_btn clicked call virtual function
+        //Call increment_settable_param
+        increment_settable_param();
+    }
+    if (&src == &decrement_btn)
+    {
+        //Interaction3
+        //When decrement_btn clicked call virtual function
+        //Call decrement_settable_param
+        decrement_settable_param();
     }
 }
 

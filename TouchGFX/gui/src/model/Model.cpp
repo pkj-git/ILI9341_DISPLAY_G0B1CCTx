@@ -15,7 +15,9 @@ void Model::tick()
 {
 	if(data_ready) {
 		data_reading = true;
-		modelListener->process_uart(serialData);
+		if (modelListener != nullptr) {
+			modelListener->process_uart(serialData);
+		}
 		data_reading = false;
 	}
 

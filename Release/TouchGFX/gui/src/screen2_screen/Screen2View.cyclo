@@ -1,0 +1,10 @@
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
+../TouchGFX/gui/src/screen2_screen/Screen2View.cpp:17:6:virtual void Screen2View::tearDownScreen()	1
+../TouchGFX/gui/src/screen2_screen/Screen2View.cpp:22:6:virtual void Screen2View::scrollList1UpdateItem(Page2&, int16_t)	1
+../TouchGFX/gui/src/screen2_screen/Screen2View.cpp:26:7:virtual void Screen2View::process_uart(volatile serialData_t&)	1
+../TouchGFX/gui/include/gui/screen2_screen/Screen2View.hpp:11:13:Screen2View::~Screen2View()	1
+../TouchGFX/gui/include/gui/screen2_screen/Screen2View.hpp:11:13:virtual Screen2View::~Screen2View()	1
+../TouchGFX/gui/src/screen2_screen/Screen2View.cpp:5:1:Screen2View::Screen2View()	1
+../TouchGFX/gui/src/screen2_screen/Screen2View.cpp:10:6:virtual void Screen2View::setupScreen()	1
+../TouchGFX/gui/src/screen2_screen/Screen2View.cpp:38:6:virtual void Screen2View::updateScreen()	2

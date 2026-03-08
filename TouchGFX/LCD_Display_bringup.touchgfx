@@ -543,7 +543,7 @@
           },
           {
             "Type": "FlexButton",
-            "Name": "back_button_1",
+            "Name": "increment_btn",
             "X": 268,
             "Y": 57,
             "Width": 47,
@@ -585,7 +585,7 @@
           },
           {
             "Type": "FlexButton",
-            "Name": "back_button_1_1",
+            "Name": "decrement_btn",
             "X": 268,
             "Y": 125,
             "Width": 47,
@@ -642,7 +642,7 @@
                 "Width": 261,
                 "Height": 101,
                 "ItemTemplateName": "Settable",
-                "NumberofItems": 10,
+                "NumberofItems": 4,
                 "Easing": "Back",
                 "EasingOption": "Out",
                 "SwipeAcceleration": 1.0,
@@ -662,6 +662,28 @@
             "Action": {
               "Type": "ActionCustom",
               "FunctionName": "updateScreen"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "increment_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "increment_settable_param"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "decrement_btn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "decrement_settable_param"
             }
           }
         ]

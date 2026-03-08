@@ -23,7 +23,7 @@ void Settable::decrementItem(int index) {
 
 }
 
-void Settable::updateData(int16_t itemIndex, volatile serialData_t& data) {
+void Settable::updateData(int16_t itemIndex, const volatile std::array<float, 4U>& params) {
     // itemIndex expected to be 0..3 for Para1 to Param4
    if (itemIndex < 0 || itemIndex >= 4) {
         formatFloat2(labelValueBuffer, LABELVALUE_SIZE, 0.0f);
@@ -38,7 +38,7 @@ void Settable::updateData(int16_t itemIndex, volatile serialData_t& data) {
     // Set label text for this cell
     Label.setTypedText(TypedText(paramTextKeys[itemIndex]));
 
-    float value = data.settable_param[itemIndex];
+    float value = const_cast<const std::array<float, 4U>&>(params)[itemIndex%4U];
     formatFloat2(labelValueBuffer, LABELVALUE_SIZE, value);
     labelValue.invalidate();
 

@@ -1,6 +1,7 @@
 #ifndef SETTABLE_HPP
 #define SETTABLE_HPP
 
+#include <array>
 #include <gui_generated/containers/SettableBase.hpp>
 #include "serial_data.h"
 
@@ -13,7 +14,7 @@ public:
     virtual void initialize();
     virtual void incrementItem(int index);
     virtual void decrementItem(int index);
-    void updateData(int16_t itemIndex, volatile serialData_t& data);
+    void updateData(int16_t itemIndex, const volatile std::array<float, 4U>& data);
 protected:
 };
 

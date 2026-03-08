@@ -1,0 +1,6 @@
+../TouchGFX/gui/include/gui/cellvoltage_screen/CellVoltagePresenter.hpp:30:13:CellVoltagePresenter::~CellVoltagePresenter()	1
+../TouchGFX/gui/src/cellvoltage_screen/CellVoltagePresenter.cpp:10:6:virtual void CellVoltagePresenter::activate()	1
+../TouchGFX/gui/src/cellvoltage_screen/CellVoltagePresenter.cpp:20:6:virtual void CellVoltagePresenter::process_uart(volatile serialData_t&)	1
+../TouchGFX/gui/include/gui/cellvoltage_screen/CellVoltagePresenter.hpp:30:13:virtual CellVoltagePresenter::~CellVoltagePresenter()	1
+../TouchGFX/gui/include/gui/cellvoltage_screen/CellVoltagePresenter.hpp:30:13:virtual void* CellVoltagePresenter::_ZThn4_N20CellVoltagePresenterD1Ev()	1
+../TouchGFX/gui/src/cellvoltage_screen/CellVoltagePresenter.cpp:4:1:CellVoltagePresenter::CellVoltagePresenter(CellVoltageView&)	1
