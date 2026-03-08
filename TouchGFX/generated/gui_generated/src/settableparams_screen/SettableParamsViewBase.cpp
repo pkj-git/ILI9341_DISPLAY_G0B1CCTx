@@ -54,7 +54,7 @@ SettableParamsViewBase::SettableParamsViewBase() :
     scrollableContainer1.setScrollbarsAlpha(255);
     scrollWheel1.setPosition(0, 57, 261, 101);
     scrollWheel1.setHorizontal(false);
-    scrollWheel1.setCircular(false);
+    scrollWheel1.setCircular(true);
     scrollWheel1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
     scrollWheel1.setSwipeAcceleration(10);
     scrollWheel1.setDragAcceleration(10);

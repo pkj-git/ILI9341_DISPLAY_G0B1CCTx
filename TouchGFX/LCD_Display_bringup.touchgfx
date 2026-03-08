@@ -641,6 +641,7 @@
                 "Y": 57,
                 "Width": 261,
                 "Height": 101,
+                "IsCircular": true,
                 "ItemTemplateName": "Settable",
                 "NumberofItems": 4,
                 "Easing": "Back",

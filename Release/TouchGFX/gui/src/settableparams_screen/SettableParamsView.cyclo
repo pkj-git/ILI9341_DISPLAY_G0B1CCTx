@@ -9,4 +9,4 @@
 ../TouchGFX/gui/src/settableparams_screen/SettableParamsView.cpp:14:6:virtual void SettableParamsView::setupScreen()	1
 ../TouchGFX/gui/src/settableparams_screen/SettableParamsView.cpp:38:6:virtual void SettableParamsView::updateScreen()	2
 ../TouchGFX/gui/src/settableparams_screen/SettableParamsView.cpp:46:6:virtual void SettableParamsView::increment_settable_param()	2
-../TouchGFX/gui/src/settableparams_screen/SettableParamsView.cpp:61:6:virtual void SettableParamsView::decrement_settable_param()	2
+../TouchGFX/gui/src/settableparams_screen/SettableParamsView.cpp:61:6:virtual void SettableParamsView::decrement_settable_param()	3
