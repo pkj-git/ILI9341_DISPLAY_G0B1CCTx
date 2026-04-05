@@ -16,6 +16,9 @@ void Page1::initialize()
 }
 
 void Page1::updateData(int16_t itemIndex, volatile serialData_t& data) {
+	if (itemIndex > 11) {
+		return;
+	}
 	display d{static_cast<display>(itemIndex)};
     switch(d) {
         case display::Batt_volt:

@@ -10,8 +10,7 @@ Screen2View::Screen2View()
 void Screen2View::setupScreen()
 {
     Screen2ViewBase::setupScreen();
-    scrollableContainer1.setScrollbarWidth(10);
-    scrollableContainer1.childGeometryChanged();
+    init = true;
 }
 
 void Screen2View::tearDownScreen()
@@ -36,6 +35,9 @@ void  Screen2View::process_uart(volatile serialData_t& data) {
 
 
 void Screen2View::updateScreen() {
+	if(!init) {
+		return;
+	}
 	for (int i = 0; i < scrollList1.getNumberOfItems(); i++)
 	{
 		scrollList1.itemChanged(i);

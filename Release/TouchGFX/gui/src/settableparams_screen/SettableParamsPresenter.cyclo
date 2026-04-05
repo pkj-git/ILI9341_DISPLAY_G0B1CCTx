@@ -1,6 +1,0 @@
-../TouchGFX/gui/include/gui/settableparams_screen/SettableParamsPresenter.hpp:28:13:SettableParamsPresenter::~SettableParamsPresenter()	1
-../TouchGFX/gui/src/settableparams_screen/SettableParamsPresenter.cpp:10:6:virtual void SettableParamsPresenter::activate()	1
-../TouchGFX/gui/src/settableparams_screen/SettableParamsPresenter.cpp:20:6:virtual void SettableParamsPresenter::process_uart(volatile serialData_t&)	1
-../TouchGFX/gui/include/gui/settableparams_screen/SettableParamsPresenter.hpp:28:13:virtual SettableParamsPresenter::~SettableParamsPresenter()	1
-../TouchGFX/gui/include/gui/settableparams_screen/SettableParamsPresenter.hpp:28:13:virtual void* SettableParamsPresenter::_ZThn4_N23SettableParamsPresenterD1Ev()	1
-../TouchGFX/gui/src/settableparams_screen/SettableParamsPresenter.cpp:4:1:SettableParamsPresenter::SettableParamsPresenter(SettableParamsView&)	1

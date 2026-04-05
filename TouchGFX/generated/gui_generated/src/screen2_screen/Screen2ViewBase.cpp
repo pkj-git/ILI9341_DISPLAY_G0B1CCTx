@@ -41,11 +41,7 @@ Screen2ViewBase::Screen2ViewBase() :
     back_button.setPosition(7, 190, 47, 44);
     add(back_button);
 
-    scrollableContainer1.setPosition(0, 38, 320, 141);
-    scrollableContainer1.setScrollbarsColor(touchgfx::Color::getColorFromRGB(0, 102, 153));
-    scrollableContainer1.setScrollbarsAlpha(255);
-    scrollableContainer1.setScrollbarsPermanentlyVisible();
-    scrollList1.setPosition(7, 8, 320, 355);
+    scrollList1.setPosition(7, 46, 320, 134);
     scrollList1.setHorizontal(false);
     scrollList1.setCircular(false);
     scrollList1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
@@ -57,9 +53,7 @@ Screen2ViewBase::Screen2ViewBase() :
     scrollList1.setOvershootPercentage(75);
     scrollList1.setDrawableSize(27, 0);
     scrollList1.setDrawables(scrollList1ListItems, updateItemCallback);
-    scrollableContainer1.add(scrollList1);
-
-    add(scrollableContainer1);
+    add(scrollList1);
 }
 
 Screen2ViewBase::~Screen2ViewBase()

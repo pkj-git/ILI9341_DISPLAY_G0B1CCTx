@@ -10,7 +10,6 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/containers/buttons/Buttons.hpp>
-#include <touchgfx/containers/ScrollableContainer.hpp>
 #include <touchgfx/containers/scrollers/ScrollList.hpp>
 #include <gui/containers/Page1.hpp>
 
@@ -47,9 +46,8 @@ protected:
     touchgfx::Box box1;
     touchgfx::Image image1;
     touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  next_button;
-    touchgfx::ScrollableContainer scrollableContainer1;
     touchgfx::ScrollList scrollList1;
-    touchgfx::DrawableListItems<Page1, 14> scrollList1ListItems;
+    touchgfx::DrawableListItems<Page1, 6> scrollList1ListItems;
 
 private:
 

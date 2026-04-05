@@ -10,7 +10,6 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/containers/buttons/Buttons.hpp>
-#include <touchgfx/containers/ScrollableContainer.hpp>
 #include <touchgfx/containers/scrollers/ScrollList.hpp>
 #include <gui/containers/CellVoltage.hpp>
 
@@ -48,9 +47,8 @@ protected:
     touchgfx::Image image1;
     touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  next_button;
     touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  back_button;
-    touchgfx::ScrollableContainer scrollableContainer1;
     touchgfx::ScrollList scrollList1;
-    touchgfx::DrawableListItems<CellVoltage, 18> scrollList1ListItems;
+    touchgfx::DrawableListItems<CellVoltage, 6> scrollList1ListItems;
 
 private:
 

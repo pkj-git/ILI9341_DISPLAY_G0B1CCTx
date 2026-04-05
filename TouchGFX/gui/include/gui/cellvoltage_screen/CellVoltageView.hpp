@@ -14,6 +14,7 @@ public:
     virtual void process_uart(volatile serialData_t& data);
     void updateScreen();
     void scrollList1UpdateItem(CellVoltage& item, int16_t itemIndex) override;
+    bool init{false};
 protected:
 };
 

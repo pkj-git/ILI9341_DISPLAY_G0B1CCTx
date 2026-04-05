@@ -65,37 +65,19 @@
             ]
           },
           {
-            "Type": "ScrollableContainer",
-            "Name": "scrollableContainer1",
-            "Y": 38,
+            "Type": "ScrollList",
+            "Name": "scrollList1",
+            "X": 7,
+            "Y": 53,
             "Width": 320,
-            "Height": 145,
-            "HorizontalScrollEnabled": true,
-            "VerticalScrollEnabled": true,
-            "ScrollbarsVisible": true,
-            "ScrollbarsVisibleOnPressed": true,
-            "ScrollbarsColor": {
-              "Green": 102,
-              "Blue": 153
-            },
-            "ScrollbarsAlpha": 255,
-            "Components": [
-              {
-                "Type": "ScrollList",
-                "Name": "scrollList1",
-                "X": 7,
-                "Y": 15,
-                "Width": 320,
-                "Height": 328,
-                "ItemTemplateName": "Page1",
-                "NumberofItems": 13,
-                "Easing": "Back",
-                "EasingOption": "Out",
-                "SwipeAcceleration": 1.0,
-                "DragAcceleration": 1.0,
-                "OverShootPercentage": 75
-              }
-            ]
+            "Height": 130,
+            "ItemTemplateName": "Page1",
+            "NumberofItems": 11,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.0,
+            "DragAcceleration": 1.0,
+            "OverShootPercentage": 75
           }
         ],
         "Interactions": [
@@ -230,37 +212,19 @@
             ]
           },
           {
-            "Type": "ScrollableContainer",
-            "Name": "scrollableContainer1",
-            "Y": 38,
+            "Type": "ScrollList",
+            "Name": "scrollList1",
+            "X": 7,
+            "Y": 46,
             "Width": 320,
-            "Height": 141,
-            "HorizontalScrollEnabled": true,
-            "VerticalScrollEnabled": true,
-            "ScrollbarsVisible": true,
-            "ScrollbarsVisibleOnPressed": true,
-            "ScrollbarsColor": {
-              "Green": 102,
-              "Blue": 153
-            },
-            "ScrollbarsAlpha": 255,
-            "Components": [
-              {
-                "Type": "ScrollList",
-                "Name": "scrollList1",
-                "X": 7,
-                "Y": 8,
-                "Width": 320,
-                "Height": 355,
-                "ItemTemplateName": "Page2",
-                "NumberofItems": 16,
-                "Easing": "Back",
-                "EasingOption": "Out",
-                "SwipeAcceleration": 1.0,
-                "DragAcceleration": 1.0,
-                "OverShootPercentage": 75
-              }
-            ]
+            "Height": 134,
+            "ItemTemplateName": "Page2",
+            "NumberofItems": 16,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.0,
+            "DragAcceleration": 1.0,
+            "OverShootPercentage": 75
           }
         ],
         "Interactions": [
@@ -407,37 +371,19 @@
             ]
           },
           {
-            "Type": "ScrollableContainer",
-            "Name": "scrollableContainer1",
-            "Y": 38,
+            "Type": "ScrollList",
+            "Name": "scrollList1",
+            "X": 7,
+            "Y": 46,
             "Width": 320,
-            "Height": 141,
-            "HorizontalScrollEnabled": true,
-            "VerticalScrollEnabled": true,
-            "ScrollbarsVisible": true,
-            "ScrollbarsVisibleOnPressed": true,
-            "ScrollbarsColor": {
-              "Green": 102,
-              "Blue": 153
-            },
-            "ScrollbarsAlpha": 255,
-            "Components": [
-              {
-                "Type": "ScrollList",
-                "Name": "scrollList1",
-                "X": 7,
-                "Y": 8,
-                "Width": 320,
-                "Height": 436,
-                "ItemTemplateName": "CellVoltage",
-                "NumberofItems": 16,
-                "Easing": "Back",
-                "EasingOption": "Out",
-                "SwipeAcceleration": 1.0,
-                "DragAcceleration": 1.0,
-                "OverShootPercentage": 75
-              }
-            ]
+            "Height": 132,
+            "ItemTemplateName": "CellVoltage",
+            "NumberofItems": 10,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.0,
+            "DragAcceleration": 1.0,
+            "OverShootPercentage": 75
           }
         ],
         "Interactions": [

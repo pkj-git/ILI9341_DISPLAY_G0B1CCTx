@@ -1,5 +1,0 @@
-../Core/Src/LCD_Touch.c:13:6:TS_IO_Init	1
-../Core/Src/LCD_Touch.c:21:6:TS_IO_Write	1
-../Core/Src/LCD_Touch.c:26:10:TS_IO_Read	1
-../Core/Src/LCD_Touch.c:33:10:TS_IO_ReadMultiple	1
-../Core/Src/LCD_Touch.c:38:6:TS_IO_Delay	1

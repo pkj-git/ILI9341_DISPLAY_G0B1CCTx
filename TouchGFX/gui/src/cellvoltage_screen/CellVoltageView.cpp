@@ -13,8 +13,7 @@ CellVoltageView::CellVoltageView()
 void CellVoltageView::setupScreen()
 {
     CellVoltageViewBase::setupScreen();
-    scrollableContainer1.setScrollbarWidth(10);
-    scrollableContainer1.childGeometryChanged();
+    init = true;
 }
 
 void CellVoltageView::tearDownScreen()
@@ -34,6 +33,10 @@ void CellVoltageView::process_uart(volatile serialData_t& data) {
 }
 
 void CellVoltageView::updateScreen() {
+	if(!init) {
+		return;
+	}
+
 	for (int i = 0; i < scrollList1.getNumberOfItems(); i++)
 	{
 		scrollList1.itemChanged(i);
