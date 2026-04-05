@@ -1,0 +1,1 @@
+../TouchGFX/gui/src/common/floatPrint.cpp:3:6:void formatFloat2(touchgfx::Unicode::UnicodeChar*, size_t, float)	3

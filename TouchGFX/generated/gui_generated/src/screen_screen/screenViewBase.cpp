@@ -36,12 +36,12 @@ screenViewBase::screenViewBase() :
     scrollList1.setHorizontal(false);
     scrollList1.setCircular(false);
     scrollList1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
-    scrollList1.setSwipeAcceleration(10);
-    scrollList1.setDragAcceleration(10);
+    scrollList1.setSwipeAcceleration(2);
+    scrollList1.setDragAcceleration(2);
     scrollList1.setNumberOfItems(11);
     scrollList1.setPadding(0, 0);
     scrollList1.setSnapping(false);
-    scrollList1.setOvershootPercentage(75);
+    scrollList1.setOvershootPercentage(0);
     scrollList1.setDrawableSize(27, 0);
     scrollList1.setDrawables(scrollList1ListItems, updateItemCallback);
     add(scrollList1);

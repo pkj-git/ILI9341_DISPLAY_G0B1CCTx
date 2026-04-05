@@ -75,9 +75,8 @@
             "NumberofItems": 11,
             "Easing": "Back",
             "EasingOption": "Out",
-            "SwipeAcceleration": 1.0,
-            "DragAcceleration": 1.0,
-            "OverShootPercentage": 75
+            "SwipeAcceleration": 0.2,
+            "DragAcceleration": 0.2
           }
         ],
         "Interactions": [
@@ -222,9 +221,8 @@
             "NumberofItems": 16,
             "Easing": "Back",
             "EasingOption": "Out",
-            "SwipeAcceleration": 1.0,
-            "DragAcceleration": 1.0,
-            "OverShootPercentage": 75
+            "SwipeAcceleration": 0.2,
+            "DragAcceleration": 0.2
           }
         ],
         "Interactions": [
@@ -381,9 +379,8 @@
             "NumberofItems": 10,
             "Easing": "Back",
             "EasingOption": "Out",
-            "SwipeAcceleration": 1.0,
-            "DragAcceleration": 1.0,
-            "OverShootPercentage": 75
+            "SwipeAcceleration": 0.2,
+            "DragAcceleration": 0.2
           }
         ],
         "Interactions": [
